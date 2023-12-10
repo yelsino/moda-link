@@ -1,0 +1,147 @@
+---
+import Essentials from "./Essentials.astro";
+
+const company_information = [
+  {
+    id: "1",
+    text: "About Newchic",
+    url: "https://www.newchic.com/tempages-BRAND/tid-3203.html?utmid=9841",
+  },
+  {
+    id: "2",
+    text: "Privacy Policy",
+    url: "https://www.newchic.com/privacy-policy-hc172.html",
+  },
+  {
+    id: "3",
+    text: "Return Policy",
+    url: "https://www.newchic.com/return-and-refund-hc162.html",
+  },
+  {
+    id: "4",
+    text: "Terms And Conditions",
+    url: "https://www.newchic.com/terms-and-conditions-hc174.html",
+  },
+  {
+    id: "5",
+    text: "Intellectual Property Claims",
+    url: "https://www.newchic.com/intellectual-property-claims-hc175.html",
+  },
+  {
+    id: "6",
+    text: "imprint",
+    url: "https://www.newchic.com/impressum-hc233.html",
+  },
+];
+
+const customer_service = [
+  {
+    id: "1",
+    text: "Track Order",
+    url: "https://www.newchic.com/account/orderlist.html",
+  },
+  {
+    id: "2",
+    text: "Shipping FAQ",
+    url: "https://www.newchic.com/help_center/shipping-faq157.html",
+  },
+  {
+    id: "3",
+    text: "Order FAQ",
+    url: "https://www.newchic.com/help_center/order-faq167.html",
+  },
+  {
+    id: "4",
+    text: "Shipping Methods",
+    url: "https://www.newchic.com/shipping-methods-hc160.html",
+  },
+  {
+    id: "5",
+    text: "Payment Methods",
+    url: "https://www.newchic.com/payment-methods-hc159.html",
+  },
+  {
+    id: "6",
+    text: "Top Searches",
+    url: "https://www.newchic.com/topsearch.html",
+  },
+];
+
+const cooperation = [
+  {
+    id: "1",
+    text: "Blogger Program",
+    url: "https://www.newchic.com/blog/promotion.html",
+  },
+  {
+    id: "2",
+    text: "Affiliate - Make Money",
+    url: "https://www.newchic.com/affiliateCenter.html?flagType=3",
+  },
+  {
+    id: "3",
+    text: "VIP Program",
+    url: "https://www.newchic.com/account/showVipIllustrate.html",
+  },
+  {
+    id: "4",
+    text: "Dropship Program",
+    url: "https://www.newchic.com/dropship-program.html",
+  },
+  {
+    id: "5",
+    text: "Wholesale Program",
+    url: "https://www.newchic.com/article/wholesaleShow.html",
+  },
+  {
+    id: "6",
+    text: "programa de estudiantes",
+    url: "https://www.descuentoestudiante.com/newchic-descuento-estudiante-iframe",
+  },
+];
+---
+
+<footer class="bg-gray-50 py-4 pt-12">
+  <Essentials />
+
+  <div class="flex justify-around py-10 px-5 min-w-[800px]">
+    <section>
+      <h3 class="text-black font-bold mb-5">Company Information</h3>
+      <ul class="flex flex-col gap-y-2">
+        {
+          company_information.map((e) => (
+            <li class="text-gray-500">
+              <a href={e.url}>{e.text}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-black font-bold mb-5">SERVICIO AL CLIENTE</h3>
+      <ul class="flex flex-col gap-y-2">
+        {
+          customer_service.map((e) => (
+            <li class="text-gray-500">
+              <a href={e.url}>{e.text}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section>
+      <h3 class="text-black font-bold mb-5">COOPERACIÓN</h3>
+      <ul class="flex flex-col gap-y-2">
+        {
+          cooperation.map((e) => (
+            <li class="text-gray-500">
+              <a href={e.url}>{e.text}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</footer>

@@ -1,0 +1,68 @@
+---
+const essentials = [
+  {
+    id:"1",
+    title: "Productos de alta calidad",
+    description: "Disfruta de productos de alta calidad.",
+    clase:"icon icon-1"
+  },
+  {
+    id:"2",
+    title: "Chat en vivo 24/7",
+    description: "Obtén ayuda instantánea en cualquier momento.",
+    clase:"icon icon-2"
+  },
+  {
+    id:"3",
+    title: "Envío acelerado",
+    description: "Múltiples métodos de envío rápidos y confiables para elegir.",
+    clase:"icon icon-3"
+  },
+  {
+    id:"4",
+    title: "Pago seguro",
+    description: "Múltiples métodos de pago seguros",
+    clase:"icon icon-4"
+  },
+ 
+];
+---
+
+
+<section class="bg-white flex justify-around  py-10 p-10 overflow-hidden min-w-[800px]">
+
+  {essentials.map((e)=>(
+    <div class="w-40  text-center flex flex-col items-center">
+    <span class={`${e.clase} block`}></span>
+    <h3 class="font-bold">{e.title}</h3>
+    <p class="text-gray-400 text-sm">{e.description}</p>
+  </div>
+  ))}
+
+</section>
+
+<style>
+  .icon {
+    width: 70px;
+    height: 70px;
+    background-repeat: no-repeat;
+    background-image: url("trush-icons.png");
+    background-size: auto;
+  }
+
+  .icon-1 {
+    background-position: 0 0;
+  }
+
+  .icon-2 {
+    background-position: -70px 0;
+  }
+
+  .icon-3 {
+    background-position: 0 -70px;
+  }
+
+  .icon-4 {
+    background-position: -70px -70px;
+  }
+</style>
