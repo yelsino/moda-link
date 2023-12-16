@@ -3,7 +3,7 @@
   console.log("ubicacion es: ", ubication);
 </script>
 
-<div  class=" ">
+<div  class=" "> 
 
   {#if ubication === "/hombre"}
     <a href="/mujer" class="bg-orange-500 rounded-full p-1 block ">
