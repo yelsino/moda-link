@@ -3,8 +3,8 @@
   console.log("ubicacion es: ", ubication);
 </script>
 
-<div  class=" "> 
-
+<button  class=" "> 
+  <p>{ubication}</p>
   {#if ubication === "/hombre"}
     <a href="/mujer" class="bg-orange-500 rounded-full p-1 block ">
       <svg
@@ -44,4 +44,4 @@
       >
     </a>
   {/if}
-</div>
+</button>
