@@ -5,7 +5,7 @@
 
 <button  class=" "> 
   <p>{ubication}</p>
-  {#if ubication === "/hombre"}
+  {#if ubication === "hombre"}
     <a href="/mujer" class="bg-orange-500 rounded-full p-1 block ">
       <svg
         xmlns="http://www.w3.org/2000/svg"

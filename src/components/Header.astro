@@ -10,7 +10,7 @@ console.log("name::: ", pathname);
   class="bg-white p-4 max-w-[2000px] px-10 flex justify-between items-center fixed w-full top-0  z-20"
 >
   <!-- Sección del logo -->
-  <MenWomen client:visible ubication={pathname} />
+  <MenWomen client:visible ubication={pathname.replace("/", "").trim()} />
 
   <!-- Sección del nombre -->
   <div class="nombre">
