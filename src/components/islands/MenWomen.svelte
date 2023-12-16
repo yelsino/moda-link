@@ -1,5 +1,5 @@
 <script>
-  export let ubication = ""
+  export let ubication = "".replaceAll("/", "")
 </script>
 
 <button  class=" "> 
