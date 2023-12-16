@@ -1,7 +1,5 @@
 <script>
   export let ubication = ""
-  const partesUrl = ubication.split('/');
-  const generoParte = partesUrl.find(part => part === 'hombre' || part === 'mujer'); // Buscar 'hombre' o 'mujer'
 </script>
 
 <button  class=" "> 
