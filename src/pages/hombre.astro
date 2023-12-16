@@ -15,19 +15,10 @@ params.set("genero", "hombre");
 console.log(urlBase+params);
 
 const response = await fetch(urlBase+params);
-console.log("response: ", response);
+const products: Product[] = await response.json();
 
-const data: Product[] = await response.json();
-console.log("fetch listo");
 
-function sortByLikesDescending(a: Product, b: Product): number {
-  const likesA = Number(a.likes);
-  const likesB = Number(b.likes);
 
-  return likesB - likesA;
-}
-
-const orderData = data.sort(sortByLikesDescending)
 
 ---
 
@@ -40,7 +31,7 @@ const orderData = data.sort(sortByLikesDescending)
         class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-10 items-center"
       >
         {
-          orderData.map((product) => (
+          products.map((product) => (
           <Card
               description={product.descripcion}
               image={product.imagen}
