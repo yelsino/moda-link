@@ -1,9 +1,10 @@
 <script>
-  export let ubication = "".replaceAll("/", "")
+  export let ubication = ""
+  const partesUrl = ubication.split('/');
+  const generoParte = partesUrl.find(part => part === 'hombre' || part === 'mujer'); // Buscar 'hombre' o 'mujer'
 </script>
 
 <button  class=" "> 
-  <p>{ubication}</p>
   {#if generoParte === "hombre"}
     <a href="/mujer" class="bg-orange-500 rounded-full p-1 block ">
       <svg
