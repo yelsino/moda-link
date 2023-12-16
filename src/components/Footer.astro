@@ -4,32 +4,32 @@ import Essentials from "./Essentials.astro";
 const company_information = [
   {
     id: "1",
-    text: "About Newchic",
+    text: "Acerca de Newchic",
     url: "https://www.newchic.com/tempages-BRAND/tid-3203.html?utmid=9841",
   },
   {
     id: "2",
-    text: "Privacy Policy",
+    text: "Política de privacidad",
     url: "https://www.newchic.com/privacy-policy-hc172.html",
   },
   {
     id: "3",
-    text: "Return Policy",
+    text: "Política de devoluciones",
     url: "https://www.newchic.com/return-and-refund-hc162.html",
   },
   {
     id: "4",
-    text: "Terms And Conditions",
+    text: "Términos y condiciones",
     url: "https://www.newchic.com/terms-and-conditions-hc174.html",
   },
   {
     id: "5",
-    text: "Intellectual Property Claims",
+    text: "Reclamaciones de propiedad intelectual",
     url: "https://www.newchic.com/intellectual-property-claims-hc175.html",
   },
   {
     id: "6",
-    text: "imprint",
+    text: "Centro de ayuda",
     url: "https://www.newchic.com/impressum-hc233.html",
   },
 ];
@@ -37,32 +37,32 @@ const company_information = [
 const customer_service = [
   {
     id: "1",
-    text: "Track Order",
+    text: "Seguimiento de pedido",
     url: "https://www.newchic.com/account/orderlist.html",
   },
   {
     id: "2",
-    text: "Shipping FAQ",
+    text: "Preguntas frecuentes sobre envíos",
     url: "https://www.newchic.com/help_center/shipping-faq157.html",
   },
   {
     id: "3",
-    text: "Order FAQ",
+    text: "Preguntas frecuentes sobre pedidos",
     url: "https://www.newchic.com/help_center/order-faq167.html",
   },
   {
     id: "4",
-    text: "Shipping Methods",
+    text: "Métodos de envío",
     url: "https://www.newchic.com/shipping-methods-hc160.html",
   },
   {
     id: "5",
-    text: "Payment Methods",
+    text: "Métodos de pago",
     url: "https://www.newchic.com/payment-methods-hc159.html",
   },
   {
     id: "6",
-    text: "Top Searches",
+    text: "Búsquedas principales",
     url: "https://www.newchic.com/topsearch.html",
   },
 ];
@@ -70,27 +70,27 @@ const customer_service = [
 const cooperation = [
   {
     id: "1",
-    text: "Blogger Program",
+    text: "Programa de blogueros",
     url: "https://www.newchic.com/blog/promotion.html",
   },
   {
     id: "2",
-    text: "Affiliate - Make Money",
+    text: "Afiliarse - Ganar dinero",
     url: "https://www.newchic.com/affiliateCenter.html?flagType=3",
   },
   {
     id: "3",
-    text: "VIP Program",
+    text: "Programa VIP",
     url: "https://www.newchic.com/account/showVipIllustrate.html",
   },
   {
     id: "4",
-    text: "Dropship Program",
+    text: "Programa de envío directo",
     url: "https://www.newchic.com/dropship-program.html",
   },
   {
     id: "5",
-    text: "Wholesale Program",
+    text: "Programa mayorista",
     url: "https://www.newchic.com/article/wholesaleShow.html",
   },
   {
@@ -104,9 +104,9 @@ const cooperation = [
 <footer class="bg-gray-50 py-4 pt-12">
   <Essentials />
 
-  <div class="flex justify-around py-10 px-5 min-w-[800px]">
+  <div class="flex justify-around flex-col sm:flex-row py-10 px-5 gap-y-10 ">
     <section>
-      <h3 class="text-black font-bold mb-5">Company Information</h3>
+      <h3 class="text-black font-bold mb-5 uppercase">Información de la empresa</h3>
       <ul class="flex flex-col gap-y-2">
         {
           company_information.map((e) => (

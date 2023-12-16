@@ -1,18 +1,16 @@
+---
+import MenWomen from './islands/MenWomen.svelte'
+
+// const {} = Astro.params
+const {pathname} = Astro.url
+console.log("name::: ", pathname);
+
+---
 <header
   class="bg-white p-4 max-w-[2000px] px-10 flex justify-between items-center fixed w-full top-0  z-20"
 >
   <!-- Sección del logo -->
-  <div class=" bg-color_orange  rounded-full p-1">
-    <!-- <img src="/favicon.svg" alt="Logo de tu empresa" class="h-10" /> -->
-    <!-- <img width="48" height="48" src="https://img.icons8.com/doodle/48/skirt.png" alt="skirt"/> -->
-    <!-- male -->
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-female text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 9m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" /><path d="M12 14v7" /><path d="M9 18h6" /></svg> -->
-    
-    <!-- male and female -->
-    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-bigender text-white" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M11 11m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M19 3l-5 5" /><path d="M15 3h4v4" /><path d="M11 16v6" /><path d="M8 19h6" /></svg>
-
-    <!-- <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-gender-male" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 14m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" /><path d="M19 5l-5.4 5.4" /><path d="M19 5h-5" /><path d="M19 5v5" /></svg> -->
-  </div>
+  <MenWomen client:visible ubication={pathname} />
 
   <!-- Sección del nombre -->
   <div class="nombre">

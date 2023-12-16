@@ -1,11 +1,14 @@
 
 export interface Product {
-  SKU:                         string;
-  "Product title":             string;
-  "Product main image":        string;
-  "Product Details Page Link": string;
-  "Sale price":                string;
-  Commission:                  string;
-  "Promotion Link":            string;
-  likes:                       string;      
+  descripcion: string
+  marca: string
+  url: string
+  precio: string
+  imagen: string
+  categoria?: string 
+  subCategoria?: string
+  likes?: number
+  genero: string
+  urlAfiliado: string
+
 }
