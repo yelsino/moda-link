@@ -1,10 +1,11 @@
 <script>
   export let genero = ""
+  export let category = "";
 
   const filters = [
     {
       id: "1",
-      name: "sombrero",
+      name: "gorros",
       href: `/${genero}/gorros`,
       icon: `<svg
       stroke="currentColor"
@@ -21,7 +22,7 @@
     },
     {
       id: "2",
-      name: "pantalones",
+      name: "pantalon",
       href: `/${genero}/pantalon`,
       icon: ` <svg
       stroke="currentColor"
@@ -38,7 +39,7 @@
     },
     {
       id: "3",
-      name: "polos",
+      name: "camiseta",
       href: `/${genero}/camiseta`,
       icon: `<svg
       stroke="currentColor"
@@ -57,7 +58,7 @@
     },
     {
       id: "4",
-      name: "sapatillas",
+      name: "zapatos",
       href: `/${genero}/zapatos`,
       icon: `<svg
       stroke="currentColor"
@@ -94,14 +95,14 @@
     },
   ];
 
-  function handleFilterClick(filterId) {
-    const selectedFilter = filters.find(filter => filter.id === filterId);
+  // function handleFilterClick(filterId) {
+  //   const selectedFilter = filters.find(filter => filter.id === filterId);
 
-    // Modificar la URL al hacer clic en el filtro
-    const currentURL = new URL(window.location.href);
-    currentURL.searchParams.set('tipo', selectedFilter.name);
-    window.history.pushState({}, '', currentURL);
-  }
+  //   // Modificar la URL al hacer clic en el filtro
+  //   const currentURL = new URL(window.location.href);
+  //   currentURL.searchParams.set('tipo', selectedFilter.name);
+  //   window.history.pushState({}, '', currentURL);
+  // }
 </script>
 
 <div
@@ -111,7 +112,9 @@
   {#each filters as filter}
     <a href={filter.href}
     id={filter.id} 
-    on:click={() => handleFilterClick(filter.id)}
-    class={`flex items-center py-5 px-2`}>{@html filter.icon}</a>
+    class={`flex items-center py-5 px-2 ${category === filter.name && 'bg-orange-500'}`}>
+    
+    {@html filter.icon}
+    </a>
   {/each}
 </div>
