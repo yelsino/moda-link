@@ -10,6 +10,11 @@ export default defineConfig({
   output: "hybrid",
   adapter: vercel(),
   redirects: {
-    "/": "/hombre"
+    "/": "/hombre/camiseta",
+    "/hombre": "/hombre/camiseta",
+    "/mujer": "/mujer/camiseta",
+  },
+  image: {
+    domains: ["astro.build"]
   }
 });

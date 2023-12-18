@@ -1,15 +1,6 @@
 ---
+import { Image } from "astro:assets"
 
-// descripcion: string
-//   marca: string
-//   url: string
-//   precio: string
-//   imagen: string
-//   categoria?: string 
-//   subCategoria?: string
-//   likes?: number
-//   genero: string
-//   urlAfiliado: string
 
 const { description, image, link } = Astro.props;
 ---
@@ -22,7 +13,8 @@ const { description, image, link } = Astro.props;
       aria-label={description}
       class="relative  w-full "
     >
-      <img src={image} alt={description} loading="lazy" />
+      <Image src={image} alt={description} loading="lazy" width="240" height="320" format="webp" />
+      
     </a>
     
   </div>

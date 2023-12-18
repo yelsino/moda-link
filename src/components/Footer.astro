@@ -102,46 +102,26 @@ const cooperation = [
 ---
 
 <footer class="bg-gray-50 py-4 pt-12">
-  <Essentials />
+  <!-- <Essentials /> -->
 
-  <div class="flex justify-around flex-col sm:flex-row py-10 px-5 gap-y-10 ">
+  <div class="flex justify-around flex-col sm:flex-row py-10 px-5 gap-10 text-gray-600">
     <section>
       <h3 class="text-black font-bold mb-5 uppercase">Información de la empresa</h3>
-      <ul class="flex flex-col gap-y-2">
-        {
-          company_information.map((e) => (
-            <li class="text-gray-500">
-              <a href={e.url}>{e.text}</a>
-            </li>
-          ))
-        }
-      </ul>
+      <p class="flex flex-col gap-y-2">
+        En Moda Link, nos apasiona seleccionar cuidadosamente ropa de alta calidad que refleje estilo y personalidad para hombres y mujeres con buen gusto. Nos esforzamos por ser un referente en el mundo de la moda, conectando estilos personales con las últimas tendencias.
+      </p>
     </section>
 
     <section>
       <h3 class="text-black font-bold mb-5">SERVICIO AL CLIENTE</h3>
-      <ul class="flex flex-col gap-y-2">
-        {
-          customer_service.map((e) => (
-            <li class="text-gray-500">
-              <a href={e.url}>{e.text}</a>
-            </li>
-          ))
-        }
-      </ul>
+      <p>Nuestro compromiso con el servicio al cliente es primordial. Estamos aquí para ayudarte en cada paso del camino, ya sea que necesites asesoramiento sobre productos, tenga preguntas sobre envíos o simplemente desees compartir tus comentarios. Nuestro equipo está dedicado a brindarte una experiencia de compra sin complicaciones y satisfactoria. No dudes en contactarnos si necesitas asistencia, ¡estamos aquí para ayudarte!</p>
     </section>
 
     <section>
       <h3 class="text-black font-bold mb-5">COOPERACIÓN</h3>
-      <ul class="flex flex-col gap-y-2">
-        {
-          cooperation.map((e) => (
-            <li class="text-gray-500">
-              <a href={e.url}>{e.text}</a>
-            </li>
-          ))
-        }
-      </ul>
+      <p class="flex flex-col gap-y-2">
+        Valoramos la cooperación y el trabajo en equipo. Creemos en la importancia de colaborar estrechamente con nuestros clientes, proveedores y socios para ofrecer la mejor experiencia en moda. Estamos comprometidos a establecer relaciones sólidas y a fomentar un ambiente de cooperación mutua. Siempre estamos abiertos a nuevas oportunidades de colaboración y a trabajar juntos para alcanzar nuestros objetivos comunes.
+      </p>
     </section>
   </div>
 </footer>
