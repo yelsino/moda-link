@@ -47,9 +47,8 @@ export const getStaticPaths =  (async ({ paginate }) => {
 const { category } = Astro.params
 const { page } = Astro.props;
 const pathname = new URL(Astro.request.url).pathname.split('/');
-// const pathname2 = new URL(Astro.request.url);
-const {origin}= Astro.url
-const firstUrl = origin +  `/${pathname[1]}/${pathname[2]}`
+const firstPath  = `/${pathname[1]}/${pathname[2]}` 
+
 
 
 
@@ -88,10 +87,10 @@ const firstUrl = origin +  `/${pathname[1]}/${pathname[2]}`
         length={page.lastPage} 
         currentUrl={page.url.current} 
         currentPage={page.currentPage} 
-        firstUrl={firstUrl} 
+        firstUrl={firstPath} 
         prevUrl={page.url.prev} 
         nextUrl={page.url.next} 
-        lastUrl={`/${firstUrl}/${page.lastPage}`}
+        lastUrl={`${firstPath}/${page.lastPage}`}
       />
     </div>
     <Footer />

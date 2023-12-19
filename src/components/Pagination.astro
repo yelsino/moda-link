@@ -1,6 +1,10 @@
 ---
 const { length, currentUrl, currentPage, firstUrl, prevUrl, nextUrl, lastUrl, gender } =
   Astro.props;
+  console.log("fistURL: ", firstUrl);
+  // console.log("r: ", prevUrl);
+  // console.log("r: ", nextUrl);
+  
 const paginationList = Array.from({ length: Number(length) }, (_, i) => i + 1);
 
 function generatePagination(currentPage:number, totalPages:number) {
