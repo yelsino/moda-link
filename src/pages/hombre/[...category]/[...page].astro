@@ -34,7 +34,7 @@ export const getStaticPaths =  (async ({ paginate }) => {
 
     return paginate(orderProducts(products), {
       params: category.params,
-      pageSize: 120,
+      pageSize: 100,
     });
   }));
 

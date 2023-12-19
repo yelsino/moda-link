@@ -1,5 +1,5 @@
 <script>
-  export let genero = "";
+  export let genero = ""
   export let category = "";
 
   const filters = [
@@ -62,43 +62,16 @@
     },
   ];
 
-  const bgColorClass =
-    genero === "mujer"
-      ? "bg-pink-100 text-pink-600"
-      : "bg-orange-100 text-orange-500";
+  const bgColorClass = genero === "mujer" ? 'bg-pink-100 text-pink-600' : 'bg-orange-100 text-orange-500';
 </script>
 
 <div
-  class="hidden sm:flex flex-col fixed z-30 bg-gray-100 left-0 top-1/2 transform -translate-y-1/2"
+  class="flex flex-col fixed z-30 bg-gray-100 left-0 top-1/2 transform -translate-y-1/2 "
 >
+  
   {#each filters as filter}
-    <a
-      href={filter.href}
-      id={filter.id}
-      class={` items-center py-5 px-2 ${
-        category === filter.name
-          ? bgColorClass + " text-black"
-          : "text-gray-500"
-      }`}
-    >
-      {@html filter.icon}
-    </a>
-  {/each}
-</div>
-
-<div
-  class=" flex-col fixed z-30 left-0 top-1/2 transform -translate-y-1/2 flex sm:hidden w-6 gap-y-14 py-8 justify-center items-center"
->
-  {#each filters as filter}
-    <a
-      href={filter.href}
-      id={filter.id}
-      class="-rotate-90 text-lg"
-      > <span class={`px-1 ${
-        category === filter.name
-          ? bgColorClass + " text-black"
-          : "text-gray-500"
-      }`}>{filter.name}</span> </a
-    >
+  <a href={filter.href} id={filter.id} class={`flex items-center py-5 px-2 ${category === filter.name ? bgColorClass + ' text-black' : 'text-gray-500'}`}>
+    {@html filter.icon}
+  </a>
   {/each}
 </div>
