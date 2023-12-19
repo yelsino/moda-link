@@ -5,6 +5,8 @@ import Footer from "@components/Footer.astro";
 import Card from "@components/Card.astro";
 import Filter from "@components/islands/Filter.svelte";
 import Layout from "@layouts/Layout.astro";
+import Pagination from "@components/Pagination.astro";
+import { orderProducts } from "@libs/products.libs";
 
 
 export const getStaticPaths =  (async ({ paginate }) => {
@@ -30,9 +32,9 @@ export const getStaticPaths =  (async ({ paginate }) => {
     const response = await fetch(urlBase + params);
     const products = await response.json();
 
-    return paginate(products, {
+    return paginate(orderProducts(products), {
       params: category.params,
-      pageSize: 150,
+      pageSize: 120,
     });
   }));
 
@@ -43,13 +45,16 @@ export const getStaticPaths =  (async ({ paginate }) => {
 
 const { category } = Astro.params
 const { page } = Astro.props;
+const pathname = new URL(Astro.request.url).pathname.split('/');
+const {origin}= Astro.url
+const firstUrl = origin +  `/${pathname[1]}/${pathname[2]}`
 ---
 
 <Layout title="Moda Link">
   <h1>categoria ropa</h1>
   <div class="h-full">
     <Header />
-    <main class="mt-20 flex">
+    <main class="mt-10 flex">
       <Filter client:visible category={category} genero="mujer" />
       <section
         class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-10 items-center py-10"
@@ -72,6 +77,67 @@ const { page } = Astro.props;
         }
       </section>
     </main>
+      <div class="pb-10">
+        <Pagination 
+          gender={pathname[1]} 
+          length={page.lastPage} 
+          currentUrl={page.url.current} 
+          currentPage={page.currentPage} 
+          firstUrl={firstUrl} 
+          prevUrl={page.url.prev} 
+          nextUrl={page.url.next} 
+          lastUrl={`/${firstUrl}/${page.lastPage}`}
+        />
+      </div>
     <Footer />
   </div>
 </Layout>
+
+
+
+<!-- const filters = [
+    {
+      id: "1",
+      name: "gorros",
+      href: `/${genero}/gorros`,
+      icon: `<svg stroke="currentColor" fill="none" stroke-width="1" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 10.5l1.436 -4c.318 -.876 .728 -1.302 1.359 -1.302c.219 0 1.054 .365 1.88 .583c.825 .219 .733 -.329 .908 -.487c.176 -.158 .355 -.294 .61 -.294c.242 0 .553 .048 1.692 .448c.759 .267 1.493 .574 2.204 .922c1.175 .582 1.426 .913 1.595 1.507l.816 4.623c2.086 .898 3.5 2.357 3.5 3.682c0 1.685 -1.2 3.818 -5.957 3.818c-6.206 0 -14.043 -4.042 -14.043 -7.32c0 -1.044 1.333 -1.77 4 -2.18z"></path><path d="M6 10.5c0 .969 4.39 3.5 9.5 3.5c1.314 0 3 .063 3 -1.5"></path></svg>`,
+    },
+    {
+      id: "2",
+      name: "pantalon",
+      href: `/${genero}/pantalon`,
+      icon: ` <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-skew-y" width="25px" height="25px" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4.326 19h15.348a1 1 0 0 0 .962 -1.275l-3.429 -12a1 1 0 0 0 -.961 -.725h-8.492a1 1 0 0 0 -.961 .725l-3.429 12a1 1 0 0 0 .962 1.275z" /></svg>`,
+    },
+    {
+      id: "3",
+      name: "camiseta",
+      href: `/${genero}/camiseta`,
+      icon: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M211,211.27l-.06-.12-46.41-98.86,21.68-34,0-.1a11.94,11.94,0,0,0,0-12.34l-.15-.24L164,34V8a4,4,0,0,0-8,0V33.82l-6.13,7.67a28,28,0,0,1-43.74,0L100,33.82V8a4,4,0,0,0-8,0V34L69.86,65.59l-.15.24a11.94,11.94,0,0,0,0,12.34.93.93,0,0,1,.05.1l21.68,34L45,211.15l-.06.12A12,12,0,0,0,56,228H200a12,12,0,0,0,11-16.73ZM76.54,74a4,4,0,0,1,0-4L96.21,41.9l3.68,4.59a36,36,0,0,0,56.22,0l3.68-4.59L179.49,70a4,4,0,0,1,0,4l-21.65,34H98.19ZM203.33,218.2A3.94,3.94,0,0,1,200,220H56a3.94,3.94,0,0,1-3.33-1.8,3.89,3.89,0,0,1-.36-3.72L98.54,116h58.92l46.23,98.48A3.89,3.89,0,0,1,203.33,218.2Z"></path></svg>`,
+    },
+    {
+      id: "4",
+      name: "zapatos",
+      href: `/${genero}/zapatos`,
+      icon: `<svg
+      stroke="currentColor"
+      fill="none"
+      stroke-width="1"
+      viewBox="0 0 24 24"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      height="25px"
+      width="25px"
+      xmlns="http://www.w3.org/2000/svg"
+      ><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path
+        d="M4 6h5.426a1 1 0 0 1 .863 .496l1.064 1.823a3 3 0 0 0 1.896 1.407l4.677 1.114a4 4 0 0 1 3.074 3.89v2.27a1 1 0 0 1 -1 1h-16a1 1 0 0 1 -1 -1v-10a1 1 0 0 1 1 -1z"
+      ></path><path d="M14 13l1 -2"></path><path d="M8 18v-1a4 4 0 0 0 -4 -4h-1"
+      ></path><path d="M10 12l1.5 -3"></path></svg
+    >`,
+    },
+    {
+      id: "5",
+      name: "accesorios",
+      href: `/${genero}/accesorios`,
+      icon: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 256 256" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M206,128a77.92,77.92,0,0,0-32.53-63.31L167.1,29.5A14,14,0,0,0,153.32,18H102.68A14,14,0,0,0,88.9,29.5L82.53,64.69a77.87,77.87,0,0,0,0,126.62L88.9,226.5A14,14,0,0,0,102.68,238h50.64a14,14,0,0,0,13.78-11.5l6.37-35.19A77.92,77.92,0,0,0,206,128ZM100.71,31.64a2,2,0,0,1,2-1.64h50.64a2,2,0,0,1,2,1.64l4.56,25.19a77.68,77.68,0,0,0-63.7,0Zm54.58,192.72a2,2,0,0,1-2,1.64H102.68a2,2,0,0,1-2-1.64l-4.56-25.19a77.68,77.68,0,0,0,63.7,0ZM128,194a66,66,0,1,1,66-66A66.08,66.08,0,0,1,128,194Zm46-66a6,6,0,0,1-6,6H128a6,6,0,0,1-6-6V88a6,6,0,0,1,12,0v34h34A6,6,0,0,1,174,128Z"></path></svg>`,
+    },
+  ]; -->

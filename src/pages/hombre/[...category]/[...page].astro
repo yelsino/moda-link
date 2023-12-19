@@ -5,6 +5,8 @@ import Footer from "@components/Footer.astro";
 import Card from "@components/Card.astro";
 import Filter from "@components/islands/Filter.svelte";
 import Layout from "@layouts/Layout.astro";
+import Pagination from "@components/Pagination.astro";
+import { orderProducts } from "@libs/products.libs";
 
 
 export const getStaticPaths =  (async ({ paginate }) => {
@@ -30,9 +32,9 @@ export const getStaticPaths =  (async ({ paginate }) => {
     const response = await fetch(urlBase + params);
     const products = await response.json();
 
-    return paginate(products, {
+    return paginate(orderProducts(products), {
       params: category.params,
-      pageSize: 150,
+      pageSize: 120,
     });
   }));
 
@@ -44,13 +46,20 @@ export const getStaticPaths =  (async ({ paginate }) => {
 
 const { category } = Astro.params
 const { page } = Astro.props;
+const pathname = new URL(Astro.request.url).pathname.split('/');
+// const pathname2 = new URL(Astro.request.url);
+const {origin}= Astro.url
+const firstUrl = origin +  `/${pathname[1]}/${pathname[2]}`
+
+
+
 ---
 
 <Layout title="Moda Link">
   <h1>categoria ropa</h1>
   <div class="h-full">
     <Header />
-    <main class="mt-20 flex">
+    <main class="mt-10 flex">
       <Filter client:visible category={category} genero="hombre" />
       <section
         class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-10 items-center py-10"
@@ -73,6 +82,18 @@ const { page } = Astro.props;
         }
       </section>
     </main>
+    <div class="pb-10">
+      <Pagination 
+        gender={pathname[1]} 
+        length={page.lastPage} 
+        currentUrl={page.url.current} 
+        currentPage={page.currentPage} 
+        firstUrl={firstUrl} 
+        prevUrl={page.url.prev} 
+        nextUrl={page.url.next} 
+        lastUrl={`/${firstUrl}/${page.lastPage}`}
+      />
+    </div>
     <Footer />
   </div>
 </Layout>

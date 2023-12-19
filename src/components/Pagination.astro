@@ -1,0 +1,160 @@
+---
+const { length, currentUrl, currentPage, firstUrl, prevUrl, nextUrl, lastUrl, gender } =
+  Astro.props;
+const paginationList = Array.from({ length: Number(length) }, (_, i) => i + 1);
+
+function generatePagination(currentPage:number, totalPages:number) {
+  const maxPagesToShow = 3;
+  const pages = [];
+
+  let startPage;
+  let endPage;
+
+  if (totalPages <= maxPagesToShow) {
+    startPage = 1;
+    endPage = totalPages;
+  } else {
+    if (currentPage <= Math.ceil(maxPagesToShow / 2)) {
+      startPage = 1;
+      endPage = maxPagesToShow;
+    } else if (currentPage + Math.floor(maxPagesToShow / 2) >= totalPages) {
+      startPage = totalPages - maxPagesToShow + 1;
+      endPage = totalPages;
+    } else {
+      startPage = currentPage - Math.floor(maxPagesToShow / 2);
+      endPage = currentPage + Math.ceil(maxPagesToShow / 2) - 1;
+    }
+  }
+
+  if (startPage > 1) {
+    pages.push(1);
+    if (startPage > 2) {
+      pages.push('...');
+    }
+  }
+
+  for (let i = startPage; i <= endPage; i++) {
+    pages.push(i);
+  }
+
+  if (endPage < totalPages) {
+    if (endPage < totalPages - 1) {
+      pages.push('...');
+    }
+    pages.push(totalPages);
+  }
+
+  return pages;
+}
+
+
+const totalPages = paginationList.length;
+const visiblePages = generatePagination(currentPage, totalPages);
+console.log("GENERO ES: ", gender);
+
+const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibold' : 'bg-orange-100 text-orange-500';
+---
+
+<nav aria-label="Blog pages" class="mx-auto flex justify-center gap-x-2 ">
+
+  {
+    prevUrl ? (
+    <a
+        href={prevUrl}
+        class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 items-center justify-center text-gray-600   hidden sm:flex"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          data-slot="icon"
+          class="w-4 h-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+          />
+        </svg>
+      </a>
+    ) : (
+    <span class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 items-center justify-center text-gray-600   hidden sm:flex">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1"
+          stroke="currentColor"
+          data-slot="icon"
+          class="w-4 h-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+          />
+        </svg>
+      </span>
+    )
+  }
+
+  {
+    visiblePages.map((num) => (
+      <a
+        href={`${firstUrl}${num == 1 ? "" : "/" + num}`}
+        class={`p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 text-gray-400 ${
+          currentPage == num ? bgColorClass : "bg-gray-100"
+        }`}
+      >
+        {num}
+      </a>
+    ))
+  }
+
+  {
+    !nextUrl ? (
+    <span class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5  items-center justify-center text-gray-600  hidden sm:flex">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          data-slot="icon"
+          class="w-4 h-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </span>
+    ) : (
+    <a
+        href={nextUrl}
+        class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5  items-center justify-center text-gray-600 hidden sm:flex"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          data-slot="icon"
+          class="w-4 h-4"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+          />
+        </svg>
+      </a>
+    )
+  }
+
+ 
+</nav>

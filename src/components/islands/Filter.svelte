@@ -7,35 +7,13 @@
       id: "1",
       name: "gorros",
       href: `/${genero}/gorros`,
-      icon: `<svg
-      stroke="currentColor"
-      fill="currentColor"
-      stroke-width="0"
-      viewBox="0 0 512 512"
-      height="25px"
-      width="25px"
-      xmlns="http://www.w3.org/2000/svg"
-      ><path
-        d="M341.52 285.56c33.65 0 82.34-6.94 82.34-47 .22-6.74.86-1.82-20.88-96.24-4.62-19.15-8.68-27.84-42.31-44.65-26.09-13.34-82.92-35.37-99.73-35.37-15.66 0-20.2 20.17-38.87 20.17-18 0-31.31-15.06-48.12-15.06-16.14 0-26.66 11-34.78 33.62-27.5 77.55-26.28 74.27-26.12 78.27 0 24.8 97.64 106.11 228.47 106.11M429 254.84c4.65 22 4.65 24.35 4.65 27.25 0 37.66-42.33 58.56-98 58.56-125.74.08-235.91-73.65-235.91-122.33a49.55 49.55 0 0 1 4.06-19.72C58.56 200.86 0 208.93 0 260.63c0 84.67 200.63 189 359.49 189 121.79 0 152.51-55.08 152.51-98.58 0-34.21-29.59-73.05-82.93-96.24"
-      ></path></svg
-    >`,
+      icon: `<svg stroke="currentColor" fill="none" stroke-width="1" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path stroke="none" d="M0 0h24v24H0z" fill="none"></path><path d="M6 10.5l1.436 -4c.318 -.876 .728 -1.302 1.359 -1.302c.219 0 1.054 .365 1.88 .583c.825 .219 .733 -.329 .908 -.487c.176 -.158 .355 -.294 .61 -.294c.242 0 .553 .048 1.692 .448c.759 .267 1.493 .574 2.204 .922c1.175 .582 1.426 .913 1.595 1.507l.816 4.623c2.086 .898 3.5 2.357 3.5 3.682c0 1.685 -1.2 3.818 -5.957 3.818c-6.206 0 -14.043 -4.042 -14.043 -7.32c0 -1.044 1.333 -1.77 4 -2.18z"></path><path d="M6 10.5c0 .969 4.39 3.5 9.5 3.5c1.314 0 3 .063 3 -1.5"></path></svg>`,
     },
     {
       id: "2",
       name: "pantalon",
       href: `/${genero}/pantalon`,
-      icon: ` <svg
-      stroke="currentColor"
-      fill="currentColor"
-      stroke-width="0"
-      viewBox="0 0 256 256"
-      height="25px"
-      width="25px"
-      xmlns="http://www.w3.org/2000/svg"
-      ><path
-        d="M227.85,213.52l-22-176A20,20,0,0,0,186,20H70A20,20,0,0,0,50.15,37.52l-22,176A20,20,0,0,0,48,236H88.69A19.94,19.94,0,0,0,108.07,221l19.93-77,19.91,76.94A20,20,0,0,0,167.31,236H208a20,20,0,0,0,19.85-22.48ZM190,104.23A28.05,28.05,0,0,1,176.29,84h11.18ZM182.47,44l2,16H71.53l2-16ZM68.53,84H79.71A28,28,0,0,1,66,104.22ZM85.6,212H52.53l10.14-81.11A52.1,52.1,0,0,0,103.83,84H116V94.47Zm84.81,0L140,94.47V84h12.17a52.09,52.09,0,0,0,41.16,46.88L203.47,212Z"
-      ></path></svg
-    >`,
+      icon: ` <svg stroke="currentColor" fill="currentColor" stroke-width="1" viewBox="0 0 256 256" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M221.89,214.26l-22-176A14,14,0,0,0,186,26H70A14,14,0,0,0,56.11,38.26l-22,176A14,14,0,0,0,48,230H88.69a14,14,0,0,0,13.57-10.56L128,120l25.73,99.44A14,14,0,0,0,167.31,230H208a14,14,0,0,0,13.89-15.74ZM195.22,97.66A34.07,34.07,0,0,1,166.54,70h25.23ZM70,38H186a2,2,0,0,1,2,1.75L190.27,58H65.73L68,39.75A2,2,0,0,1,70,38ZM64.23,70H89.46A34.07,34.07,0,0,1,60.78,97.66Zm26.4,146.49A2,2,0,0,1,88.69,218H48a2,2,0,0,1-2-2.25L59.25,109.87A46.07,46.07,0,0,0,101.6,70H122V95.24Zm118.87.83a2,2,0,0,1-1.5.68H167.31a2,2,0,0,1-1.95-1.56L134,95.24V70h20.4a46.07,46.07,0,0,0,42.35,39.87L210,215.75A2,2,0,0,1,209.5,217.32Z"></path></svg>`,
     },
     {
       id: "3",
@@ -44,7 +22,7 @@
       icon: `<svg
       stroke="currentColor"
       fill="none"
-      stroke-width="2"
+      stroke-width="1"
       viewBox="0 0 24 24"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -63,7 +41,7 @@
       icon: `<svg
       stroke="currentColor"
       fill="none"
-      stroke-width="2"
+      stroke-width="1"
       viewBox="0 0 24 24"
       stroke-linecap="round"
       stroke-linejoin="round"
@@ -80,41 +58,20 @@
       id: "5",
       name: "accesorios",
       href: `/${genero}/accesorios`,
-      icon: `<svg
-      stroke="currentColor"
-      fill="currentColor"
-      stroke-width="0"
-      viewBox="0 0 512 512"
-      height="25px"
-      width="25px"
-      xmlns="http://www.w3.org/2000/svg"
-      ><path
-        d="M416 256c0-51.001-24.004-96.001-60.996-125L336 16H176l-19.004 115C120.004 159.999 96 204.999 96 256c0 50.996 24.004 95.996 60.996 125L176 496h160l19.004-115C391.996 351.996 416 306.996 416 256zm-280 0c0-66.001 54.004-120 120-120s120 53.999 120 120c0 65.996-54.004 120-120 120s-120-54.004-120-120z"
-      ></path></svg
-    >`,
+      icon: `<svg stroke="currentColor" fill="currentColor" stroke-width="1" viewBox="0 0 256 256" height="25px" width="25px" xmlns="http://www.w3.org/2000/svg"><path d="M206,128a77.92,77.92,0,0,0-32.53-63.31L167.1,29.5A14,14,0,0,0,153.32,18H102.68A14,14,0,0,0,88.9,29.5L82.53,64.69a77.87,77.87,0,0,0,0,126.62L88.9,226.5A14,14,0,0,0,102.68,238h50.64a14,14,0,0,0,13.78-11.5l6.37-35.19A77.92,77.92,0,0,0,206,128ZM100.71,31.64a2,2,0,0,1,2-1.64h50.64a2,2,0,0,1,2,1.64l4.56,25.19a77.68,77.68,0,0,0-63.7,0Zm54.58,192.72a2,2,0,0,1-2,1.64H102.68a2,2,0,0,1-2-1.64l-4.56-25.19a77.68,77.68,0,0,0,63.7,0ZM128,194a66,66,0,1,1,66-66A66.08,66.08,0,0,1,128,194Zm46-66a6,6,0,0,1-6,6H128a6,6,0,0,1-6-6V88a6,6,0,0,1,12,0v34h34A6,6,0,0,1,174,128Z"></path></svg>`,
     },
   ];
 
-  // function handleFilterClick(filterId) {
-  //   const selectedFilter = filters.find(filter => filter.id === filterId);
-
-  //   // Modificar la URL al hacer clic en el filtro
-  //   const currentURL = new URL(window.location.href);
-  //   currentURL.searchParams.set('tipo', selectedFilter.name);
-  //   window.history.pushState({}, '', currentURL);
-  // }
+  const bgColorClass = genero === "mujer" ? 'bg-pink-100 text-pink-600' : 'bg-orange-100 text-orange-500';
 </script>
 
 <div
-  class="flex flex-col fixed bg-gray-100 left-0 top-1/2 transform -translate-y-1/2 "
+  class="flex flex-col fixed z-30 bg-gray-100 left-0 top-1/2 transform -translate-y-1/2 "
 >
   
   {#each filters as filter}
-    <a href={filter.href}
-    id={filter.id} 
-    class={`flex items-center py-5 px-2 ${category === filter.name && 'bg-orange-500'}`}>
-    
+  <a href={filter.href} id={filter.id} class={`flex items-center py-5 px-2 ${category === filter.name ? bgColorClass + ' text-black' : 'text-gray-500'}`}>
     {@html filter.icon}
-    </a>
+  </a>
   {/each}
 </div>

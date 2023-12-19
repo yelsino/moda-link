@@ -24,7 +24,7 @@
       >
     </a>
   {:else}
-    <a href="/hombre" class="bg-orange-500 rounded-full p-1 block text-white">
+    <a href="/hombre" class="bg-pink-500 rounded-full p-1 block text-white">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-gender-male"
