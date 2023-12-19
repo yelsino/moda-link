@@ -8,9 +8,8 @@ import Layout from "@layouts/Layout.astro";
 import Pagination from "@components/Pagination.astro";
 import { orderProducts } from "@libs/products.libs";
 
-
-export const getStaticPaths =  (async ({ paginate }) => {
-   const categories = [
+export const getStaticPaths = (async ({ paginate }) => {
+  const categories = [
     { params: { category: "accesorios" } },
     { params: { category: "camiseta" } },
     { params: { category: "pantalon" } },
@@ -18,36 +17,36 @@ export const getStaticPaths =  (async ({ paginate }) => {
     { params: { category: "zapatos" } },
   ];
 
-
   const urlBase = "https://moda-link-api.deno.dev/api/v1/products?";
 
- // Usar Promise.all() para realizar las peticiones de manera concurrente
- const paths = await Promise.all(categories.map(async (category) => {
-    console.log(category);
-    
-    const params = new URLSearchParams();
-    params.set("genero", "mujer");
-    params.set("filter", category.params.category);
+  // Usar Promise.all() para realizar las peticiones de manera concurrente
+  const paths = await Promise.all(
+    categories.map(async (category) => {
+      console.log(category);
 
-    const response = await fetch(urlBase + params);
-    const products = await response.json();
+      const params = new URLSearchParams();
+      params.set("genero", "mujer");
+      params.set("filter", category.params.category);
 
-    return paginate(orderProducts(products), {
-      params: category.params,
-      pageSize: 120,
-    });
-  }));
+      const response = await fetch(urlBase + params);
+      const products = await response.json();
+
+      return paginate(orderProducts(products), {
+        params: category.params,
+        pageSize: 120,
+      });
+    })
+  );
 
   return paths.flat();
-
 }) satisfies GetStaticPaths;
 
-
-const { category } = Astro.params
+const { category } = Astro.params;
 const { page } = Astro.props;
+
 const pathname = new URL(Astro.request.url).pathname.split('/');
-const {origin}= Astro.url
-const firstUrl = origin +  `/${pathname[1]}/${pathname[2]}`
+const firstPath  = `/${pathname[1]}/${pathname[2]}` 
+
 ---
 
 <Layout title="Moda Link">
@@ -60,7 +59,7 @@ const firstUrl = origin +  `/${pathname[1]}/${pathname[2]}`
         class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-10 items-center py-10"
       >
         {
-          page.data.map((product:any) => (
+          page.data.map((product: any) => (
             <Card
               description={product.descripcion}
               image={product.imagen}
@@ -77,23 +76,21 @@ const firstUrl = origin +  `/${pathname[1]}/${pathname[2]}`
         }
       </section>
     </main>
-      <div class="pb-10">
-        <Pagination 
-          gender={pathname[1]} 
-          length={page.lastPage} 
-          currentUrl={page.url.current} 
-          currentPage={page.currentPage} 
-          firstUrl={firstUrl} 
-          prevUrl={page.url.prev} 
-          nextUrl={page.url.next} 
-          lastUrl={`/${firstUrl}/${page.lastPage}`}
-        />
-      </div>
+    <div class="pb-10">
+      <Pagination
+        gender={pathname[1]}
+        length={page.lastPage}
+        currentUrl={page.url.current}
+        currentPage={page.currentPage}
+        firstUrl={firstPath}
+        prevUrl={page.url.prev}
+        nextUrl={page.url.next}
+        lastUrl={`${firstPath}/${page.lastPage}`}
+      />
+    </div>
     <Footer />
   </div>
 </Layout>
-
-
 
 <!-- const filters = [
     {
