@@ -44,13 +44,54 @@ export const getStaticPaths = (async ({ paginate }) => {
 const { category } = Astro.params;
 const { page } = Astro.props;
 
-const pathname = new URL(Astro.request.url).pathname.split('/');
-const firstPath  = `/${pathname[1]}/${pathname[2]}` 
+const pathname = new URL(Astro.request.url).pathname.split("/");
+const firstPath = `/${pathname[1]}/${pathname[2]}`;
 
+const dataSeoFemenina = [
+{
+    title: "Moda femenina: Sombreros y Gorras para Mujeres | Moda Link",
+    nombre: "gorros",
+    nombreSeo: "sombreros y gorras para mujeres",
+    descripcion:
+      "Descubre una amplia selección de sombreros y gorras para mujeres en Moda Link. Encuentra desde sombreros elegantes hasta gorras deportivas, perfectos para complementar tu estilo en cualquier ocasión.",
+  },
+  {
+    title: "Moda femenina: Blusas y Tops de moda | Moda Link",
+    nombre: "camiseta",
+    nombreSeo: "blusas y tops para mujeres",
+    descripcion:
+      "Explora nuestra colección de blusas y tops de moda para mujeres en Moda Link. Encuentra desde diseños clásicos hasta las últimas tendencias, ideales para crear looks versátiles y a la moda.",
+  },
+  {
+    title: "Moda femenina: Pantalones y Vaqueros de tendencia | Moda Link",
+    nombre: "pantalon",
+    nombreSeo: "pantalones y vaqueros para mujeres",
+    descripcion:
+      "Encuentra una amplia variedad de pantalones y vaqueros de tendencia para mujeres en Moda Link. Desde pantalones casuales hasta jeans modernos, encuentra el ajuste perfecto para cualquier ocasión.",
+  },
+  {
+    title: "Moda femenina: Accesorios de estilo | Moda Link",
+    nombre: "accesorios",
+    nombreSeo: "accesorios de estilo para mujeres",
+    descripcion:
+      "Descubre una selección de accesorios de estilo para mujeres en Moda Link. Completa tu look con nuestros accesorios modernos, desde joyas elegantes hasta bolsos de moda.",
+  },
+  {
+    title: "Moda femenina: Calzado de moda | Moda Link",
+    nombre: "zapatos",
+    nombreSeo: "calzado de moda para mujeres",
+    descripcion:
+      "Explora nuestra colección de calzado de moda para mujeres en Moda Link. Encuentra desde zapatos formales hasta opciones más casuales que se adapten a tu estilo y te hagan destacar.",
+  },
+];
+const getElementSeo = dataSeoFemenina.find((item) => item.nombre === category);
 ---
 
-<Layout title="Moda Link">
-  <h1>categoria ropa</h1>
+<Layout
+  title={getElementSeo?.title ?? "Moda Link"}
+  description={getElementSeo?.descripcion ?? "Ropa para mujeres"}
+>
+  <!-- <h1>categoria ropa</h1> -->
   <div class="h-full">
     <Header />
     <main class="mt-10 flex">
