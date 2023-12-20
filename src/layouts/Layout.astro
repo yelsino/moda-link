@@ -1,6 +1,7 @@
 ---
 import { SEO } from "astro-seo";
 import { ViewTransitions } from "astro:transitions";
+import '@fontsource/pacifico';
 
 interface Props {
   title: string;
@@ -39,8 +40,8 @@ const { title, description, extend, openGraph, icono } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/gender.svg" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" /> -->
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> -->
     <!-- <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet"
@@ -60,14 +61,14 @@ const { title, description, extend, openGraph, icono } = Astro.props;
       gtag("config", "G-WD7HX62D47");
     </script>
 
-<script>
+<!-- <script>
   window.addEventListener('load', () => {
     const link = document.createElement('link');
     link.href = 'https://fonts.googleapis.com/css2?family=Pacifico&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
   });
-</script>
+</script> -->
 
     <SEO
       title={title}

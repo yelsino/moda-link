@@ -17,6 +17,9 @@ dependencies:
   '@astrojs/vercel':
     specifier: ^6.0.1
     version: 6.0.1(astro@4.0.1)
+  '@fontsource/pacifico':
+    specifier: ^5.0.8
+    version: 5.0.8
   astro:
     specifier: ^4.0.1
     version: 4.0.1(typescript@5.3.2)
@@ -657,6 +660,10 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fontsource/pacifico@5.0.8:
+    resolution: {integrity: sha512-0WQ50ZzIv3dP98ET8Pthr12cF6f8ova3FslIXjrtwh9mo2Xo60T1hzUhVNfZLFVtwd2MVH6MNVa85OCfqZ4/+w==}
+    dev: false
 
   /@img/sharp-darwin-arm64@0.33.1:
     resolution: {integrity: sha512-esr2BZ1x0bo+wl7Gx2hjssYhjrhUsD88VQulI0FrG8/otRQUOxLWHMBd1Y1qo2Gfg2KUvXNpT0ASnV9BzJCexw==}
