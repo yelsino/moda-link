@@ -1,0 +1,47 @@
+{
+	"version": 3,
+	"routes": [
+		{
+			"src": "/",
+			"headers": {
+				"Location": "/hombre/camiseta"
+			},
+			"status": 301
+		},
+		{
+			"src": "/",
+			"headers": {
+				"Location": "/hombre/camiseta"
+			},
+			"status": 301
+		},
+		{
+			"src": "/\\/hombre",
+			"headers": {
+				"Location": "/hombre/camiseta"
+			},
+			"status": 301
+		},
+		{
+			"src": "/\\/mujer",
+			"headers": {
+				"Location": "/mujer/camiseta"
+			},
+			"status": 301
+		},
+		{
+			"src": "^/_astro/(.*)$",
+			"headers": {
+				"cache-control": "public, max-age=31536000, immutable"
+			},
+			"continue": true
+		},
+		{
+			"handle": "filesystem"
+		},
+		{
+			"src": "/.*",
+			"dest": "render"
+		}
+	]
+}

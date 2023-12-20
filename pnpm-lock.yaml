@@ -20,6 +20,9 @@ dependencies:
   astro:
     specifier: ^4.0.1
     version: 4.0.1(typescript@5.3.2)
+  astro-compressor:
+    specifier: ^0.4.1
+    version: 0.4.1
   astro-seo:
     specifier: ^0.8.0
     version: 0.8.0
@@ -1131,6 +1134,10 @@ packages:
 
   /array-iterate@2.0.1:
     resolution: {integrity: sha512-I1jXZMjAgCMmxT4qxXfPXa6SthSoE8h6gkSI9BGGNv8mP8G/v0blc+qFnZu6K42vTOiuME596QaLO0TP3Lk0xg==}
+    dev: false
+
+  /astro-compressor@0.4.1:
+    resolution: {integrity: sha512-IAgYAlxYRMolaptsFB9quH7RxX4eUeC4UfULCPhT+ILcg7m1kbaxuyUKqGg9Hh+KZ+FNPPDAz7DqUfl+HDWhQg==}
     dev: false
 
   /astro-seo@0.8.0:

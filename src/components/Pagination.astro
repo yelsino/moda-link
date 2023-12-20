@@ -64,6 +64,7 @@ const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibo
   {
     prevUrl ? (
     <a
+        aria-label="boton pagina anterior"
         href={prevUrl}
         class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 items-center justify-center text-gray-600   hidden sm:flex"
       >
@@ -108,6 +109,7 @@ const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibo
     visiblePages.map((num) => (
       <a
         href={`${firstUrl}${num == 1 ? "" : "/" + num}`}
+        aria-label={`pagina de productos número ${num}`}
         class={`p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 text-gray-400 ${
           currentPage == num ? bgColorClass : "bg-gray-100"
         }`}
@@ -139,6 +141,7 @@ const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibo
     ) : (
     <a
         href={nextUrl}
+        aria-label={`boton pagina siguiente`}
         class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5  items-center justify-center text-gray-600 hidden sm:flex"
       >
         <svg

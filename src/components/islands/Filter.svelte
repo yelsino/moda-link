@@ -74,6 +74,7 @@
   {#each filters as filter}
     <a
       href={filter.href}
+      aria-label={`boton filtrar ${filter.name}`}
       id={filter.id}
       class={` items-center py-5 px-2 ${
         category === filter.name
@@ -92,6 +93,7 @@
   {#each filters as filter}
     <a
       href={filter.href}
+      aria-label={`boton filtrar ${filter.name}`}
       id={filter.id}
       class="-rotate-90 text-lg"
       > <span class={`px-1 ${
