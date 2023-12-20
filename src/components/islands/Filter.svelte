@@ -94,7 +94,7 @@
     <a
       href={filter.href}
       aria-label={`boton filtrar ${filter.name}`}
-      id={filter.id}
+      id={filter.id+1}
       class="-rotate-90 text-lg"
       > <span class={`px-1 ${
         category === filter.name
