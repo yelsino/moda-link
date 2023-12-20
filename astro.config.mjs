@@ -17,6 +17,7 @@ export default defineConfig({
     "/mujer": "/mujer/camiseta"
   },
   image: {
-    domains: ["astro.build"]
+    domains: ["imgaz1.chiccdn.com"],
+    remotePatterns: [{protocol:"https"}]
   }
 });
