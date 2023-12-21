@@ -1,13 +1,19 @@
 ---
-const { length, currentUrl, currentPage, firstUrl, prevUrl, nextUrl, lastUrl, gender } =
-  Astro.props;
-  console.log("fistURL: ", firstUrl);
-  // console.log("r: ", prevUrl);
-  // console.log("r: ", nextUrl);
-  
+const {
+  length,
+  currentUrl,
+  currentPage,
+  firstUrl,
+  prevUrl,
+  nextUrl,
+  lastUrl,
+  gender,
+} = Astro.props;
+console.log("fistURL: ", firstUrl);
+
 const paginationList = Array.from({ length: Number(length) }, (_, i) => i + 1);
 
-function generatePagination(currentPage:number, totalPages:number) {
+function generatePagination(currentPage: number, totalPages: number) {
   const maxPagesToShow = 3;
   const pages = [];
 
@@ -33,7 +39,7 @@ function generatePagination(currentPage:number, totalPages:number) {
   if (startPage > 1) {
     pages.push(1);
     if (startPage > 2) {
-      pages.push('...');
+      pages.push("...");
     }
   }
 
@@ -43,7 +49,7 @@ function generatePagination(currentPage:number, totalPages:number) {
 
   if (endPage < totalPages) {
     if (endPage < totalPages - 1) {
-      pages.push('...');
+      pages.push("...");
     }
     pages.push(totalPages);
   }
@@ -51,19 +57,20 @@ function generatePagination(currentPage:number, totalPages:number) {
   return pages;
 }
 
-
 const totalPages = paginationList.length;
 const visiblePages = generatePagination(currentPage, totalPages);
 console.log("GENERO ES: ", gender);
 
-const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibold' : 'bg-orange-100 text-orange-500 font-semibold';
+const bgColorClass =
+  gender === "mujer"
+    ? "bg-pink-100 text-pink-600 font-semibold"
+    : "bg-orange-100 text-orange-500 font-semibold";
 ---
 
-<nav aria-label="Blog pages" class="mx-auto flex justify-center gap-x-2 ">
-
+<nav aria-label="Blog pages" class="mx-auto flex justify-center gap-x-2">
   {
     prevUrl ? (
-    <a
+      <a
         aria-label="boton pagina anterior"
         href={prevUrl}
         class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 items-center justify-center text-gray-600   hidden sm:flex"
@@ -85,7 +92,7 @@ const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibo
         </svg>
       </a>
     ) : (
-    <span class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 items-center justify-center text-gray-600   hidden sm:flex">
+      <span class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 items-center justify-center text-gray-600   hidden sm:flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -106,22 +113,33 @@ const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibo
   }
 
   {
-    visiblePages.map((num) => (
-      <a
-        href={`${firstUrl}${num == 1 ? "" : "/" + num}`}
-        aria-label={`pagina de productos número ${num}`}
-        class={`p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 text-gray-600 ${
-          currentPage == num ? bgColorClass : "bg-gray-100"
-        }`}
-      >
-        {num}
-      </a>
-    ))
+    visiblePages.map((num) => {
+      console.log(typeof num);
+      if (typeof num === "string") {
+        return (
+          <span class="p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 text-gray-600 bg-gray-100">
+            {num}
+          </span>
+        );
+      } else {
+        return (
+          <a
+            href={`${firstUrl}${num == 1 ? "" : "/" + num}`}
+            aria-label={`pagina de productos número ${num}`}
+            class={`p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 text-gray-600 ${
+              currentPage == num ? bgColorClass : "bg-gray-100"
+            }`}
+          >
+            {num}
+          </a>
+        );
+      }
+    })
   }
 
   {
     !nextUrl ? (
-    <span class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5  items-center justify-center text-gray-600  hidden sm:flex">
+      <span class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5  items-center justify-center text-gray-600  hidden sm:flex">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -139,7 +157,7 @@ const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibo
         </svg>
       </span>
     ) : (
-    <a
+      <a
         href={nextUrl}
         aria-label={`boton pagina siguiente`}
         class="bg-gray-100 p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5  items-center justify-center text-gray-600 hidden sm:flex"
@@ -162,6 +180,4 @@ const bgColorClass = gender === "mujer" ? 'bg-pink-100 text-pink-600 font-semibo
       </a>
     )
   }
-
- 
 </nav>
