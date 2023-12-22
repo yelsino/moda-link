@@ -88,7 +88,7 @@
 </div>
 
 <div
-  class=" flex-col fixed z-30 left-0 top-1/2 transform -translate-y-1/2 flex sm:hidden w-6 gap-y-14 py-8 justify-center items-center"
+  class=" flex-col fixed z-30 left-0 top-1/2 transform -translate-y-1/2 flex sm:hidden w-6 gap-y-14 py-8 justify-center items-center bg-white"
 >
   {#each filters as filter}
     <a

@@ -1,4 +1,5 @@
 ---
+import Card from "./Card.astro";
 import CardIndex from "./CardIndex.astro";
 const urlBase = "https://moda-link-api.deno.dev/api/v1/products?";
 const params = new URLSearchParams();
@@ -6,21 +7,53 @@ params.set("genero", "hombre");
 const response = await fetch(urlBase + params);
 const products = await response.json();
 
-const { title, inicio, fin, sectionId, background } = Astro.props
-
+const { title, inicio, fin, sectionId, background, descripcion, sections, link } =
+  Astro.props;
 ---
 
+<div class={`border-b flex flex-col gap-y-3`}>
+  <h2 class="text-xl md:text-3xl font-semibold md:text-center px-5 ">
+    {title}
+    {
+      link && <a
+      href="/mujer"
+      target="_self"
+      aria-label={"visitar: " + title}
+      class="text-color_pink1 inline-block translate-y-1"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="w-6 h-6"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M13.19 8.688a4.5 4.5 0 0 1 1.242 7.244l-4.5 4.5a4.5 4.5 0 0 1-6.364-6.364l1.757-1.757m13.35-.622 1.757-1.757a4.5 4.5 0 0 0-6.364-6.364l-4.5 4.5a4.5 4.5 0 0 0 1.242 7.244"
+        ></path>
+      </svg>
+    </a>
+    }
+    
+  </h2>
 
-<div class={`border-b flex flex-col gap-y-3  `}>
-  <div class="flex flex-col md:flex-row  justify-between px-5 gap-y-2">
-    <h2 class="text-2xl font-semibold">{title}</h2>
-    <ul class="flex gap-x-2 items-center">
-      <li class="border px-1">item1</li>
-      <li class="border px-1">item2</li>
-      <li class="border px-1">item3</li>
-      <li class="border px-1">item4</li>
-    </ul>
-  </div>
+  <p class="px-5 md:text-center text-base sm:text-lg text-gray-600">
+    {descripcion}
+  </p>
+  {
+    sections && (
+      <ul class="flex gap-x-2 items-center px-5 md:mx-auto">
+        <li class="px-1 bg-color_pink2 text-color_pink1">clasicas</li>
+        <li class="px-1 bg-color_pink2 text-color_pink1">mangas</li>
+        <li class="px-1 bg-color_pink2 text-color_pink1">formales</li>
+        <li class="px-1 bg-color_pink2 text-color_pink1">deportivas</li>
+      </ul>
+    )
+  }
+
   <astro-greet class={`${background && ""}`} data-message={sectionId}>
     <section id={sectionId} class="grid-container scroll-js px-5">
       {
@@ -41,51 +74,41 @@ const { title, inicio, fin, sectionId, background } = Astro.props
             />
           ))
       }
-
-  </section>
+    </section>
   </astro-greet>
- 
-  
 </div>
 
 <script>
-  
   import Conveyer from "@egjs/conveyer";
 
   class AstroGreet extends HTMLElement {
     constructor() {
       super();
-      
+
       const sectionId = this.dataset.message;
-      const formatId = `#${sectionId}`
+      const formatId = `#${sectionId}`;
       new Conveyer(formatId);
     }
   }
 
-  customElements.define('astro-greet', AstroGreet);
-
+  customElements.define("astro-greet", AstroGreet);
 </script>
 
-
 <style>
-
-.grid-container{
+  .grid-container {
     display: grid;
     grid-auto-flow: column;
     overflow-x: scroll;
     grid-template-rows: auto auto;
-    gap: 20px
-}
-.grid-container::-webkit-scrollbar{
-  width: 0;
-}
+    gap: 20px;
+  }
+  .grid-container::-webkit-scrollbar {
+    width: 0;
+  }
 
-.items {
-  width: 100px;
-  height: 100px;
-  border: solid 1px black;
-}
-
+  .items {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+  }
 </style>
-
-

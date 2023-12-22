@@ -17,10 +17,18 @@ const { description, image, urlAfiliado } = Astro.props;
     </a>
     
   </div>
-	<p
-      class="text-gray-500 overflow-hidden sm:whitespace-nowrap max-w-full inline-block overflow-ellipsis w-60"
-    >
-      {description}
-    </p>
+  <p class="description text-gray-500 text-sm select-text">
+    {description}
+  </p>
 </div>
 
+<style>
+  .description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Muestra las dos primeras líneas */
+    max-width: 200px;
+  }
+</style>

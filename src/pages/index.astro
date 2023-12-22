@@ -16,31 +16,41 @@ import SectionIndex from "@components/SectionIndex.astro";
     <main class="mt-20 flex flex-col gap-y-6">
       
       <SectionIndex 
-        title="Tus Favoritos" 
+        title="Tus prendas favoritas y recomendados para tí" 
+        sections={false}
         inicio={0} 
         fin={24}
         sectionId="tus-favoritos"
+        link={false}
       />
 
       <SectionIndex 
-        title="Moda femenina mas popular" 
+        title="Moda femenina más popular" 
         inicio={24} 
         fin={48}
+        sections={true}
         sectionId="moda-femenina"
         background={true}
+        link={true}
+        descripcion=" Desde el clásico y elegante, explora una variedad de tendencias que reflejan la diversidad y la sofisticación moderna. Explora estilos únicos de la moda femenina actual con nuestras colecciones seleccionadas. ¡Explora, inspira y define tu propio sentido de la moda aquí!"
       />
       <SectionIndex 
         title="Moda masculina mas popular" 
         inicio={0} 
         fin={24}
         sectionId="moda-masculina"
+        sections={true}
+        link={true}
+        descripcion="Explora los estilos de moda masculina más populares en nuestro sitio. Desde lo clásico y atemporal hasta lo moderno y urbano, descubre una amplia gama de tendencias que reflejan la versatilidad y el estilo actual. Encuentra tu look único y sumérgete en la moda masculina actual con nuestras colecciones seleccionadas. ¡Inspírate, descubre y define tu propio estilo aquí!"
       />
      
       <SectionIndex 
-        title="camisetas" 
+        title="Tendencias ropa mas viral del mercado" 
         inicio={72} 
         fin={98} 
         sectionId="moda-masculina-camisetas"
+        link={true}
+        descripcion="Recopilación de las tendencias de moda más virales y populares del mercado actual. Explora una selección exclusiva de prendas y artículos de moda que están generando un gran impacto y demanda."
       />
       
      

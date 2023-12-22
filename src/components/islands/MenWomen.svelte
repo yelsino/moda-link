@@ -4,14 +4,14 @@
   const generoParte = partesUrl.find(part => part === 'hombre' || part === 'mujer'); // Buscar 'hombre' o 'mujer'
 </script>
 
-<div class={`${ubication === "/" && "hidden"} `}> 
+<div > 
   {#if generoParte === "hombre"}
     <a aria-label="boton ver productos moda femenina" href="/mujer" class="bg-orange-500 rounded-full p-1 block ">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-gender-female text-white"
-        width="24"
-        height="24"
+        width="20"
+        height="20"
         viewBox="0 0 24 24"
         stroke-width="2"
         stroke="currentColor"
@@ -28,8 +28,8 @@
       <svg
         xmlns="http://www.w3.org/2000/svg"
         class="icon icon-tabler icon-tabler-gender-male"
-        width="24"
-        height="24"
+        width="20"
+        height="20"
         viewBox="0 0 24 24"
         stroke-width="2"
         stroke="currentColor"
