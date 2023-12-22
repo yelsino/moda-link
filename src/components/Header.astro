@@ -2,18 +2,20 @@
 import MenWomen from './islands/MenWomen.svelte'
 
 const {pathname} = Astro.url
+console.log("pathname", pathname);
+
 
 ---
 <header
-  class="bg-white py-4 max-w-[2000px] px-10 flex justify-between items-center fixed w-full top-0  z-20"
+  class="bg-white py-4 max-w-[2000px] px-5 flex justify-between items-center fixed w-full top-0  z-20"
 >
   <!-- Sección del logo -->
   <MenWomen client:visible ubication={pathname} />
 
   <!-- Sección del nombre -->
-  <div class="nombre">
+  <a href="/" aria-label="moda link, pagina de incio"  class="nombre">
     <h1 class="text-lg font-semibold text-gray-800 font-pacifico ">Moda Link</h1>
-  </div>
+  </a>
 
   <!-- Sección del usuario -->
     <a href="/about" aria-label="about as" class="text-sm text-gray-600 tracking-tight flex gap-x-1 cursor-default hover:text-color_orange ease-in-out duration-300">
