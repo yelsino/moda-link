@@ -22,7 +22,6 @@ export const getStaticPaths = (async ({ paginate }) => {
   // Usar Promise.all() para realizar las peticiones de manera concurrente
   const paths = await Promise.all(
     categories.map(async (category) => {
-      console.log(category);
 
       const params = new URLSearchParams();
       params.set("genero", "hombre");
@@ -31,7 +30,7 @@ export const getStaticPaths = (async ({ paginate }) => {
       const response = await fetch(urlBase + params);
       const products = await response.json();
 
-      return paginate(orderProducts(products), {
+      return paginate(orderProducts(products.slice(0,100)), {
         params: category.params,
         pageSize: 100,
       });

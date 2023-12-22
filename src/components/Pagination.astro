@@ -9,7 +9,6 @@ const {
   lastUrl,
   gender,
 } = Astro.props;
-console.log("fistURL: ", firstUrl);
 
 const paginationList = Array.from({ length: Number(length) }, (_, i) => i + 1);
 
@@ -114,7 +113,6 @@ const bgColorClass =
 
   {
     visiblePages.map((num) => {
-      console.log(typeof num);
       if (typeof num === "string") {
         return (
           <span class="p-1 px-3 sm:p-2 sm:px-4 md:p-3 md:px-5 text-gray-600 bg-gray-100">

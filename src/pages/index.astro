@@ -2,25 +2,48 @@
 import Layout from "../layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
-
-
-return Astro.redirect("/hombre/camiseta");
-
+import SectionIndex from "@components/SectionIndex.astro";
 ---
 
-<Layout 
+
+
+<Layout
   title="Moda Link"
   description="En moda link, nos dedicamos a seleccionar cuidadosamente ropa de alta calidad que refleja estilo y personalidad para hombres y mujeres con buen gusto."
-  >
+>
   <div class="h-full">
     <Header />
-    <main class="mt-20 flex">
+    <main class="mt-20 flex flex-col gap-y-6">
+      
+      <SectionIndex 
+        title="Tus Favoritos" 
+        inicio={0} 
+        fin={24}
+        sectionId="tus-favoritos"
+      />
 
-      <section
-        class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-10 items-center"
-      >
-        
-      </section>
+      <SectionIndex 
+        title="Moda femenina mas popular" 
+        inicio={24} 
+        fin={48}
+        sectionId="moda-femenina"
+        background={true}
+      />
+      <SectionIndex 
+        title="Moda masculina mas popular" 
+        inicio={0} 
+        fin={24}
+        sectionId="moda-masculina"
+      />
+     
+      <SectionIndex 
+        title="camisetas" 
+        inicio={72} 
+        fin={98} 
+        sectionId="moda-masculina-camisetas"
+      />
+      
+     
     </main>
     <Footer />
   </div>

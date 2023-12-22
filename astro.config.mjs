@@ -11,8 +11,6 @@ export default defineConfig({
   output: "hybrid",
   adapter: vercel(),
   redirects: {
-    "/": "/hombre/camiseta",
-    "": "/hombre/camiseta",
     "/hombre": "/hombre/camiseta",
     "/mujer": "/mujer/camiseta"
   },
