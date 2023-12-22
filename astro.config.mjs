@@ -11,9 +11,10 @@ export default defineConfig({
   output: "hybrid",
   adapter: vercel({
     adapter: vercel({
-      webAnalytics: {
-        enabled: true
-      }
+      analytics: true,
+      speedInsights: {
+        enabled: true,
+      },
     })
   }),
   redirects: {
