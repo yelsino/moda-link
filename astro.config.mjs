@@ -10,15 +10,12 @@ export default defineConfig({
   integrations: [tailwind(), svelte(), compressor({ gzip: true, brotli: true })],
   output: "hybrid",
   adapter: vercel({
-    adapter: vercel({
-      
-      webAnalytics: {
-        enabled: true
-      },
-      speedInsights: {
-        enabled: true
-      }
-    })
+    webAnalytics: {
+      enabled: true
+    },
+    speedInsights: {
+      enabled: true
+    }
   }),
   redirects: {
     "/hombre": "/hombre/camiseta",
