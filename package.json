@@ -17,6 +17,7 @@
     "@egjs/conveyer": "^1.7.1",
     "@egjs/svelte-conveyer": "^1.7.1",
     "@fontsource/pacifico": "^5.0.8",
+    "@vercel/analytics": "^1.1.1",
     "astro": "^4.0.1",
     "astro-compressor": "^0.4.1",
     "astro-seo": "^0.8.0",

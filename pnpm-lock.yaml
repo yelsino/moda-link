@@ -26,6 +26,9 @@ dependencies:
   '@fontsource/pacifico':
     specifier: ^5.0.8
     version: 5.0.8
+  '@vercel/analytics':
+    specifier: ^1.1.1
+    version: 1.1.1
   astro:
     specifier: ^4.0.1
     version: 4.0.1(typescript@5.3.2)
