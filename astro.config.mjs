@@ -9,7 +9,13 @@ import compressor from "astro-compressor";
 export default defineConfig({
   integrations: [tailwind(), svelte(), compressor({ gzip: true, brotli: true })],
   output: "hybrid",
-  adapter: vercel(),
+  adapter: vercel({
+    adapter: vercel({
+      webAnalytics: {
+        enabled: true
+      }
+    })
+  }),
   redirects: {
     "/hombre": "/hombre/camiseta",
     "/mujer": "/mujer/camiseta"
