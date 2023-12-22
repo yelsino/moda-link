@@ -8,7 +8,10 @@ export default {
 				pacifico: ['Pacifico', 'sans serif'],
 			},
 			colors: {
-				color_orange: '#FF6B00'
+				color_orange: '#FF6B00',
+				color_blue1: '#19D2F1',
+				color_pink1: '#F244C4',
+				color_pink2: '#FFD3F3'
 			}
 		},
 	},
