@@ -29,14 +29,14 @@ export const getStaticPaths = (async ({ paginate }) => {
       const response = await fetch(urlBase + params);
       const products = await response.json();
 
-      return paginate(orderProducts(products), {
-        params: category.params,
-        pageSize: 100,
-      });
-      // return paginate(orderProducts(products.slice(0, 100)), {
+      // return paginate(orderProducts(products), {
       //   params: category.params,
       //   pageSize: 100,
       // });
+      return paginate(orderProducts(products.slice(0, 100)), {
+        params: category.params,
+        pageSize: 100,
+      });
     })
   );
 
