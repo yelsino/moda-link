@@ -1,7 +1,7 @@
 ---
 import { Image } from "astro:assets";
 
-const { description, image, urlAfiliado } = Astro.props;
+const { description, image, urlAfiliado,likes } = Astro.props;
 ---
 
 <div class="rounded-sm relative overflow-hidden group w-40 sm:w-52  flex flex-col justify-between ">
@@ -38,6 +38,7 @@ const { description, image, urlAfiliado } = Astro.props;
       draggable={false}
     />
   </div>
+  <!-- <span>{likes}</span> -->
   <p class="description text-gray-500 text-sm select-text ">
     {description}
   </p>

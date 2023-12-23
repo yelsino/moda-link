@@ -1,0 +1,22 @@
+---
+import { Image } from "astro:assets";
+
+
+const { description, image, title } = Astro.props;
+---
+
+<div>
+  <div class="w-80 h-[400px] border ">
+    <Image
+      class="w-full h-full object-cover"
+      src={image}
+      alt={description}
+      width="320"
+      height="400"
+      format="webp"
+      draggable={false}
+    />
+</div>
+<h3 class=" text-gray-800 text-xl">{title}</h3>
+</div>
+

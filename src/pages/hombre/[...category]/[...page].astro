@@ -22,7 +22,6 @@ export const getStaticPaths = (async ({ paginate }) => {
   // Usar Promise.all() para realizar las peticiones de manera concurrente
   const paths = await Promise.all(
     categories.map(async (category) => {
-
       const params = new URLSearchParams();
       params.set("genero", "hombre");
       params.set("filter", category.params.category);
@@ -30,10 +29,14 @@ export const getStaticPaths = (async ({ paginate }) => {
       const response = await fetch(urlBase + params);
       const products = await response.json();
 
-      return paginate(orderProducts(products.slice(0,100)), {
+      return paginate(orderProducts(products), {
         params: category.params,
         pageSize: 100,
       });
+      // return paginate(orderProducts(products.slice(0, 100)), {
+      //   params: category.params,
+      //   pageSize: 100,
+      // });
     })
   );
 
@@ -85,6 +88,54 @@ const dataSeo = [
 ];
 
 const getElementSeo = dataSeo.find((item) => item.nombre === category);
+
+const headers = [
+  {
+    title: "gorros de lana",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Sombreros de Fieltro",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Gorros de Punto",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Boinas y Berets",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Sombreros de Invierno",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Gorros Deportivos",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Gorros de Moda Urbana",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Sombreros Playeros",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+  {
+    title: "Accesorios para la Cabeza",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. A debitis ea laboriosam minima, quibusdam voluptatum quod maiores, atque consequatur voluptatibus laudantium odit repellat necessitatibus. Animi cupiditate hic doloremque iste fuga!",
+  },
+];
 ---
 
 <!-- modificar title category para incluir palabras claves mas utilziadas -->
@@ -94,10 +145,23 @@ const getElementSeo = dataSeo.find((item) => item.nombre === category);
 >
   <div class="h-full">
     <Header />
-    <main class="mt-10 flex">
+    <main class="mt-10 flex flex-col py-10">
       <Filter client:visible category={category} genero="hombre" />
+
+      <!-- <div class="w-9/12">
+        <h2 class="text-2xl font-bold">
+          Pantalones para hombre, los mejores pantalones seleccionados para
+          usted
+        </h2>
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit iure
+          laborum rerum illo explicabo voluptate nemo adipisci magnam. Eum,
+          blanditiis! Voluptatum unde sequi similique fugiat aliquam corrupti
+          quam asperiores nam.
+        </p>
+      </div> -->
       <section
-        class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-10 items-center py-10"
+        class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-6 items-center "
       >
         {
           page.data.map((product: any) => (
@@ -116,6 +180,7 @@ const getElementSeo = dataSeo.find((item) => item.nombre === category);
           ))
         }
       </section>
+    
     </main>
     <div class="pb-10">
       <Pagination
