@@ -34,10 +34,6 @@ export const getStaticPaths = (async ({ paginate }) => {
         params: category.params,
         pageSize: 100,
       });
-      // return paginate(orderProducts(products.slice(0,100)), {
-      //   params: category.params,
-      //   pageSize: 100,
-      // });
     })
   );
 

@@ -2,13 +2,13 @@
 import { Image } from "astro:assets"
 
 
-const { description, image, urlAfiliado } = Astro.props;
+const { description, image, urlAfiliado, link } = Astro.props;
 ---
 
 <div class=" rounded-sm relative  w-40 sm:w-60 overflow-hidden ">
   <div class=" ">
     <a
-      href={urlAfiliado}
+      href={urlAfiliado ?? link}
       target="_blank"
       aria-label={description}
       class="relative  w-full "
