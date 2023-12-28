@@ -40,17 +40,17 @@ const pathname = Astro.url.pathname;
 const lang = getLangFromUrl(Astro.url);
 
 function cambiarIdioma(ruta: string, idioma: string) {
-  // Elimina el número al final de la ruta, si existe
-  const rutaSinNumero = ruta.replace(/\/\d+$/, '');
+  // Elimina el número al final de la ruta y el slash adicional, si existe
+  const rutaSinNumero = ruta.replace(/\/\d+\/?$/, '');
 
   if (idioma === "en") {
-    return rutaIdiomas[rutaSinNumero] || ruta;
+    return (rutaIdiomas[rutaSinNumero] || ruta).replace(/\/$/, '');
   } else {
-    // Busca la ruta en inglés sin el número
+    // Busca la ruta en inglés sin el número y el slash adicional
     const rutaEnIngles = Object.keys(rutaIdiomas).find(
-      (key) => rutaIdiomas[key] === rutaSinNumero
+      (key) => rutaIdiomas[key].replace(/\/$/, '') === rutaSinNumero
     );
-    return rutaEnIngles || ruta;
+    return (rutaEnIngles || ruta).replace(/\/$/, '');
   }
 }
 
