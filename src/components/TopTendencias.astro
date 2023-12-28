@@ -7,7 +7,7 @@ const {
   background, 
   descripcion, 
   link,
-  trens
+  trends
 } = Astro.props;
 
 
@@ -48,11 +48,11 @@ const {
  
   <astro-greet class={`${background && ""}`} data-message={sectionId}>
     <section id={sectionId} class="grid-container scroll-js px-5">
-      {trens.map((trend:any)=>(
+      {trends.map((trend:any)=>(
        <CardTendencia 
           description={trend.description ?? ""}
           title={trend.title}
-          image={trend.imagen}
+          image={trend.image}
        />
       ))}
      

@@ -1,0 +1,152 @@
+{
+  "men":  {
+    "title" : "Menswear",
+    "description": "Explore the most popular men's fashion styles on our site. From classic and timeless to modern and urban, discover a wide range of trends that reflect today's versatility and style. Find your unique look and immerse yourself in current men's fashion with our selected collections. Get inspired, discover and define your own style here!"
+   },
+  "women":  {
+    "title": "Feminine fashion",
+    "description": "From classic and elegant, explore a variety of trends that reflect diversity and modern sophistication. Explore unique styles of today's women's fashion with our curated collections. Explore, inspire and define your own fashion sense here!"
+   },
+   "trendMale": {
+    "title": "Men's fashion: Clothing trends 2024",
+    "description": "From blouses with semi-transparent fabrics to the latest trend footwear. Here is all the essential information to renew your style this season and look like a fashionable gentleman, sheltered from the sun or under its radiant light.",
+    "trendsMale" : [
+      {
+        "title": "Neck Scarf",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/ami-panuelo-cuello-6480d898a9bf6.jpg?resize=980:*"
+      },
+      {
+        "title": "Knit T-shirts",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/etro-camisetas-de-punto-6480d90416c35.jpg?resize=980:*"
+      },
+      {
+        "title": "Polo Shirts",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/hermes-camisa-polo-6480d93042743.jpg?resize=980:*"
+      },
+      {
+        "title": "Sheer Clothing for Men",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/amiri-transparencias-6480d983aa272.jpg?resize=980:*"
+      },
+      {
+        "title": "Padded Sandals",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/fendi-chanclas-acolchadas-6480d9a9d045d.jpg?resize=980:*"
+      },
+      {
+        "title": "Bermuda Shorts and Polo with Blazer",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/bermudas-polo-y-americana-6480da1020c37.jpg?resize=980:*"
+      },
+      {
+        "title": "Your Classiest Suit with Sandals",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/brioni-traje-y-sandalias-6480da59bafdf.jpg?resize=980:*"
+      },
+      {
+        "title": "Shell Necklaces",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/dior-collar-conchas-6480da8c83d86.jpg?resize=980:*"
+      },
+      {
+        "title": "Visible Underwear",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/msgm-calzoncillos-a-la-vista-6480dab9001bd.jpg?resize=980:*"
+      },
+      {
+        "title": "Floral Prints",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/erdem-banadores-estampado-flores-6480dadde09b2.jpg?resize=980:*"
+      },
+      {
+        "title": "The Crocs Upgrade",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/vuitton-zuecos-goma-6480db15e855e.jpg?resize=980:*"
+      }
+    ]
+   },
+   "trendFemale": {
+    "title": "Women's fashion: Most viral clothing trends",
+    "description": "If you are looking for ideas to pack your luggage for these summer holidays in 2023, we present fifteen small trends inspired by the catwalks and urban style of various international fashion weeks.",
+    "trendsFemale": [
+      {
+        "title": "Transparencies",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/guest-is-seen-wearing-light-pink-ruffled-transparent-long-news-photo-1675091781.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "It's the most powerful trend of 2023. We've seen it in evening dresses and tops, but it will reach its peak when summer starts and fishnet dresses and completely translucent fabrics become part of our everyday attire, alongside beautiful styles like this one."
+      },
+      {
+        "title": "Wrap Skirts",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-8-648c1bd41d8bd.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "If you're someone who puts effort into beachwear outfits, the midi wrap skirt will be your best companion. Some come with a matching bikini for an ideal 'twin set.'"
+      },
+      {
+        "title": "'Denim party'",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tasha-ghouri-attends-the-ann-summers-party-as-the-new-face-news-photo-1675097025.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "It's time to take Y2K to the extreme and reinvent this iconic fabric in all its forms and textures. This time, fully embrace the rebellious mood and opt for distressed denim, drawing inspiration from Blumarine and Diesel. Always go for low-rise, wide cuts, studs, shines, rips, or strategic volumes like this jacket. And always in a 'total look' format."
+      },
+      {
+        "title": "Turban",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-6-648c1c511d552.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "Whether your hair is up or down, this hair accessory elevates any basic look. Choosing a design with sequin details, gold, or shine can be the perfect and original complement to your wedding dresses."
+      },
+      {
+        "title": "Greek Cuts",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/guest-seen-wearing-a-black-prada-bag-dark-shades-by-versace-news-photo-1675094384.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "It's time to dress like the goddess you are with solemn, airy, fluid, and flowing garments like this one. And no, this doesn't have to be too serious if you add a touch of the 2000s. How? Easy: by opting for low-rise styles, body chains, or sports glasses. You got it."
+      },
+      {
+        "title": "Heeled Mules",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-2-648c1c511d63c.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "Undoubtedly, the most elegant footwear of the summer are classic pumps, but open-backed and in vibrant colors. You'll find them in shades like green, orange, and nude, but also metallic or with shimmer. They look great with wide cargo pants."
+      },
+      {
+        "title": "Beaded Handbags",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-7-648c1c511deb1.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "If you're looking for an original and fun bag for both day and night, get a clutch, tote, or shoulder bag made with colorful beads, in addition to raffia baskets or net bags."
+      },
+      {
+        "title": "Visible Lingerie",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/leonie-hanne-wears-rhinestones-long-heart-pendant-earrings-news-photo-1675094368.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "There's no doubt that summer 2023 aims to bring out our sexiest version. Therefore, displaying lingerie will be our first step to achieve an outstanding look. In this sense, we encourage you to go for the most fanciful version with shines and rhinestones. Plus, if you wear it under a denim 'total look,' you'll rock it."
+      },
+      {
+        "title": "Strapless Slip Dresses",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-5-648c1c513c108.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "A prediction? Your slip dress this season will be white, floor-length, and with a strapless neckline. Wear it with platform sandals and a choker, just like Bella Hadid."
+      },
+      {
+        "title": "'The Little Mermaid' Jewelry",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-1-648c1c513e0d1.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "The release of the Ariel movie has brought many trends to the streets. One of them is jewelry shaped like marine elements such as shells, snails, fish, corals..."
+      },
+      {
+        "title": "Biker Style",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/fashion-week-guest-seen-wearing-full-miu-miu-look-a-brown-news-photo-1675094723.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "Certainly, as temperatures rise, we put aside the leather jackets but maintain our 'biker mom' aesthetic. How? Combining leather-effect garments (mini shorts and dresses will be your favorites) with good biker boots with buckles."
+      },
+      {
+        "title": "Denim Skirts",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/nina-sandbech-is-seen-wearing-heart-shaped-denim-jacket-news-photo-1675086278.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "Along with cargo and parachute skirts, these will be the most popular in the coming months. They're flattering, eye-catching, and as easy to combine as a pair of jeans. The best part? If you wear them with high boots, you'll look spectacular."
+      },
+      {
+        "title": "Airy Tops",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-4-648c1c51507f6.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "The perfect match for your lightweight and cool summer pants are semi-transparent tops with ruffles. With a hint of romance and sexiness, they're perfect for any summer night."
+      },
+      {
+        "title": "Mary Janes",
+        "image": "https://hips.hearstapps.com/hmg-prod/images/model-walks-the-runway-during-the-coach-ready-to-wear-news-photo-1673974227.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        "description": "At this point, no one doubts that they're the trendiest shoe. You'll wear them in each of your elegant looks when it starts to get hot. If you're not completely sold on them and seek an alternative, try ballerina flats."
+      }
+    ]
+   },
+ 
+  "footer": {
+    "sections" : [
+      {
+        "title": "Our purpose",
+        "description": "At Moda Link, we are passionate about carefully selecting high-quality clothing that reflects style and personality for men and women with good taste."
+      },
+      {
+        "title": "Our community",
+        "description": "Join our community of fashion enthusiasts and discover the most popular and appreciated garments on the web. Explore trends"
+      }
+    ],
+    "networks": {
+      "title": "Our networks"
+    }
+  }
+}

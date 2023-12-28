@@ -1,43 +1,21 @@
 ---
-import MenWomen from './islands/MenWomen.svelte'
+import PickLanguage from "./PickLanguage.astro";
+import MenWomen from "./MenWomen.astro";
+import { getLangFromUrl } from "src/i18n/utils";
 
-const {pathname} = Astro.url
-console.log("pathname", pathname);
-
-
+const lang = getLangFromUrl(Astro.url);
+const { pathname } = Astro.url;
 ---
+
 <header
-  class="bg-white py-4 max-w-[2000px] px-5 flex justify-between items-center fixed w-full top-0  z-20"
+  class="bg-white py-4 max-w-[2000px] px-5 flex justify-between items-center fixed w-full top-0 z-20"
 >
-  <!-- gender index -->
+  <!-- <MenWomen client:visible ubication={pathname} /> -->
+  <MenWomen ubication={pathname} />
 
-  <!-- Sección del logo -->
-
-  <!-- <div> -->
-    <MenWomen client:visible ubication={pathname} />
-  <!-- </div> -->
-
-  <!-- Sección del nombre -->
-  <a href="/" aria-label="moda link, pagina de incio"  class="nombre">
-    <h1 class="text-lg font-semibold text-gray-800 font-pacifico ">Moda Link</h1>
+  <a href={lang === "en" ? `/${lang}` : "/"} aria-label="moda link, pagina de incio" class="nombre">
+    <h1 class="text-lg font-semibold text-gray-800 font-pacifico">Moda Link</h1>
   </a>
 
-  <!-- Sección del usuario -->
-    <a href="/about" aria-label="about as" class="text-sm text-gray-600 tracking-tight flex gap-x-1 cursor-default hover:text-color_orange ease-in-out duration-300">
-      <span>about as</span> 
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke-width="1.5"
-        stroke="currentColor"
-        class="w-5 h-5"
-      >
-        <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
-        ></path>
-      </svg>
-    </a>
+  <PickLanguage />
 </header>

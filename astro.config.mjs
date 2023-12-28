@@ -20,9 +20,21 @@ export default defineConfig({
   redirects: {
     "/hombre": "/hombre/camiseta",
     "/mujer": "/mujer/camiseta",
+    // "/women": "/en/women/camiseta",
+    // "/men": "/en/men/camiseta",
   },
   image: {
     domains: ["imgaz1.chiccdn.com", "hips.hearstapps.com"],
     remotePatterns: [{ protocol: "https" }],
   },
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: [ "en", "es"],
+  //   routing: {
+  //     prefixDefaultLocale: true
+  //   },
+  //   fallback: {
+  //     en: "es"
+  //   }
+  // }
 });

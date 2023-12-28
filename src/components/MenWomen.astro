@@ -1,0 +1,106 @@
+---
+import { getLangFromUrl } from "src/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const pathname = Astro.url.pathname;
+const categories = {
+  en: {
+    camiseta: "t-shirt",
+    accesorios: "accessories",
+    pantalon: "pants",
+    gorros: "caps",
+    zapatos: "shoes",
+  },
+  es: {
+    camiseta: "camiseta",
+    accesorios: "accesorios",
+    pantalon: "pantalon",
+    gorros: "gorros",
+    zapatos: "zapatos",
+  },
+};
+
+const genders = {
+  es: {
+    women: "hombre",
+    men: "mujer"
+  },
+  en: {
+    women: "men",
+    men: "women"
+  }
+}
+
+function cambiarIdioma(gender: string, category: string) {
+  return lang === "en" ? `/en/${gender}/${category}` : `/${gender}/${category}`;
+}
+
+function getGender(pathname: string) {
+  const urldivide = pathname.split("/");
+  return lang === "en" ? urldivide[2] : urldivide[1];
+}
+
+const gender = getGender(pathname);
+---
+
+<div>
+ 
+  {
+    gender === "hombre" || gender === "men" ? (
+      <a
+        aria-label="boton ver productos moda femenina"
+        href={cambiarIdioma(genders[lang].men, categories[lang].camiseta)}
+        class="bg-orange-500 rounded-full p-1 block "
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-gender-female text-white"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M12 9m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
+          <path d="M12 14v7" />
+          <>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 18h6" />
+          </>
+        </svg>
+       
+      </a>
+    ) : (
+      <a
+        href={cambiarIdioma(genders[lang].women, categories[lang].camiseta)}
+        aria-label="boton ver productos moda masculina"
+        class="bg-pink-500 rounded-full p-1 block text-white"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-gender-male"
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          stroke-width="2"
+          stroke="currentColor"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M10 14m-5 0a5 5 0 1 0 10 0a5 5 0 1 0 -10 0" />
+          <path d="M19 5l-5.4 5.4" />
+          <path d="M19 5h-5" />
+          <>
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M19 5v5" />
+          </>
+        </svg>
+        
+      </a>
+    )
+  }
+</div>

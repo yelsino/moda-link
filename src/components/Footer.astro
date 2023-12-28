@@ -1,104 +1,9 @@
 ---
-import Essentials from "./Essentials.astro";
+import en from "@locales/en/index.json";
+import es from "@locales/es/index.json";
+import { getLangFromUrl } from "src/i18n/utils";
 
-const company_information = [
-  {
-    id: "1",
-    text: "Acerca de Newchic",
-    url: "https://www.newchic.com/tempages-BRAND/tid-3203.html?utmid=9841",
-  },
-  {
-    id: "2",
-    text: "Política de privacidad",
-    url: "https://www.newchic.com/privacy-policy-hc172.html",
-  },
-  {
-    id: "3",
-    text: "Política de devoluciones",
-    url: "https://www.newchic.com/return-and-refund-hc162.html",
-  },
-  {
-    id: "4",
-    text: "Términos y condiciones",
-    url: "https://www.newchic.com/terms-and-conditions-hc174.html",
-  },
-  {
-    id: "5",
-    text: "Reclamaciones de propiedad intelectual",
-    url: "https://www.newchic.com/intellectual-property-claims-hc175.html",
-  },
-  {
-    id: "6",
-    text: "Centro de ayuda",
-    url: "https://www.newchic.com/impressum-hc233.html",
-  },
-];
-
-const customer_service = [
-  {
-    id: "1",
-    text: "Seguimiento de pedido",
-    url: "https://www.newchic.com/account/orderlist.html",
-  },
-  {
-    id: "2",
-    text: "Preguntas frecuentes sobre envíos",
-    url: "https://www.newchic.com/help_center/shipping-faq157.html",
-  },
-  {
-    id: "3",
-    text: "Preguntas frecuentes sobre pedidos",
-    url: "https://www.newchic.com/help_center/order-faq167.html",
-  },
-  {
-    id: "4",
-    text: "Métodos de envío",
-    url: "https://www.newchic.com/shipping-methods-hc160.html",
-  },
-  {
-    id: "5",
-    text: "Métodos de pago",
-    url: "https://www.newchic.com/payment-methods-hc159.html",
-  },
-  {
-    id: "6",
-    text: "Búsquedas principales",
-    url: "https://www.newchic.com/topsearch.html",
-  },
-];
-
-const cooperation = [
-  {
-    id: "1",
-    text: "Programa de blogueros",
-    url: "https://www.newchic.com/blog/promotion.html",
-  },
-  {
-    id: "2",
-    text: "Afiliarse - Ganar dinero",
-    url: "https://www.newchic.com/affiliateCenter.html?flagType=3",
-  },
-  {
-    id: "3",
-    text: "Programa VIP",
-    url: "https://www.newchic.com/account/showVipIllustrate.html",
-  },
-  {
-    id: "4",
-    text: "Programa de envío directo",
-    url: "https://www.newchic.com/dropship-program.html",
-  },
-  {
-    id: "5",
-    text: "Programa mayorista",
-    url: "https://www.newchic.com/article/wholesaleShow.html",
-  },
-  {
-    id: "6",
-    text: "programa de estudiantes",
-    url: "https://www.descuentoestudiante.com/newchic-descuento-estudiante-iframe",
-  },
-];
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <footer class="bg-gray-50 py-4 pt-12">
@@ -112,25 +17,36 @@ const cooperation = [
         <span class="font-bold font-pacifico text-black">Moda Link</span>
       </div>
     </section>
-    <section class="max-w-xs">
-      <h3 class="text-black font-bold mb-4 ">Nuestro proposito</h3>
-      <p>
-        En Moda Link, nos apasiona seleccionar cuidadosamente ropa de alta calidad que refleje estilo y personalidad para hombres y mujeres con buen gusto.
-      </p>
-    </section>
 
-    <section class="max-w-xs">
-      <h3 class="text-black font-bold mb-4">Nuestra comunidad</h3>
-      <p>
-        Únete a nuestra comunidad de entusiastas de la moda y descubre las prendas más populares y apreciadas en la red. Explora las tendencias
-      </p>
-    </section>
+    {
+      lang === "en"
+        ? en.footer.sections.map((section) => (
+            <section class="max-w-xs">
+              <h3 class="text-black font-bold mb-4">{section.title}</h3>
+              <p>
+               {section.description}
+              </p>
+            </section>
+          ))
+        : es.footer.sections.map((section) => (
+            <section class="max-w-xs">
+              <h3 class="text-black font-bold mb-4">{section.title}</h3>
+              <p>
+                {section.description}
+              </p>
+            </section>
+          ))
+    }
 
     <section class="max-w-xs">
       <h3 class="text-black font-bold mb-4">Nuestras redes</h3>
       <ul class="flex flex-col gap-y-3">
         <li>
-          <a  target="_blank" class="flex gap-x-3" href="https://www.facebook.com/profile.php?id=100083366617462" aria-label="visita nuestro facebook"
+          <a
+            target="_blank"
+            class="flex gap-x-3"
+            href="https://www.facebook.com/profile.php?id=100083366617462"
+            aria-label="visita nuestro facebook"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-meta"
@@ -151,7 +67,12 @@ const cooperation = [
           >
         </li>
         <li>
-          <a  class="flex gap-x-3"  target="_blank"  href="https://www.tiktok.com/@modalink?_t=8iK6YL7GYRZ&_r=1" aria-label="visita nuestro tick tock">
+          <a
+            class="flex gap-x-3"
+            target="_blank"
+            href="https://www.tiktok.com/@modalink?_t=8iK6YL7GYRZ&_r=1"
+            aria-label="visita nuestro tick tock"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-tiktok"
@@ -170,7 +91,11 @@ const cooperation = [
           >
         </li>
         <li>
-          <a  class="flex gap-x-3"  target="_blank"  href="https://www.instagram.com/modalink?igshid=OGQ5ZDc2ODk2ZA==" aria-label="visita nuestro instagram"
+          <a
+            class="flex gap-x-3"
+            target="_blank"
+            href="https://www.instagram.com/modalink?igshid=OGQ5ZDc2ODk2ZA=="
+            aria-label="visita nuestro instagram"
             ><svg
               xmlns="http://www.w3.org/2000/svg"
               class="icon icon-tabler icon-tabler-brand-instagram"
@@ -193,5 +118,3 @@ const cooperation = [
     </section>
   </div>
 </footer>
-
-

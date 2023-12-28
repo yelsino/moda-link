@@ -1,11 +1,15 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 import Header from "@components/Header.astro";
 import Footer from "@components/Footer.astro";
 import SectionIndex from "@components/SectionIndex.astro";
 import TopTendencias from "@components/TopTendencias.astro";
+import { getLangFromUrl, useTranslations } from "src/i18n/utils";
 import Nav from "@components/Nav.astro";
-import index from "@locales/es/index.json";
+import index from "@locales/en/index.json"
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 ---
 
@@ -15,10 +19,8 @@ import index from "@locales/es/index.json";
 >
   <div class="h-full">
     <Header />
-
     <main class="mt-20 flex flex-col gap-y-6">
-      <!-- <Nav /> -->
-
+     <!-- <Nav/> -->
       <SectionIndex
         title={index.women.title}
         inicio={0}
@@ -27,17 +29,17 @@ import index from "@locales/es/index.json";
         sectionId="moda-femenina"
         background={true}
         genero="mujer"
-        link="/mujer"
+        link="/en/women"
         descripcion={index.women.description}
       />
 
       <SectionIndex
-        title={index.men.title}
+      title={index.men.title}
         inicio={0}
         fin={100}
         sectionId="moda-masculina"
         sections={false}
-        link={`/hombre`}
+        link={`/en/men`}
         genero="hombre"
         descripcion={index.men.description}
       />
@@ -55,6 +57,7 @@ import index from "@locales/es/index.json";
         trends={index.trendMale.trendsMale}
         descripcion={index.trendMale.description}
       />
+      
     </main>
     <Footer />
   </div>

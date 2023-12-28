@@ -1,22 +1,21 @@
 ---
-import type { GetStaticPaths } from "astro";
-import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
 import Card from "@components/Card.astro";
+import Footer from "@components/Footer.astro";
+import Header from "@components/Header.astro";
+import Pagination from "@components/Pagination.astro";
 import Filter from "@components/Filter.astro";
 import Layout from "@layouts/Layout.astro";
-import Pagination from "@components/Pagination.astro";
 import { orderProducts } from "@libs/products.libs";
+import type { GetStaticPaths } from "astro";
+import categories from "@locales/en/masculino/categories.json"
+import dataSeo from "@locales/en/masculino/data-seo.json"
 import { getLangFromUrl } from "src/i18n/utils";
-import dataSeo from "@locales/es/masculino/data-seo.json"
-import categories from "@locales/es/masculino/categories.json"
+
 
 export const getStaticPaths = (async ({ paginate }) => {
 
-  // const urlBase = "https://moda-link-api.deno.dev/api/v1/products?";
-  const urlBase = await import.meta.env.MODALINK_API_ES;
+  const urlBase = await import.meta.env.MODALINK_API_EN;
 
-  // Usar Promise.all() para realizar las peticiones de manera concurrente
   const paths = await Promise.all(
     categories.map(async (category) => {
       const params = new URLSearchParams();
@@ -33,17 +32,14 @@ export const getStaticPaths = (async ({ paginate }) => {
     })
   );
 
-  // Utilizar flat() para aplanar el array de arrays devuelto por Promise.all()
   return paths.flat();
 }) satisfies GetStaticPaths;
 
 const { category } = Astro.params;
 const { page } = Astro.props;
-const lang = getLangFromUrl(Astro.url);
 const pathname = new URL(Astro.request.url).pathname.split("/");
+const lang = getLangFromUrl(Astro.url);
 const firstPath = lang === "en" ? `/${pathname[1]}/${pathname[2]}/${pathname[3]}` : `/${pathname[1]}/${pathname[2]}`;
-
-
 
 const getElementSeo = dataSeo.find((item) => item.nombre === category);
 
@@ -104,8 +100,7 @@ const getElementSeo = dataSeo.find((item) => item.nombre === category);
   <div class="h-full">
     <Header />
     <main class="mt-10 flex flex-col py-10">
-      <Filter  category={category} genero="hombre" />
-
+      <Filter category={category} genero="men"/>
       <!-- <div class="w-9/12">
         <h2 class="text-2xl font-bold">
           Pantalones para hombre, los mejores pantalones seleccionados para

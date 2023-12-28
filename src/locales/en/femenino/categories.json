@@ -1,0 +1,27 @@
+[
+  {
+    "params": {
+      "category": "accessories"
+    }
+  },
+  {
+    "params": {
+      "category": "t-shirt"
+    }
+  },
+  {
+    "params": {
+      "category": "pants"
+    }
+  },
+  {
+    "params": {
+      "category": "caps"
+    }
+  },
+  {
+    "params": {
+      "category": "shoes"
+    }
+  }
+]

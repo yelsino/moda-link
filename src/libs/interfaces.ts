@@ -12,3 +12,7 @@ export interface Product {
   urlAfiliado: string
   id: string
 }
+
+export interface RutaIdiomas {
+  [key: string]: string;
+}

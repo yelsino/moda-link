@@ -1,0 +1,27 @@
+[
+  {
+    "params": {
+      "category": "accesorios"
+    }
+  },
+  {
+    "params": {
+      "category": "camiseta"
+    }
+  },
+  {
+    "params": {
+      "category": "pantalon"
+    }
+  },
+  {
+    "params": {
+      "category": "gorros"
+    }
+  },
+  {
+    "params": {
+      "category": "zapatos"
+    }
+  }
+]
