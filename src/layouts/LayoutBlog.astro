@@ -1,16 +1,11 @@
 ---
-import { SEO } from "astro-seo";
 import { ViewTransitions } from "astro:transitions";
-import '@fontsource/pacifico';
-import '@fontsource/fugaz-one';
-import '@fontsource-variable/tilt-prism';
-import '@fontsource/rubik-mono-one';
-import '@fontsource/roboto-condensed';
-import { getLangFromUrl } from '../i18n/utils';
+import { SEO } from "astro-seo";
+// import { Analytics } from '@vercel/analytics/react';
 
 interface Props {
   title: string;
-  icono?: string;
+	icono?: string;
   description: string;
   extend?: {
     link: [{ rel: string; href: string }];
@@ -36,21 +31,21 @@ interface Props {
 }
 
 const { title, description, extend, openGraph, icono } = Astro.props;
-
-const lang = getLangFromUrl(Astro.url);
-console.log(lang);
-
 ---
 
-<!doctype html>
-<html lang={lang}>
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href={icono}/>
     <meta name="viewport" content="width=device-width" />
-    <link rel="icon" type="image/svg+xml" href="/gender.svg" />
-    <meta name="generator" content={Astro.generator} />
-    <meta name="google-site-verification" content="PzTQUXOImzyDfBUlu3hE0aFHlZQ72X_FMeOr5E5KAXg" />
-    <!-- <meta http-equiv="refresh" content="0;url=/en/" /> -->
+    <!-- <meta name="generator" content={Astro.generator} /> -->
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Kodchasan:wght@300;400&family=Poppins:wght@600;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- <title>{title}</title> -->
     <SEO
       title={title}
       description={description}
@@ -59,8 +54,13 @@ console.log(lang);
     />
     <ViewTransitions />
   </head>
-  <body class="bg-white selection:bg-orange-100">
-    <slot />
-    
+  <body>
+	
+    <main
+      class="selection:bg-fuchsia-200 selection:text-black max-w-5xl mx-auto relative flex flex-col"
+    >
+      <slot />
+    </main>
+		<!-- <Analytics /> -->
   </body>
 </html>

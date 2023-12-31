@@ -1,0 +1,72 @@
+---
+import { getLangFromUrl } from "src/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const discoveries = {
+  en: {
+    title: "Discover more:",
+    tags: [
+      { id: 1, tag: "Clothing for men", url: "/en/men/" },
+      { id: 2, tag: "Clothing for women", url: "/en/women/" },
+      { id: 3, tag: "Clothing for children", url: "/en/child/" },
+      { id: 3, tag: "Clothing for babies", url: "/en/baby/" },
+
+      { id: 44, tag: "T-shirts for men", url: "/en/men/t-shirt" },
+      { id: 45, tag: "Caps for men", url: "/en/men/caps" },
+      { id: 46, tag: "Pants for men", url: "/en/men/pants" },
+      { id: 47, tag: "Shoes for men", url: "/en/men/shoes" },
+      { id: 48, tag: "Accessories for men", url: "/en/men/accessories" },
+
+      { id: 49, tag: "T-shirts for women", url: "/en/women/t-shirt" },
+      { id: 50, tag: "Caps for women", url: "/en/women/caps" },
+      { id: 51, tag: "Pants for women", url: "/en/women/pants" },
+      { id: 52, tag: "Shoes for women", url: "/en/women/shoes" },
+      { id: 53, tag: "Accessories for women", url: "/en/women/accessories" },
+    ],
+  },
+  es: {
+    title: "Descubrir más:",
+    tags: [
+      { id: 1, tag: "Ropa para hombres", url: "/hombre/" },
+      { id: 2, tag: "Ropa para mujeres", url: "/mujer/" },
+      { id: 3, tag: "Ropa para Niños", url: "/nene/" },
+      { id: 3, tag: "Ropa para bebes", url: "/bebe/" },
+
+      { id: 44, tag: "Camisetas para hombres", url: "/hombre/camiseta" },
+      { id: 45, tag: "Gorros para hombres", url: "/hombre/gorros" },
+      { id: 46, tag: "Pantalones para hombres", url: "/hombre/pantalon" },
+      { id: 47, tag: "Zapatillas para hombres", url: "/hombre/zapatos" },
+      { id: 48, tag: "Accesorios para hombres", url: "/hombre/accesorios" },
+
+      { id: 49, tag: "Camisetas para mujeres", url: "/mujer/camiseta" },
+      { id: 50, tag: "Gorros para mujeres", url: "/mujer/gorros" },
+      { id: 51, tag: "Pantalones para mujeres", url: "/mujer/pantalon" },
+      { id: 52, tag: "Zapatillas para mujeres", url: "/mujer/zapatos" },
+      { id: 53, tag: "Accesorios para mujeres", url: "/mujer/accesorios" },
+    ],
+  },
+};
+---
+
+<section class="px-5 flex flex-col gap-y-5 my-6">
+  <h2
+    class="text-2xl leading-tight tracking-tight md:text-3xl font-fugazOne 2xl:text-center"
+  >
+    {discoveries[lang].title}
+  </h2>
+  <ul class="flex flex-wrap gap-2">
+    {
+      discoveries[lang].tags.map((tag) => (
+        <li>
+          <a
+            class="transition group inline-grid grid-flow-col justify-center items-center rounded-lg   bg-white  hover:text-color_pink1 border border-neutral-200 hover:border-color_pink1 py-2 px-5 gap-2 ease-in-out duration-300 text-sm md:text-base"
+            href={tag.url}
+          >
+            {tag.tag}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

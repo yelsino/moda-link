@@ -6,7 +6,11 @@ import SectionIndex from "@components/SectionIndex.astro";
 import TopTendencias from "@components/TopTendencias.astro";
 import Nav from "@components/Nav.astro";
 import index from "@locales/es/index.json";
-
+import Faq from "@components/Faq.astro";
+import Descover from "@components/Descover.astro";
+import SectionPosts from "@components/SectionPosts.astro";
+import SliderCategories from "@components/Categories.astro";
+import Categories from "@components/Categories.astro";
 ---
 
 <Layout
@@ -15,9 +19,10 @@ import index from "@locales/es/index.json";
 >
   <div class="h-full">
     <Header />
+    
+    <Categories sectionId="navbar-xxx" />
+    <main class="flex flex-col gap-y-6">
 
-    <main class="mt-20 flex flex-col gap-y-6">
-      <!-- <Nav /> -->
 
       <SectionIndex
         title={index.women.title}
@@ -55,7 +60,14 @@ import index from "@locales/es/index.json";
         trends={index.trendMale.trendsMale}
         descripcion={index.trendMale.description}
       />
+
+      <Faq />
+
+      <Descover />
+
+      <SectionPosts/>
+
+      <Footer />
     </main>
-    <Footer />
   </div>
 </Layout>

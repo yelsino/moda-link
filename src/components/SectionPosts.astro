@@ -1,0 +1,148 @@
+---
+import { Image } from "astro:assets";
+import image1 from "../assets/images-blog/camiseta-comprencion.jpg";
+import image2 from "../assets/images-blog/vestido-noche.jpg";
+import image3 from "../assets/images-blog/infantil-adorable.jpg";
+import image4 from "../assets/images-blog/bebe-estilo.jpg";
+import image5 from "../assets/images-blog/mujer-informal.jpg";
+import image6 from "../assets/images-blog/ninos-estaciones.jpg";
+import { getLangFromUrl } from "src/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+
+const section = {
+  es: {
+    title: "Más de moda link",
+    posts: [
+      {
+        id: 1,
+        image: image1,
+        title: "Camisetas de Compresión para Hombres",
+        description:
+          "Descubre nuestra colección de camisetas de compresión para hombres. Mantén un estilo moderno mientras te ejercitas y experimenta la combinación perfecta de comodidad y rendimiento.",
+        url: "/blog/camisetas-compresion-hombres",
+      },
+      {
+        id: 2,
+        image: image2,
+        title: "Vestidos de Noche para Ocasiones Especiales",
+        description:
+          "Encuentra el vestido de noche perfecto para esa ocasión especial. Explora nuestra selección de vestidos elegantes que te harán destacar con estilo.",
+        url: "/blog/vestidos-de-noche-para-ocaciones-especiales",
+      },
+      {
+        id: 3,
+        image: image3,
+        title: "Conjuntos Infantiles Adorables",
+        description:
+          "Descubre nuestra colección de moda infantil con conjuntos adorables y cómodos para niños. Mantén a tus pequeños a la moda con diversión y estilo.",
+        url: "/blog/conjuntos-infantiles-adorables",
+      },
+      // {
+      //   id: 4,
+      //   image: image4,
+      //   title: "Ropa de Bebés con Estilo",
+      //   description:
+      //     "Descubre nuestra adorable colección de ropa para bebés. Viste a los más pequeños con estilo y comodidad. Explora opciones encantadoras para tu bebé.",
+      //   url: "/blog/ropa-de-bebes-con-estilo",
+      // },
+      // {
+      //   id: 5,
+      //   image: image5,
+      //   title: "Ropa Informal para mujer",
+      //   description:
+      //     "Encuentra la moda casual perfecta para mujeres. Explora nuestra colección de ropa informal y mantén un estilo relajado sin comprometer el buen gusto.",
+      //   url: "/blog/ropa-informal-para-mujer",
+      // },
+      // {
+      //   id: 6,
+      //   image: image6,
+      //   title: "Ropa de Niños para Todas las Estaciones",
+      //   description:
+      //     "Explora las últimas tendencias en moda infantil. Desde conjuntos de primavera hasta abrigos de invierno, mantenemos a tus pequeños a la moda durante todo el año.",
+      //   url: "/blog/ropa-de-ninos-para-todas-las-estaciones",
+      // },
+    ],
+  },
+  en: {
+    title: "More fashionable link",
+    posts: [
+      {
+        id: 1,
+        image: image1,
+        title: "Compression T-Shirts for Men",
+        description:
+          "Discover our collection of compression t-shirts for men. Maintain a modern style while exercising and experience the perfect combination of comfort and performance.",
+        url: "/blog/camisetas-compresion-hombres",
+      },
+      {
+        id: 2,
+        image: image2,
+        title: "Evening Dresses for Special Occasions",
+        description:
+          "Find the perfect evening dress for that special occasion. Explore our selection of elegant dresses that will make you stand out with style.",
+        url: "/blog/vestidos-de-noche-para-ocaciones-especiales",
+      },
+      {
+        id: 3,
+        image: image3,
+        title: "Adorable Children's Outfits",
+        description:
+          "Discover our collection of children's fashion with adorable and comfortable outfits for kids. Keep your little ones stylish with fun and style.",
+        url: "/blog/conjuntos-infantiles-adorables",
+      },
+      // {
+      //   id: 4,
+      //   image: image4,
+      //   title: "Stylish Baby Clothing",
+      //   description:
+      //     "Explore our adorable collection of baby clothes. Dress the little ones with style and comfort. Explore charming options for your baby.",
+      //   url: "/blog/ropa-de-bebes-con-estilo",
+      // },
+      // {
+      //   id: 5,
+      //   image: image5,
+      //   title: "Casual Clothing for Women",
+      //   description:
+      //     "Find the perfect casual fashion for women. Explore our collection of casual clothing and maintain a relaxed style without compromising taste.",
+      //   url: "/blog/ropa-informal-para-mujer",
+      // },
+      // {
+      //   id: 6,
+      //   image: image6,
+      //   title: "Children's Clothing for All Seasons",
+      //   description:
+      //     "Explore the latest trends in children's fashion. From spring outfits to winter coats, we keep your little ones stylish all year round.",
+      //   url: "/blog/ropa-de-ninos-para-todas-las-estaciones",
+      // },
+    ],
+  },
+};
+---
+
+<section class="px-5 flex flex-col gap-y-5 my-6">
+  <h2 class="text-2xl md:text-3xl font-medium font-fugazOne 2xl:text-center">
+    {section[lang].title}
+  </h2>
+  <ul class="grid grid-flow-row gap-6 md:grid-cols-2 xl:grid-cols-3">
+    {
+      section[lang].posts.map((post) => (
+        <li class="hover:scale-[1.03] ease-in-out duration-200">
+          <a class=" transition group" href={post.url}>
+            <article class="h-full overflow-hidden rounded-2xl border border-neutral-100 transition-transform duration-200 ease-in-out cursor-default">
+              <div>
+                <Image src={post.image} alt="" format="webp" />
+              </div>
+              <div class="p-6">
+                <h3 class="mb-2 text-xl font-medium">{post.title}</h3>
+                <p class="line-clamp-4  leading-relaxed text-neutral-700">
+                  {post.description}
+                </p>
+              </div>
+            </article>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</section>

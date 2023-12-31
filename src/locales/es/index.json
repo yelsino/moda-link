@@ -8,7 +8,7 @@
     "description": "Desde lo clásico y elegante, explora una variedad de tendencias que reflejan diversidad y sofisticación moderna. Explora estilos únicos de la moda femenina actual con nuestras colecciones seleccionadas. ¡Explora, inspira y define tu propio sentido de la moda aquí!"
   },
   "trendMale": {
-    "title": "Moda masculina: Tendencias de ropa 2024",
+    "title": "Ropa 2024 para hombres",
     "description": "Desde blusas con telas semitransparentes hasta calzado de última tendencia. Aquí tienes toda la información esencial para renovar tu estilo esta temporada y lucir como un caballero a la moda, resguardado del sol o bajo su radiante luz.",
     "trendsMale": [
       {
@@ -58,7 +58,7 @@
     ]
   },
   "trendFemale": {
-    "title": "Moda femenina: Tendencias de ropa más virales",
+    "title": "Ropa para mujer más virales",
     "description": "Si estás buscando ideas para empacar tu equipaje para estas vacaciones de verano en 2023, te presentamos quince pequeñas tendencias inspiradas en las pasarelas y el estilo urbano de diversas semanas de la moda internacionales.",
     "trendsFemale": [
       {

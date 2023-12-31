@@ -23,9 +23,21 @@ dependencies:
   '@egjs/svelte-conveyer':
     specifier: ^1.7.1
     version: 1.7.1
+  '@fontsource-variable/tilt-prism':
+    specifier: ^5.0.3
+    version: 5.0.3
+  '@fontsource/fugaz-one':
+    specifier: ^5.0.18
+    version: 5.0.18
   '@fontsource/pacifico':
     specifier: ^5.0.8
     version: 5.0.8
+  '@fontsource/roboto-condensed':
+    specifier: ^5.0.14
+    version: 5.0.14
+  '@fontsource/rubik-mono-one':
+    specifier: ^5.0.18
+    version: 5.0.18
   astro:
     specifier: ^4.0.1
     version: 4.0.1(typescript@5.3.2)
@@ -35,11 +47,14 @@ dependencies:
   astro-seo:
     specifier: ^0.8.0
     version: 0.8.0
+  fuse.js:
+    specifier: ^7.0.0
+    version: 7.0.0
   sharp:
     specifier: ^0.33.1
     version: 0.33.1
   svelte:
-    specifier: ^5.0.0-next.1
+    specifier: 5.0.0-next.25
     version: 5.0.0-next.25
   tailwindcss:
     specifier: ^3.0.24
@@ -721,8 +736,24 @@ packages:
     dev: false
     optional: true
 
+  /@fontsource-variable/tilt-prism@5.0.3:
+    resolution: {integrity: sha512-UBULn/SlmZEvs5KCa2Q42koutTGDTjGH3Ns1DD1gnmryRLlBFP1cH4WxazwR3gFbqGeM0QliFrYAYgNCtomh4w==}
+    dev: false
+
+  /@fontsource/fugaz-one@5.0.18:
+    resolution: {integrity: sha512-qaslLuhShQ96aR4Qj3nAM6TVocSnRoaJNYcfjkcmo5BF8MeNVZNFi9mRCf8vXgGuc53DGVX3ezvehjVlnz3VnA==}
+    dev: false
+
   /@fontsource/pacifico@5.0.8:
     resolution: {integrity: sha512-0WQ50ZzIv3dP98ET8Pthr12cF6f8ova3FslIXjrtwh9mo2Xo60T1hzUhVNfZLFVtwd2MVH6MNVa85OCfqZ4/+w==}
+    dev: false
+
+  /@fontsource/roboto-condensed@5.0.14:
+    resolution: {integrity: sha512-ZNBHUhE5/3z9efMIjpBblFsfLHgGotJjlzKd5Q8DODbkRRWy6Yh+JnbiaJZ8zwQyHyYBNOolk57BG4BcjSzrRg==}
+    dev: false
+
+  /@fontsource/rubik-mono-one@5.0.18:
+    resolution: {integrity: sha512-2qaKREDazsct2L+WLzLiVuSnVZXqSa00BNEq3NDSFCVzzWNTHLpdFXS88VXqqH2gh51Jpqn3mc5TAVKOa0ccAg==}
     dev: false
 
   /@img/sharp-darwin-arm64@0.33.1:
@@ -2183,6 +2214,11 @@ packages:
 
   /function-bind@1.1.2:
     resolution: {integrity: sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==}
+    dev: false
+
+  /fuse.js@7.0.0:
+    resolution: {integrity: sha512-14F4hBIxqKvD4Zz/XjDc3y94mNZN6pRv3U13Udo0lNLCWRBUsrMv2xwcF/y/Z5sV6+FQW+/ow68cHpm4sunt8Q==}
+    engines: {node: '>=10'}
     dev: false
 
   /gauge@3.0.2:

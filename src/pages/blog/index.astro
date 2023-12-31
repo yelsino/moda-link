@@ -1,0 +1,44 @@
+---
+import Footer from "@components/Footer.astro";
+import Articles from "@components/blog/Articles.astro";
+import Filters from "@components/blog/Filters.svelte";
+import NavBar from "@components/blog/NavBar.astro";
+import Layout from "@layouts/Layout.astro";
+import { getCollection } from "astro:content";
+
+const posts = await getCollection("posts");
+const convertPosts = posts.map((post) => post.data);
+---
+
+
+<Layout
+  icono="/blogger.svg"
+  title="yelsino: blog" 
+  description="Descubre el mundo de la inteligencia artificial y la programación web en un solo lugar. Aprende a integrar herramientas de OpenAI API para potenciar tus proyectos. Artículos detallados sobre IA, desarrollo web y cómo fusionar ambos campos. ¡Explora tutoriales, consejos y guías para maximizar tus habilidades en inteligencia artificial y programación en nuestro blog!">
+  <main class="selection:bg-fuchsia-200 selection:text-black max-w-5xl mx-auto relative flex flex-col">
+    <NavBar />
+  <div class="px-10 md:px-20 flex flex-col gap-y-10 mt-24">
+    <section>
+      <h1 class="text-center font-kodchasan text-3xl sm:text-4xl font-black">
+        😋<br />
+        ¡DESCUBRE TU ESTILO! <br />
+        <span class="text-color_pink1">MODA CON ESTILO</span> PARA HOMBRES Y MUJERES <br
+          class="hidden md:flex"
+        /> ENTRA AL MUNDO DE TENDENCIAS Y ELEGANCIA
+      </h1>
+
+      <p class="text-center font-mono text-lg lg:text-2xl text-gray-600 tracking-tight sm:tracking-normal">
+        Descubre nuevas tendencias potenciando tu estilo  
+        fusióna entre la innovación de la moda 
+        y la expresión personal. ¡Deja que tu estilo hable por ti!
+    </p>
+    </section>
+
+    <section class="mb-10">
+      <Filters client:visible />
+      <Articles posts={convertPosts} />
+    </section>
+  </div>
+</main>
+<Footer/>
+</Layout>

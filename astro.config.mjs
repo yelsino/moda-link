@@ -20,8 +20,13 @@ export default defineConfig({
   redirects: {
     "/hombre": "/hombre/camiseta",
     "/mujer": "/mujer/camiseta",
+    "/nene": "/nene/camiseta",
+    "/bebe": "/bebe/camiseta",
+
     "/en/women": "/en/women/t-shirt",
     "/en/men": "/en/men/t-shirt",
+    "/en/child": "/en/child/t-shirt",
+    "/en/baby": "/en/baby/t-shirt",
   },
   image: {
     domains: ["imgaz1.chiccdn.com", "hips.hearstapps.com"],

@@ -6,6 +6,10 @@ export default {
 		extend: {
 			fontFamily: {
 				pacifico: ['Pacifico', 'sans serif'],
+				fugazOne: ['Fugaz One', 'sans serif'],
+				tiltPrism: ['Tilt Prism Variable', 'sans serif'],
+				rubickMono: ['Rubik Mono One', 'sans serif'],
+				robotoCondensed: ['Roboto Condensed', 'sans serif'],
 			},
 			colors: {
 				color_orange: '#FF6B00',

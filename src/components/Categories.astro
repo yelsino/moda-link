@@ -1,0 +1,101 @@
+---
+import { getLangFromUrl } from "src/i18n/utils";
+const { sectionId, background } = Astro.props;
+
+// const lista = ;
+const lang = getLangFromUrl(Astro.url);
+
+const categories = {
+  es: [
+    {
+      id: "1",
+      text: "Ropa para hombres",
+      src: "/videos/hombre1.mp4",
+      url: "/hombre",
+    },
+    {
+      id: "2",
+      text: "Ropa para mujeres",
+      src: "/videos/mujer1.mp4",
+      url: "/mujer",
+    },
+    {
+      id: "3",
+      text: "Ropa para niños",
+      src: "/videos/nino1.mp4",
+      url: "/nene",
+    },
+    {
+      id: "4",
+      text: "Ropa para bebes",
+      src: "/videos/bebe1.mp4",
+      url: "/bebe",
+    },
+  ],
+  en: [
+    {
+      id: "1",
+      text: "Clothing for men",
+      src: "/videos/hombre1.mp4",
+      url: "/en/men",
+    },
+    {
+      id: "2",
+      text: "Clothing for women",
+      src: "/videos/mujer1.mp4",
+      url: "/en/women",
+    },
+    {
+      id: "3",
+      text: "Clothing for children",
+      src: "/videos/nino1.mp4",
+      url: "/en/child",
+    },
+    {
+      id: "4",
+      text: "Clothing for babies",
+      src: "/videos/bebe1.mp4",
+      url: "/en/baby",
+    },
+  ],
+};
+---
+
+<astro-greet class={`${background && ""}`} data-message={sectionId}>
+  <nav class="flex justify-center mt-20 mb-10 px-5">
+    <ul id={sectionId} class="md:gap-x-1 grid grid-cols-2 lg:grid-cols-4 ">
+      {
+        categories[lang].map((item: any) => (
+          <li class="relative group">
+            <a href={item.url} class="relative group-hover:z-20">
+              <video autoplay loop muted class="w-full block">
+                <source src={item.src} type="video/mp4"  />
+                video no compatible
+              </video>
+              <p class="absolute bottom-0 right-0 z-10 text-white text-lg sm:text-2xl md:text-3xl  font-fugazOne px-2">
+                {item.text}
+              </p>
+            </a>
+            <div class="bg-black absolute top-0 w-full h-full bg-opacity-30 group-hover:bg-opacity-0 ease-in-out duration-300 group-hover:z-0" />
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</astro-greet>
+
+<script>
+  import Conveyer from "@egjs/conveyer";
+
+  class AstroGreet extends HTMLElement {
+    constructor() {
+      super();
+
+      const sectionId = this.dataset.message;
+      const formatId = `#${sectionId}`;
+      new Conveyer(formatId);
+    }
+  }
+
+  customElements.define("astro-greet", AstroGreet);
+</script>

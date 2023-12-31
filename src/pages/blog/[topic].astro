@@ -1,0 +1,148 @@
+---
+// @ts-ignore
+import { getCollection, CollectionEntry } from "astro:content";
+import Articles from "@components/blog/Articles.astro";
+import Fuse from "fuse.js";
+import { dateFormat } from "@libs/formats";
+import NavBar from "@components/blog/NavBar.astro";
+import Layout from "@layouts/Layout.astro";
+import Footer from "@components/Footer.astro";
+
+
+const posts = await getCollection("posts");
+const convertPosts = posts.map((post)=>(post.data))
+
+const options = {
+    keys: ['title'],
+    includeMatches: true,
+    minMatchCharLength: 2,
+    threshold: 0.5,
+  };
+  
+
+  let fuse = new Fuse(convertPosts, options);
+
+type Props = {
+  post: CollectionEntry<"posts">
+}
+
+export async function getStaticPaths() {
+  
+  const posts = await getCollection("posts");
+
+  return posts.map((post) => {
+    return {
+      params: {
+        topic: post.data.topic,
+      },
+      props: {
+        post,
+      },
+    };
+  });
+}
+
+const {post} = Astro.props;
+const {Content} = await post.render();
+let postFilter = fuse.search(post.data.title).map((post)=>post.item);
+
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  <main class="selection:bg-fuchsia-200 selection:text-black max-w-5xl mx-auto relative flex flex-col">
+    <NavBar />
+  <div class="px-10 md:px-20 flex flex-col gap-y-10 mt-24">
+    <section  class="content_md border-b pb-8">
+      <div class="flex justify-between">
+        <p class="text-sm text-gray-500">{dateFormat(post.data.date) }</p>
+        <a href="/blog" class="flex text-xl items-center">
+          🥱
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-back-up" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 14l-4 -4l4 -4" /><path d="M5 10h11a4 4 0 1 1 0 8h-1" /></svg>
+        </a>
+      </div>
+      <Content />
+    </section>
+  
+    
+    <div class=" mb-10">
+      <p class="text-gray-400 font-bold text-3xl mb-3">Te puede interesar 😉</p>
+      <Articles posts={postFilter}/>
+    </div>
+  </div>
+
+  
+</main>
+<Footer />
+</Layout>
+
+
+<style is:inline>
+
+
+  .content_md > h1 {
+    font-size: 2.1rem;
+    font-family: 'Fugaz One';
+  }
+
+  .content_md > h2 {
+    font-size: 1.5rem;
+    font-family: 'Fugaz One';
+    margin-top: 1.5rem;
+  }
+
+  .content_md > h3 {
+    font-size: 1.2rem;
+    letter-spacing: -0.6px;
+    font-weight: bold;
+  }
+
+
+
+  .content_md p {
+  font-size: 1.2rem;
+}
+
+/* Grilla responsiva */
+.content_md ol {
+  display: grid;
+  grid-gap: 1rem;
+
+  grid-template-columns: repeat(2, 1fr); /* Por defecto, 2 columnas */
+  margin-bottom: 1.5rem;
+
+  @media (min-width: 64em) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+}
+
+.content_md > ol > li {
+  position: relative;
+  width: 15rem;
+}
+
+.content_md > ol > li > p > a {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  color: rgb(95, 95, 95);
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.content_md > ol > li > p > a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 100%;
+}
+
+.content_md > ul > li {
+  
+}
+ 
+
+ 
+</style>
