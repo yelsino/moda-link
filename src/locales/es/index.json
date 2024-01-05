@@ -1,143 +1,80 @@
 {
-  "men": {
-    "title": "Ropa de hombre",
-    "description": "Explora los estilos de moda masculina más populares en nuestro sitio. Desde lo clásico y atemporal hasta lo moderno y urbano, descubre una amplia gama de tendencias que reflejan la versatilidad y el estilo actual. Encuentra tu look único y sumérgete en la moda masculina actual con nuestras colecciones seleccionadas. ¡Inspírate, descubre y define tu propio estilo aquí!"
-  },
-  "women": {
-    "title": "Moda femenina",
-    "description": "Desde lo clásico y elegante, explora una variedad de tendencias que reflejan diversidad y sofisticación moderna. Explora estilos únicos de la moda femenina actual con nuestras colecciones seleccionadas. ¡Explora, inspira y define tu propio sentido de la moda aquí!"
-  },
-  "trendMale": {
-    "title": "Ropa 2024 para hombres",
-    "description": "Desde blusas con telas semitransparentes hasta calzado de última tendencia. Aquí tienes toda la información esencial para renovar tu estilo esta temporada y lucir como un caballero a la moda, resguardado del sol o bajo su radiante luz.",
-    "trendsMale": [
-      {
-        "title": "Pañuelo al cuello",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/ami-panuelo-cuello-6480d898a9bf6.jpg?resize=980:*"
-      },
-      {
-        "title": "Camisetas de punto",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/etro-camisetas-de-punto-6480d90416c35.jpg?resize=980:*"
-      },
-      {
-        "title": "Las camisas-polo",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/hermes-camisa-polo-6480d93042743.jpg?resize=980:*"
-      },
-      {
-        "title": "Transparencias para hombre",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/amiri-transparencias-6480d983aa272.jpg?resize=980:*"
-      },
-      {
-        "title": "Chanclas acolchadas",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/fendi-chanclas-acolchadas-6480d9a9d045d.jpg?resize=980:*"
-      },
-      {
-        "title": "Bermudas y polo con americana",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/bermudas-polo-y-americana-6480da1020c37.jpg?resize=980:*"
-      },
-      {
-        "title": "Tu traje más elegante con sandalias",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/brioni-traje-y-sandalias-6480da59bafdf.jpg?resize=980:*"
-      },
-      {
-        "title": "Los collares de conchas",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/dior-collar-conchas-6480da8c83d86.jpg?resize=980:*"
-      },
-      {
-        "title": "Calzoncillos a la vista",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/msgm-calzoncillos-a-la-vista-6480dab9001bd.jpg?resize=980:*"
-      },
-      {
-        "title": "Estampado de flores",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/erdem-banadores-estampado-flores-6480dadde09b2.jpg?resize=980:*"
-      },
-      {
-        "title": "El upgrade de los crocs",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/vuitton-zuecos-goma-6480db15e855e.jpg?resize=980:*"
-      }
-    ]
-  },
-  "trendFemale": {
-    "title": "Ropa para mujer más virales",
-    "description": "Si estás buscando ideas para empacar tu equipaje para estas vacaciones de verano en 2023, te presentamos quince pequeñas tendencias inspiradas en las pasarelas y el estilo urbano de diversas semanas de la moda internacionales.",
-    "trendsFemale": [
-      {
-        "title": "Transparencias",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/guest-is-seen-wearing-light-pink-ruffled-transparent-long-news-photo-1675091781.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Es la tendencia más potente de 2023. La hemos visto en vestidos de noche y en tops, pero llegará a su nivel máximo cuando comience el verano y los vestidos de red y los tejidos completamente translúcidos pasen a formar parte de nuestro día a día de la mano de estilismos tan preciosos como este."
-      },
-      {
-        "title": "Faldas pareo",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-8-648c1bd41d8bd.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Si eres de las que se curran los estilismos para ir a la playa, la falda tipo pareo de corte midi será tu mejor aliada. Algunas tienen el bikini a juego para que te hagas un ‘twin set’ ideal."
-      },
-      {
-        "title": "‘Denim party’",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tasha-ghouri-attends-the-ann-summers-party-as-the-new-face-news-photo-1675097025.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Es hora de llevar el ‘Y2K’ a su extremo y reinventar este tejido mítico en todas sus formas y texturas. Esta vez, tienes que meterte de lleno en el ‘mood’ transgresor y apostar por el ‘denim’ desgastado, con la inspiración de Blumarine y Diesel. Apuesta siempre por el tiro bajo, cortes anchos, tachuelas, brillos, rotos o volúmenes estratégicos como el de esta chaqueta. Y siempre en forma de ‘total look’."
-      },
-      {
-        "title": "Turbantes",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-6-648c1c511d552.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Tanto con el pelo recogido como suelto, este accesorio para el pelo levanta cualquier ‘look’ básico. Si escoges un diseño con detalles de lentejuelas, dorados o brillos, puede ser el complemento perfecto y original para tus vestidos de boda."
-      },
-      {
-        "title": "Cortes griegos",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/guest-seen-wearing-a-black-prada-bag-dark-shades-by-versace-news-photo-1675094384.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Es hora de vestirte como la diosa que eres con prendas solemnes, vaporosas, fluidas y con vuelo como esta. Y no, esto no tiene por qué resultar demasiado serio si te encargas de darle el toque dosmilero. ¿Cómo? Fácil: apostando por recursos como el tiro bajo, las ‘body chains’ o las gafas deportivas. Lo tienes."
-      },
-      {
-        "title": "Mules de tacón",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-2-648c1c511d63c.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Sin duda, el calzado más elegante del verano son los típicos salones de toda la vida, pero destalonados y a todo color. Los encontrarás en tonos vimos como el verde, el naranja y el sosa, pero también metalizados o con brillos. Quedan genial con pantalones cargo anchos."
-      },
-      {
-        "title": "Cortes griegos",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/guest-seen-wearing-a-black-prada-bag-dark-shades-by-versace-news-photo-1675094384.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Es hora de vestirte como la diosa que eres con prendas solemnes, vaporosas, fluidas y con vuelo como esta. Y no, esto no tiene por qué resultar demasiado serio si te encargas de darle el toque dosmilero. ¿Cómo? Fácil: apostando por recursos como el tiro bajo, las ‘body chains’ o las gafas deportivas. Lo tienes."
-      },
-      {
-        "title": "Bolsos de abalorios",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-7-648c1c511deb1.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Si además de los capazos de rafia o las bolsas de red, buscas un bolso original y divertido que te sirva tanto para la noche como para el día, hazte con un clutch, tote o bandolera fabricados con cuentas de colores."
-      },
-      {
-        "title": "Lencería a la vista",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/leonie-hanne-wears-rhinestones-long-heart-pendant-earrings-news-photo-1675094368.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "No cabe duda de que el verano de 2023 se ha propuesto sacar nuestra versión más sexy. Por eso, mostrar la lencería se va a convertir en nuestro primer paso para lograr un ‘lookazo’. En este sentido, te animamos a que apuestes por la versión más fantasía de la mano de brillos y ‘strass’. Además, si la llevas debajo de un ‘total look’ en denim, arrasarás."
-      },
-      {
-        "title": "Vestidos lenceros palabra de honor",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-5-648c1c513c108.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "¿Una predicción? Tu ‘slip dress’ esta temporada será blanco, largo hasta los pies y con escote palabra de honor. Póntelo con sandalias de plataforma y un choker, como Bella Hadid."
-      },
-      {
-        "title": "Joyas de ‘La Sirenita’",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-1-648c1c513e0d1.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "El estreno de la película de Ariel ha dejado muchas tendencias a pie de calle. Una de ellas son las joyas con forma de elementos marinos como conchas, caracoles, peces, corales..."
-      },
-      {
-        "title": "Estilo motero",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/fashion-week-guest-seen-wearing-full-miu-miu-look-a-brown-news-photo-1675094723.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Está claro que, ahora que suben las temperaturas, dejamos a un lado las chupas de cuero pero seguiremos conservado nuestra ‘motomami aesthetic’. ¿Cómo? Combinando prendas de efecto piel (los ‘shorts’ y los vestidos mini serán tus favoritos) con unas buenas botas moteras con hebillas."
-      },
-      {
-        "title": "Faldas vaqueras",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/nina-sandbech-is-seen-wearing-heart-shaped-denim-jacket-news-photo-1675086278.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "Junto con las cargo y ‘parachute’, son las que más se van a llevar en los próximos meses. Hacen tipazo, llaman la atención y son tan fáciles de combinar como si de unos ‘jeans’ se tratara. ¿Lo mejor? Si te las pones con unas botas altas, lucirás espectacular."
-      },
-      {
-        "title": "Tops vaporosos",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/tendencias-verano-2023-4-648c1c51507f6.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "El ‘match’ perfecto para tus pantalones fluidos y fresquitos de este verano son los tops semitransparente con volantes. Con un punto entre romántico y sexy, son perfectos para cualquier noche de verano."
-      },
-      {
-        "title": "Mary Janes",
-        "image": "https://hips.hearstapps.com/hmg-prod/images/model-walks-the-runway-during-the-coach-ready-to-wear-news-photo-1673974227.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        "description": "A estas alturas, nadie duda que son el zapato más tendencia. Lo llevarás en cada uno de tus ‘looks’ elegantes cuando comience a hacer calor. Si no te terminan de convencer y buscas una alternativa, prueba con las bailarinas."
-      }
-    ]
-  },
+  "men": [
+    {
+      "title": "Nuestras mejores camisetas",
+      "description": "Colección seleccionada de camisetas y tops para hombres con estilo único",
+      "link": "/hombre/camiseta",
+      "fetch": "genero=hombre&page=1&sizePage=20&filter=camiseta",
+      "id": "camisetas-de-hombre"
+    },
+    {
+      "title": "Pantalones de Moda",
+      "description": "Descubre nuestra colección de pantalones de moda para hombres",
+      "link": "/hombre/pantalon",
+      "fetch": "genero=hombre&page=1&sizePage=20&filter=pantalon",
+      "id": "pantalones-de-hombre"
+    },
+    {
+      "title": "Gorros Estilosos",
+      "description": "Completa tu look con nuestros gorros de moda para hombres",
+      "link": "/hombre/gorros",
+      "fetch": "genero=hombre&page=1&sizePage=20&filter=gorros",
+      "id": "gorros-de-hombre"
+    },
+    {
+      "title": "Accesorios Trendy",
+      "description": "Completa tu look con nuestros accesorios de moda para hombres",
+      "link": "/hombre/accesorios",
+      "fetch": "genero=hombre&page1&sizePage=20&filter=accesorios",
+      "id": "accesorios-de-hombre"
+    },
+    {
+      "title": "Calzado Elegante",
+      "description": "Encuentra el calzado perfecto para cualquier ocasión en nuestra colección",
+      "link": "/hombre/zapatos",
+      "fetch": "genero=hombre&page1&sizePage=20&filter=zapatos",
+      "id": "calzado-de-hombre"
+    }
+  ],
+  
+  
+  "women": [
+    {
+      "title": "Nuestras mejores camisetas",
+      "description": "Colección seleccionada de camisetas y tops para mujeres con estilo único",
+      "link": "/mujer/camiseta",
+      "fetch": "genero=mujer&page=1&sizePage=20&filter=camiseta",
+      "id": "camisetas-de-mujer"
+    },
+    {
+      "title": "Faldas y Pantalones de Moda",
+      "description": "Descubre nuestra colección de faldas y pantalones de moda para mujeres",
+      "link": "/mujer/pantalon",
+      "fetch": "genero=mujer&page=1&sizePage=20&filter=pantalon",
+      "id": "faldas-pantalones-de-mujer"
+    },
+    {
+      "title": "Accesorios Trendy",
+      "description": "Completa tu look con nuestros accesorios de moda para mujeres",
+      "link": "/mujer/accesorios",
+      "fetch": "genero=mujer&page1&sizePage=20&filter=accesorios",
+      "id": "accesorios-de-mujer"
+    },
+    {
+      "title": "Lencería Sensual",
+      "description": "Explora nuestra colección de lencería sensual para mujeres",
+      "link": "/mujer/camiseta",
+      "fetch": "genero=mujer&page=1&sizePage=20&filter=camiseta",
+      "id": "lenceria-de-mujer"
+    },
+    {
+      "title": "Calzado Elegante",
+      "description": "Encuentra el calzado perfecto para cualquier ocasión en nuestra colección",
+      "link": "/mujer/zapatos",
+      "fetch": "genero=mujer&page1&sizePage=20&filter=zapatos",
+      "id": "calzado-de-mujer"
+    }
+  ],
   "footer": {
     "sections": [
       {

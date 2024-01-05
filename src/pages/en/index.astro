@@ -1,15 +1,14 @@
 ---
-import Layout from "../../layouts/Layout.astro";
 import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
 import SectionIndex from "@components/SectionIndex.astro";
-import TopTendencias from "@components/TopTendencias.astro";
-import index from "@locales/en/index.json"
+import index from "@locales/en/index.json";
 import Faq from "@components/Faq.astro";
 import Descover from "@components/Descover.astro";
 import SectionPosts from "@components/SectionPosts.astro";
+import Footer from "@components/Footer.astro";
+import FrontPage from "@components/FrontPage.astro";
 import Categories from "@components/Categories.astro";
-
+import Layout from "@layouts/Layout.astro";
 ---
 
 <Layout
@@ -19,52 +18,34 @@ import Categories from "@components/Categories.astro";
   <div class="h-full">
     <Header />
 
-    <Categories sectionId="navbar-xxx" />
-    <main class="mt-20 flex flex-col gap-y-6">
-     <!-- <Nav/> -->
-      <SectionIndex
-        title={index.women.title}
-        inicio={0}
-        fin={100}
-        sections={false}
-        sectionId="moda-femenina"
-        background={true}
-        genero="mujer"
-        link="/en/women"
-        descripcion={index.women.description}
-      /> 
+    <FrontPage  gender="men" />
 
-      <SectionIndex
-      title={index.men.title}
-        inicio={0}
-        fin={100}
-        sectionId="moda-masculina"
-        sections={false}
-        link={`/en/men`}
-        genero="hombre"
-        descripcion={index.men.description}
-      />
-      <TopTendencias
-        title={index.trendFemale.title}
-        sectionId="tendencias-femenina"
-        link="https://www.cosmopolitan.com/es/moda/tendencias-moda/g42228427/tendencias-verano-2023/"
-        trends={index.trendFemale.trendsFemale}
-        descripcion={index.trendFemale.description}
-      />
-      <TopTendencias
-        title={index.trendMale.title}
-        sectionId="tendencias-masculinas"
-        link="https://www.esquire.com/es/moda-hombre/a44120295/tendencias-verano-moda-hombre/"
-        trends={index.trendMale.trendsMale}
-        descripcion={index.trendMale.description}
-      />
-      
+    <Categories  gender="men"/>
+
+    <main
+      class="flex flex-col gap-y-6 max-w-7xl mx-auto xl:mt-[330px] mt-[580px]"
+    >
+      {
+        index["men"].map((section) => (
+          <SectionIndex
+            title={section.title}
+            sectionId={section.id}
+            link={section.link}
+            urlFetch={section.fetch}
+            descripcion={section.description}
+          />
+        ))
+      }
+
+
+
       <Faq />
 
       <Descover />
 
-      <SectionPosts/>
+      <SectionPosts />
     </main>
     <Footer />
   </div>
 </Layout>
+

@@ -1,0 +1,108 @@
+---
+import { getLangFromUrl } from "src/i18n/utils";
+import videomen from "../assets/index/videoyellow.mp4"
+import videowomen from "../assets/index/videorosa.mp4"
+import imagemen from "../assets/index/menyellow.jpg"
+import imagewomen from "../assets/index/womenrosa.jpg"
+
+const lang = getLangFromUrl(Astro.url);
+
+interface Props {
+  gender: Gender;
+}
+
+type Gender = "men" | "women";
+
+const { gender } = Astro.props;
+
+const background = gender === "men" ? "bg-[#FEFF99]" : "bg-pink-500";
+const textColor = gender === "men" ? "text-black text-opacity-60" : "text-purple-200";
+
+const texts = {
+  men: {
+    en: {
+      title: "Fresh Fashion <br /> Men's Style",
+      notFound: "Your browser does not support the video tag.",
+      description:
+        "The best for you, exclusive clothing for guys, stylish, confident, handsome, empowered",
+    },
+    es: {
+      title: "ROPA DE MARCA <br /> MODA MASCULINA",
+      notFound: "Tu navegador no soporta el tag de video.",
+      description:
+        "Lo mejor para ti, ropa exclusiva para chicos, con estilo, seguros, guapos, empoderados",
+    },
+    video: videomen,
+    image: imagemen.src,
+  },
+  women: {
+    en: {
+      title: "Fresh Fashion <br /> Women's Style",
+      notFound: "Your browser does not support the video tag.",
+      description:
+        "The best for you, exclusive clothing for girls, sexy, radiant, beautiful, empowered",
+    },
+    es: {
+      title: "ROPA DE MARCA <br /> MODA FEMENINA",
+      notFound: "Tu navegador no soporta el tag de video.",
+      description:
+        "Lo mejor para tí, ropa exlusiva para chicas, sexis, radiantes, bellas,empoderadas",
+    },
+    video: videowomen,
+    image: imagewomen.src,
+  },
+};
+---
+
+<div class="max-w-7xl mx-auto relative mt-10 flex flex-col items-center">
+  <span
+    class={`${background} absolute bottom-0 w-full h-[20rem] flex justify-center cuadro translate-y-32 xl:translate-y-10`}
+  >
+  </span>
+
+  <div
+    class="absolute bottom-0 w-full h-[100px] lg:h-[150px] flex justify-center translate-y-5 lg:translate-y-10 xl:-translate-y-16"
+  >
+    <div
+      class={`${background} px-12 h-full absolute flex items-center justify-center -rotate-2`}
+    >
+      <h1
+        class={`font-fugazOne text-4xl lg:text-5xl 2xl:text-6xl ${textColor}`}
+        set:html={texts[gender][lang].title}
+      />
+    </div>
+  </div>
+
+  <video
+    poster={texts[gender].image}
+    style="width: 100%; height: 100%;"
+    class=""
+    autoplay=""
+    muted=""
+    playsinline=""
+    loop=""
+    src={texts[gender].video}
+  >
+    {texts[gender][lang].notFound}
+  </video>
+
+  <div
+    class="absolute bottom-0 font-medium translate-y-20 xl:-translate-y-5 flex justify-center items-center flex-col"
+  >
+    <p
+      class={`text-center text-lg lg:text-2xl translate-y-2  w-10/12 ${textColor} `}
+    >
+      {texts[gender][lang].description}
+    </p>
+  </div>
+</div>
+
+<style>
+  .cuadro {
+    clip-path: polygon(0 55%, 100% 50%, 100% 100%, 0% 100%);
+
+    @media (min-width: 1536px) {
+      clip-path: polygon(0 45%, 100% 30%, 100% 100%, 0% 100%);
+    }
+  }
+</style>

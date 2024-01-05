@@ -1,101 +1,201 @@
 ---
 import { getLangFromUrl } from "src/i18n/utils";
-const { sectionId, background } = Astro.props;
 
-// const lista = ;
 const lang = getLangFromUrl(Astro.url);
 
-const categories = {
-  es: [
-    {
-      id: "1",
-      text: "Ropa para hombres",
-      src: "/videos/hombre1.mp4",
-      url: "/hombre",
+interface Props {
+  gender: Gender;
+}
+
+type Gender = "men" | "women";
+
+const { gender } = Astro.props;
+
+const background = gender === "men" ? "bg-[#FEFF99] hover:bg-[#FDFF64] text-black" : "bg-pink-500 hover:bg-pink-600 text-purple-200"
+
+const texts = {
+  men: {
+  en: {
+    title: "Browse through our categories",
+    categoria1: {
+      title: "Pants",
+      description:
+        "Men's Pants: Elevate your style with comfortable and stylish pants.",
+        url: "/en/men/pants"
     },
-    {
-      id: "2",
-      text: "Ropa para mujeres",
-      src: "/videos/mujer1.mp4",
-      url: "/mujer",
+    categoria2: {
+      title: "Hats",
+      description: "Explore a variety of fashionable hats for every occasion.",
+      url: "/en/men/caps"
     },
-    {
-      id: "3",
-      text: "Ropa para niños",
-      src: "/videos/nino1.mp4",
-      url: "/nene",
+    categoria3: {
+      title: "Shirts",
+      description:
+        "Men's Shirts: Transform your day with stylish and personality-filled shirts.",
+        url: "/en/men/t-shirt"
     },
-    {
-      id: "4",
-      text: "Ropa para bebes",
-      src: "/videos/bebe1.mp4",
-      url: "/bebe",
+    categoria4: {
+      title: "Footwear",
+      description: "Discover trendy shoes to complete your fashionable look.",
+      url: "/en/men/shoes"
     },
-  ],
-  en: [
-    {
-      id: "1",
-      text: "Clothing for men",
-      src: "/videos/hombre1.mp4",
-      url: "/en/men",
+    categoria5: {
+      title: "Accessories",
+      description: "Collection of elegant accessories to enhance your style.",
+      url: "/en/men/accessories"
     },
-    {
-      id: "2",
-      text: "Clothing for women",
-      src: "/videos/mujer1.mp4",
-      url: "/en/women",
+  },
+  es: {
+    title: "Navega entre nuestras categorías",
+    categoria1: {
+      title: "Pantalones",
+      description:
+        "Pantalones de hombre: Eleva tu estilo con pantalones cómodos y elegantes.",
+      url: "/hombre/pantalon"
     },
-    {
-      id: "3",
-      text: "Clothing for children",
-      src: "/videos/nino1.mp4",
-      url: "/en/child",
+    categoria2: {
+      title: "Gorros",
+      description: "Explora una variedad de gorros a la moda para cada ocasión.",
+      url: "/hombre/gorros"
     },
-    {
-      id: "4",
-      text: "Clothing for babies",
-      src: "/videos/bebe1.mp4",
-      url: "/en/baby",
+    categoria3: {
+      title: "Camisetas",
+      description:
+        "Camisetas de hombre: Transforma tu día con camisetas elegantes y llenas de personalidad.",
+        url: "/hombre/pantalon"
     },
-  ],
+    categoria4: {
+      title: "Calzados",
+      description: "Descubre zapatos a la moda para completar tu look.",
+      url: "/hombre/zapatos"
+    },
+    categoria5: {
+      title: "Accesorios",
+      description: "Colección de accesorios elegantes para realzar tu estilo.",
+      url: "/hombre/accesorios"
+    },
+  },
+},
+ women: {
+  en: {
+    title: "Browse through our categories",
+    categoria1: {
+      title: "T-Shirts",
+      description:
+        "Women's T-Shirts: Transform your day with style and personality.",
+        url: "/en/women/t-shirt"
+    },
+    categoria2: {
+      title: "Skirts and Pants",
+      description: "Find fashionable skirts and pants to look spectacular.",
+      url: "/en/women/pants"
+    },
+    categoria3: {
+      title: "Accessories",
+      description:
+        "Collection of elegant accessories to complement your style.",
+        url: "/en/women/accessories"
+    },
+    categoria4: {
+      title: "Lingerie",
+      description:
+        "Discover sensual and comfortable lingerie to enhance your style.",
+        url: "/en/women/t-shirt"
+    },
+    categoria5: {
+      title: "Footwear",
+      description: "The trendy shoes you're looking for to complete your look.",
+      url: "/en/women/shoes"
+    },
+  },
+  es: {
+    title: "Navega entre nuestras categorias",
+    categoria1: {
+      title: "Camisetas",
+      description:
+        "Camisetas de mujer: Transforma tu día con estilo y personalidad.",
+        url: "/mujer/camiseta"
+    },
+    categoria2: {
+      title: "Faldas y Pantalones",
+      description:
+        "Encuentra faldas y pantalones a la moda para lucir espectacular.",
+        url: "/mujer/pantalon"
+    },
+    categoria3: {
+      title: "Accesorios",
+      description:
+        "Colección de accesorios elegantes para complementar tu estilo.",
+        url: "/mujer/accesorios"
+    },
+    categoria4: {
+      title: "Lenceria",
+      description: "Descubre lencería sensual y cómoda para realzar tu estilo.",
+      url: "/mujer/camiseta"
+    },
+    categoria5: {
+      title: "Calzados",
+      description: "Los zapatos de moda que buscas para completar tu look.",
+      url: "/mujer/zapatos"
+    },
+  },
+ },
+ 
 };
 ---
 
-<astro-greet class={`${background && ""}`} data-message={sectionId}>
-  <nav class="flex justify-center mt-20 mb-10 px-5">
-    <ul id={sectionId} class="md:gap-x-1 grid grid-cols-2 lg:grid-cols-4 ">
-      {
-        categories[lang].map((item: any) => (
-          <li class="relative group">
-            <a href={item.url} class="relative group-hover:z-20">
-              <video autoplay loop muted class="w-full block">
-                <source src={item.src} type="video/mp4"  />
-                video no compatible
-              </video>
-              <p class="absolute bottom-0 right-0 z-10 text-white text-lg sm:text-2xl md:text-3xl  font-fugazOne px-2">
-                {item.text}
-              </p>
-            </a>
-            <div class="bg-black absolute top-0 w-full h-full bg-opacity-30 group-hover:bg-opacity-0 ease-in-out duration-300 group-hover:z-0" />
-          </li>
-        ))
-      }
-    </ul>
-  </nav>
-</astro-greet>
+<div class="max-w-7xl mx-auto mt-36 xl:mt-12 pb-20">
+  <h2 class="text-2xl md:text-3xl px-5 text-center font-fugazOne py-5">
+    {texts[gender][lang].title}
+  </h2>
 
-<script>
-  import Conveyer from "@egjs/conveyer";
+  <div class="grid gap-5 relative h-32 grid-cols-2 xl:grid-cols-3">
+    <a href={texts[gender][lang].categoria1.url} class={`category ${background} `}>
+      <h2 class="title">{texts[gender][lang].categoria1.title}</h2>
+      <p class="parrafo">
+        {texts[gender][lang].categoria1.description}
+      </p>
+    </a>
+    <a  href={texts[gender][lang].categoria2.url} class={`category ${background} `}>
+      <h2 class="title">{texts[gender][lang].categoria2.title}</h2>
+      <p class="parrafo">
+        {texts[gender][lang].categoria2.description}
+      </p>
+    </a>
 
-  class AstroGreet extends HTMLElement {
-    constructor() {
-      super();
+    <a  href={texts[gender][lang].categoria3.url}
+      class={`${background} md:px-10  w-full h-60 overflow-hidden  ease-in-out duration-300 flex justify-center items-center flex-col px-2 xl:h-full row-span-2 cursor-default`}
+    >
+      <h2 class="title">{texts[gender][lang].categoria3.title}</h2>
+      <p class="parrafo">
+        {texts[gender][lang].categoria3.description}
+      </p>
+    </a>
+    <a  href={texts[gender][lang].categoria4.url} class={`category ${background} `}>
+      <h2 class="title">{texts[gender][lang].categoria4.title}</h2>
+      <p class="parrafo">
+        {texts[gender][lang].categoria4.description}
+      </p>
+    </a>
+    <a  href={texts[gender][lang].categoria5.url} class={`category ${background}  col-span-2 xl:col-span-1  -translate-y-5 xl:-translate-y-0`}>
+      <h2 class="title">{texts[gender][lang].categoria5.title}</h2>
+      <p class="parrafo">
+        {texts[gender][lang].categoria5.description}
+      </p>
+    </a>
+  </div>
+</div>
 
-      const sectionId = this.dataset.message;
-      const formatId = `#${sectionId}`;
-      new Conveyer(formatId);
-    }
+<style>
+  .category {
+    @apply w-full h-60 overflow-hidden relative  ease-in-out duration-300 flex justify-center items-center flex-col px-2 md:px-10 cursor-default
   }
 
-  customElements.define("astro-greet", AstroGreet);
-</script>
+  .title {
+    @apply font-fugazOne text-3xl text-center;
+  }
+
+  .parrafo {
+    @apply text-center text-xl;
+  }
+</style>

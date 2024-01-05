@@ -1,0 +1,52 @@
+---
+import Header from "@components/Header.astro";
+import SectionIndex from "@components/SectionIndex.astro";
+import index from "@locales/es/index.json";
+import Faq from "@components/Faq.astro";
+import Descover from "@components/Descover.astro";
+import SectionPosts from "@components/SectionPosts.astro";
+import Footer from "@components/Footer.astro";
+import FrontPage from "@components/FrontPage.astro";
+import Categories from "@components/Categories.astro";
+import Layout from "@layouts/Layout.astro";
+
+---
+
+<Layout
+  title="Moda Link"
+  description="En moda link, nos dedicamos a seleccionar cuidadosamente ropa de alta calidad que refleja estilo y personalidad para hombres y mujeres con buen gusto."
+>
+  <div class="h-full">
+    <Header />
+
+    <FrontPage gender="men" />
+
+    <Categories gender="men" />
+
+    <main
+      class="flex flex-col gap-y-6 max-w-7xl mx-auto xl:mt-[330px] mt-[580px]"
+    >
+      {
+        index["men"].map((section) => (
+          <SectionIndex
+            title={section.title}
+            sectionId={section.id}
+            link={section.link}
+            urlFetch={section.fetch}
+            descripcion={section.description}
+          />
+        ))
+      }
+
+
+
+      <Faq />
+
+      <Descover />
+
+      <SectionPosts />
+    </main>
+    <Footer />
+  </div>
+</Layout>
+

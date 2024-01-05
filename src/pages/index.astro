@@ -1,15 +1,13 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Header from "@components/Header.astro";
-import Footer from "@components/Footer.astro";
 import SectionIndex from "@components/SectionIndex.astro";
-import TopTendencias from "@components/TopTendencias.astro";
-import Nav from "@components/Nav.astro";
 import index from "@locales/es/index.json";
 import Faq from "@components/Faq.astro";
 import Descover from "@components/Descover.astro";
 import SectionPosts from "@components/SectionPosts.astro";
-import SliderCategories from "@components/Categories.astro";
+import Footer from "@components/Footer.astro";
+import FrontPage from "@components/FrontPage.astro";
 import Categories from "@components/Categories.astro";
 ---
 
@@ -19,55 +17,35 @@ import Categories from "@components/Categories.astro";
 >
   <div class="h-full">
     <Header />
-    
-    <Categories sectionId="navbar-xxx" />
-    <main class="flex flex-col gap-y-6">
+
+    <FrontPage  gender="men" />
+
+    <Categories  gender="men"/>
+
+    <main
+      class="flex flex-col gap-y-6 max-w-7xl mx-auto xl:mt-[330px] mt-[580px]"
+    >
+      {
+        index["men"].map((section) => (
+          <SectionIndex
+            title={section.title}
+            sectionId={section.id}
+            link={section.link}
+            urlFetch={section.fetch}
+            descripcion={section.description}
+          />
+        ))
+      }
 
 
-      <SectionIndex
-        title={index.women.title}
-        inicio={0}
-        fin={100}
-        sections={false}
-        sectionId="moda-femenina"
-        background={true}
-        genero="mujer"
-        link="/mujer"
-        descripcion={index.women.description}
-      />
-
-      <SectionIndex
-        title={index.men.title}
-        inicio={0}
-        fin={100}
-        sectionId="moda-masculina"
-        sections={false}
-        link={`/hombre`}
-        genero="hombre"
-        descripcion={index.men.description}
-      />
-      <TopTendencias
-        title={index.trendFemale.title}
-        sectionId="tendencias-femenina"
-        link="https://www.cosmopolitan.com/es/moda/tendencias-moda/g42228427/tendencias-verano-2023/"
-        trends={index.trendFemale.trendsFemale}
-        descripcion={index.trendFemale.description}
-      />
-      <TopTendencias
-        title={index.trendMale.title}
-        sectionId="tendencias-masculinas"
-        link="https://www.esquire.com/es/moda-hombre/a44120295/tendencias-verano-moda-hombre/"
-        trends={index.trendMale.trendsMale}
-        descripcion={index.trendMale.description}
-      />
 
       <Faq />
 
       <Descover />
 
-      <SectionPosts/>
-
-      <Footer />
+      <SectionPosts />
     </main>
+    <Footer />
   </div>
 </Layout>
+
