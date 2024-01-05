@@ -16,7 +16,8 @@ type Gender = "men" | "women";
 const { gender } = Astro.props;
 
 const background = gender === "men" ? "bg-[#FEFF99]" : "bg-pink-500";
-const textColor = gender === "men" ? "text-black text-opacity-60" : "text-purple-200";
+const textColor = gender === "men" ? "text-black text-opacity-70" : "text-purple-200 text-opacity-100";
+const titleColor = gender === "men" ? "text-black " : "text-purple-200";
 
 const texts = {
   men: {
@@ -67,7 +68,7 @@ const texts = {
       class={`${background} px-12 h-full absolute flex items-center justify-center -rotate-2`}
     >
       <h1
-        class={`font-fugazOne text-4xl lg:text-5xl 2xl:text-6xl ${textColor}`}
+        class={`font-fugazOne text-4xl lg:text-5xl 2xl:text-6xl ${titleColor}`}
         set:html={texts[gender][lang].title}
       />
     </div>
