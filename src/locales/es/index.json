@@ -25,14 +25,14 @@
       "title": "Accesorios Trendy",
       "description": "Completa tu look con nuestros accesorios de moda para hombres",
       "link": "/hombre/accesorios",
-      "fetch": "genero=hombre&page1&sizePage=20&filter=accesorios",
+      "fetch": "genero=hombre&page=1&sizePage=20&filter=accesorios",
       "id": "accesorios-de-hombre"
     },
     {
       "title": "Calzado Elegante",
       "description": "Encuentra el calzado perfecto para cualquier ocasión en nuestra colección",
       "link": "/hombre/zapatos",
-      "fetch": "genero=hombre&page1&sizePage=20&filter=zapatos",
+      "fetch": "genero=hombre&page=1&sizePage=20&filter=zapatos",
       "id": "calzado-de-hombre"
     }
   ],
@@ -57,7 +57,7 @@
       "title": "Accesorios Trendy",
       "description": "Completa tu look con nuestros accesorios de moda para mujeres",
       "link": "/mujer/accesorios",
-      "fetch": "genero=mujer&page1&sizePage=20&filter=accesorios",
+      "fetch": "genero=mujer&page=1&sizePage=20&filter=accesorios",
       "id": "accesorios-de-mujer"
     },
     {
@@ -71,7 +71,7 @@
       "title": "Calzado Elegante",
       "description": "Encuentra el calzado perfecto para cualquier ocasión en nuestra colección",
       "link": "/mujer/zapatos",
-      "fetch": "genero=mujer&page1&sizePage=20&filter=zapatos",
+      "fetch": "genero=mujer&page=1&sizePage=20&filter=zapatos",
       "id": "calzado-de-mujer"
     }
   ],

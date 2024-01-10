@@ -150,20 +150,21 @@ const texts = {
   </h2>
 
   <div class="grid gap-5 relative h-32 grid-cols-2 xl:grid-cols-3">
-    <a href={texts[gender][lang].categoria1.url} class={`category ${background} `}>
+    <a aria-label={`${texts[gender][lang].categoria1.title} ${texts[gender][lang].categoria1.description}`} href={texts[gender][lang].categoria1.url} class={`category ${background} `}>
       <h2 class="title">{texts[gender][lang].categoria1.title}</h2>
       <p class="parrafo">
         {texts[gender][lang].categoria1.description}
       </p>
     </a>
-    <a  href={texts[gender][lang].categoria2.url} class={`category ${background} `}>
+    
+    <a aria-label={`${texts[gender][lang].categoria2.title} ${texts[gender][lang].categoria2.description}`}   href={texts[gender][lang].categoria2.url} class={`category ${background} `}>
       <h2 class="title">{texts[gender][lang].categoria2.title}</h2>
       <p class="parrafo">
         {texts[gender][lang].categoria2.description}
       </p>
     </a>
 
-    <a  href={texts[gender][lang].categoria3.url}
+    <a  aria-label={`${texts[gender][lang].categoria3.title} ${texts[gender][lang].categoria3.description}`}   href={texts[gender][lang].categoria3.url}
       class={`${background} md:px-10  w-full h-60 overflow-hidden  ease-in-out duration-300 flex justify-center items-center flex-col px-2 xl:h-full row-span-2 cursor-default`}
     >
       <h2 class="title">{texts[gender][lang].categoria3.title}</h2>
@@ -171,13 +172,15 @@ const texts = {
         {texts[gender][lang].categoria3.description}
       </p>
     </a>
-    <a  href={texts[gender][lang].categoria4.url} class={`category ${background} `}>
+
+    <a  aria-label={`${texts[gender][lang].categoria4.title} ${texts[gender][lang].categoria4.description}`}   href={texts[gender][lang].categoria4.url} class={`category ${background} `}>
       <h2 class="title">{texts[gender][lang].categoria4.title}</h2>
       <p class="parrafo">
         {texts[gender][lang].categoria4.description}
       </p>
     </a>
-    <a  href={texts[gender][lang].categoria5.url} class={`category ${background}  col-span-2 xl:col-span-1  -translate-y-5 xl:-translate-y-0`}>
+
+    <a  aria-label={`${texts[gender][lang].categoria5.title} ${texts[gender][lang].categoria5.description}`}   href={texts[gender][lang].categoria5.url} class={`category ${background}  col-span-2 xl:col-span-1  -translate-y-5 xl:-translate-y-0`}>
       <h2 class="title">{texts[gender][lang].categoria5.title}</h2>
       <p class="parrafo">
         {texts[gender][lang].categoria5.description}
@@ -185,6 +188,7 @@ const texts = {
     </a>
   </div>
 </div>
+
 
 <style>
   .category {

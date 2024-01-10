@@ -68,7 +68,7 @@ const texts = {
       class={`${background} px-12 h-full absolute flex items-center justify-center -rotate-2`}
     >
       <h1
-        class={`font-fugazOne text-4xl lg:text-5xl 2xl:text-6xl ${titleColor}`}
+        class={`font-fugazOne text-2xl md:text-4xl lg:text-5xl 2xl:text-6xl ${titleColor}`}
         set:html={texts[gender][lang].title}
       />
     </div>
@@ -91,7 +91,7 @@ const texts = {
     class="absolute bottom-0 font-medium translate-y-20 xl:-translate-y-5 flex justify-center items-center flex-col"
   >
     <p
-      class={`text-center text-lg lg:text-2xl translate-y-2  w-10/12 ${textColor} `}
+      class={`text-center md:text-lg lg:text-2xl translate-y-2  w-10/12 ${textColor} `}
     >
       {texts[gender][lang].description}
     </p>

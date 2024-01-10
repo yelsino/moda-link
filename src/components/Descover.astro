@@ -56,6 +56,7 @@ const discoveries = {
       discoveries[lang].tags.map((tag) => (
         <li>
           <a
+            aria-label={tag.tag}
             class="transition group inline-grid grid-flow-col justify-center items-center rounded-lg   bg-white  hover:text-color_pink1 border border-neutral-200 hover:border-color_pink1 py-2 px-5 gap-2 ease-in-out duration-300 text-sm md:text-base"
             href={tag.url}
           >
