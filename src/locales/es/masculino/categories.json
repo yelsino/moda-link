@@ -2,26 +2,449 @@
   {
     "params": {
       "category": "accesorios"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "bufandas",
+          "url": "/hombre/accesorios-bufandas"
+        },
+        {
+          "name": "corbatas",
+          "url": "/hombre/accesorios-corbatas"
+        },
+        {
+          "name": "cinturones",
+          "url": "/hombre/accesorios-cinturones"
+        },
+        {
+          "name": "carteras",
+          "url": "/hombre/accesorios-carteras"
+        },
+        {
+          "name": "relojes",
+          "url": "/hombre/accesorios-relojes"
+        },
+        {
+          "name": "joyería",
+          "url": "/hombre/accesorios-joyeria"
+        },
+        {
+          "name": "gafas",
+          "url": "/hombre/accesorios-gafas"
+        }
+       
+      ]
     }
   },
   {
     "params": {
       "category": "camiseta"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "básicas",
+          "url": "/hombre/camisetas-basicas"
+        },
+        {
+          "name": "estampadas",
+          "url": "/hombre/camisetas-estampadas"
+        },
+        {
+          "name": "slim fit",
+          "url": "/hombre/zapatos-slim-fit"
+        },
+        {
+          "name": "algodón orgánico",
+          "url": "/hombre/camisetas-algodon-organico"
+        },
+        {
+          "name": "deportivas",
+          "url": "/hombre/camisetas-deportivas"
+        },
+        {
+          "name": "vintage",
+          "url": "/hombre/camisetas-vintage"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "pantalon"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "jeans",
+          "url": "/hombre/pantalon-jeans"
+        },
+        {
+          "name": "casuales",
+          "url": "/hombre/pantalon-casuales"
+        },
+        {
+          "name": "formales",
+          "url": "/hombre/pantalon-formales"
+        },
+        {
+          "name": "leggings",
+          "url": "/hombre/pantalon-leggings"
+        },
+        {
+          "name": "shorts",
+          "url": "/hombre/pantalon-short"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "gorros"
+    },
+
+    "props": {
+      "subcategories": [
+        {
+          "name": "de lana",
+          "url": "/hombre/gorros-de-lana"
+        },
+        {
+          "name": "de fieltro",
+          "url": "/hombre/gorros-de-fieltro"
+        },
+        {
+          "name": "de punto",
+          "url": "/hombre/gorros-de-punto"
+        },
+        {
+          "name": "de invierno",
+          "url": "/hombre/"
+        },
+        {
+          "name": "deportivos",
+          "url": "/hombre/gorros-deportivos"
+        },
+        {
+          "name": "urbanos",
+          "url": "/hombre/gorros-urbanos"
+        },
+        {
+          "name": "playeros",
+          "url": "/hombre/gorros-playeros"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "zapatos"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "zapatos formales",
+          "url": "/hombre/zapatos-formales"
+        },
+        {
+          "name": "zapatillas deportivas",
+          "url": "/hombre/zapatillas-deportivas"
+        },
+        {
+          "name": "sandalias y chancletas",
+          "url": "/hombre/sandalias-chancletas"
+        },
+        {
+          "name": "zapatillas de cuero",
+          "url": "/hombre/zapatillas-de-cuero"
+        }
+      ]
     }
-  }
+  },
+
+
+
+  {
+    "params": {
+      "category": "accesorios-bufandas"
+    },
+    "props": {
+      "subCategory": "bufandas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accesorios-corbatas"
+    },
+    "props": {
+      "subCategory": "corbatas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accesorios-cinturones"
+    },
+    "props": {
+      "subCategory": "cinturones",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accesorios-carteras"
+    },
+    "props": {
+      "subCategory": "carteras",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accesorios-relojes"
+    },
+    "props": {
+      "subCategory": "relojes",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accesorios-joyeria"
+    },
+    "props": {
+      "subCategory": "joyería",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accesorios-gafas"
+    },
+    "props": {
+      "subCategory": "gafas",
+      "subcategories": []
+    }
+  },
+
+
+
+
+
+  {
+    "params": {
+      "category": "camisetas-basicas"
+    },
+    "props": {
+      "subCategory": "básicas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-estampadas"
+    },
+    "props": {
+      "subCategory": "estampadas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "zapatos-slim-fit"
+    },
+    "props": {
+      "subCategory": "slim fit",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-algodon-organico"
+    },
+    "props": {
+      "subCategory": "algodón orgánico",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-deportivas"
+    },
+    "props": {
+      "subCategory": "deportivas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-vintage"
+    },
+    "props": {
+      "subCategory": "vintage",
+      "subcategories": []
+    }
+  },
+
+
+
+
+  {
+      "params": {
+        "category": "pantalon-jeans"
+      },
+      "props": {
+        "subCategory": "jeans",
+        "subcategories": []
+      }
+  },
+  {
+      "params": {
+        "category": "pantalon-casuales"
+      },
+      "props": {
+        "subCategory": "casuales",
+        "subcategories": []
+      }
+  },
+  {
+      "params": {
+        "category": "pantalon-formales"
+      },
+      "props": {
+        "subCategory": "formales",
+        "subcategories": []
+      }
+  },
+  {
+      "params": {
+        "category": "pantalon-leggings"
+      },
+      "props": {
+        "subCategory": "leggings",
+        "subcategories": []
+      }
+  },
+  {
+      "params": {
+        "category": "pantalon-short"
+      },
+      "props": {
+        "subCategory": "shorts",
+        "subcategories": []
+      }
+  },
+  
+
+
+
+    {
+      "params": {
+        "category": "gorros-de-lana"
+      },
+      "props": {
+        "subCategory": "de lana",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "gorros-de-fieltro"
+      },
+      "props": {
+        "subCategory": "de fieltro",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "gorros-de-punto"
+      },
+      "props": {
+        "subCategory": "de punto",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "gorros-de-invierno"
+      },
+      "props": {
+        "subCategory": "de invierno",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "gorros-deportivos"
+      },
+      "props": {
+        "subCategory": "deportivos",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "gorros-urbanos"
+      },
+      "props": {
+        "subCategory": "urbanos",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "gorros-playeros"
+      },
+      "props": {
+        "subCategory": "playeros",
+        "subcategories": []
+      }
+    },
+  
+
+
+
+    {
+        "params": {
+          "category": "zapatos-formales"
+        },
+        "props": {
+          "subCategory": "zapatos formales",
+          "subcategories": []
+        }
+    },
+    {
+        "params": {
+          "category": "zapatillas-deportivas"
+        },
+        "props": {
+          "subCategory": "zapatillas deportivas",
+          "subcategories": []
+        }
+    },
+    {
+        "params": {
+          "category": "sandalias-chancletas"
+        },
+        "props": {
+          "subCategory": "sandalias y chancletas",
+          "subcategories": []
+        }
+    },
+    {
+        "params": {
+          "category": "zapatillas-de-cuero"
+        },
+        "props": {
+          "subCategory": "zapatillas de cuero",
+          "subcategories": []
+        }
+    }
+    
+
+
+
 ]

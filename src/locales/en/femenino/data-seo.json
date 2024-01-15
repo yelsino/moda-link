@@ -1,32 +1,240 @@
 [
   {
-    "title": "Women's Fashion: Hats and Caps for Women | Moda Link",
-    "nombre": "caps",
-    "nombreSeo": "hats and caps for women",
-    "descripcion": "Discover a wide selection of hats and caps for women at Moda Link. Find everything from elegant hats to sporty caps, perfect to complement your style for any occasion."
+   "metitle": "Accessories for women | Fashion Link",
+   "title": "Accessories for women",
+   "name": "accessories",
+   "nameSeo": "accessories for women",
+   "description": "Discover a wide range of accessories for women at Moda Link. Find perfect accessories to enhance your style, from elegant ties to modern belts and much more."
   },
   {
-    "title": "Women's Fashion: Fashion Blouses and Tops | Moda Link",
-    "nombre": "t-shirt",
-    "nombreSeo": "blouses and tops for women",
-    "descripcion": "Explore our collection of fashion blouses and tops for women at Moda Link. Find everything from classic designs to the latest trends, ideal for creating versatile and fashionable looks."
+   "metitle": "T-shirts for women | Fashion Link",
+   "title": "T-shirts for women",
+   "name": "t-shirt",
+   "nameSeo": "t-shirts for women",
+   "description": "Explore our collection of women's t-shirts at Moda Link. From classic designs to the latest trends, find comfortable and stylish t-shirts for every occasion."
   },
   {
-    "title": "Women's Fashion: Trendy Pants and Jeans | Moda Link",
-    "nombre": "pants",
-    "nombreSeo": "pants and jeans for women",
-    "descripcion": "Find a wide variety of trendy pants and jeans for women at Moda Link. From casual pants to modern jeans, find the perfect fit for any occasion."
+   "metitle": "Pants for women | Fashion Link",
+   "title": "Pants for women",
+   "name": "pants",
+   "nameSeo": "pants for women",
+   "description": "Find women's pants that combine comfort and style at Moda Link. Discover a variety of designs, from casual pants to elegant options for a sophisticated look."
   },
   {
-    "title": "Women's Fashion: Stylish Accessories | Moda Link",
-    "nombre": "accessories",
-    "nombreSeo": "stylish accessories for women",
-    "descripcion": "Discover a selection of stylish accessories for women at Moda Link. Complete your look with our modern accessories, from elegant jewelry to fashionable handbags."
+   "metitle": "Caps for women | Fashion Link",
+   "title": "Caps for women",
+   "name": "caps",
+   "nameSeo": "caps for women",
+   "description": "Discover a selection of caps for women at Moda Link. Complete your outfit with our modern and functional hats, available in a wide range of styles and colors."
   },
   {
-    "title": "Women's Fashion: Trendy Footwear | Moda Link",
-    "nombre": "shoes",
-    "nombreSeo": "trendy footwear for women",
-    "descripcion": "Explore our collection of trendy footwear for women at Moda Link. Find everything from formal shoes to more casual options that suit your style and make you stand out."
+   "metitle": "Shoes for women | Fashion Link",
+   "title": "Women's shoes",
+   "name": "shoes",
+   "nameSeo": "shoes for women",
+   "description": "Explore our collection of women's shoes at Moda Link. Find stylish, versatile footwear that will complement your style, from formal shoes to more casual options."
+  },
+  {
+   "metitle": "Scarves for women | Fashion Link",
+   "title": "Scarves for women",
+   "name": "accessories-scarves",
+   "nameSeo": "scarves for women",
+   "description": "Add a touch of style and warmth to your look with our scarves for women at Moda Link. Discover a variety of designs and materials to complement your unique style."
+  },
+  {
+   "metitle": "Ties for women | Fashion Link",
+   "title": "Ties for women",
+   "name": "accessories-ties",
+   "nameSeo": "ties for women",
+   "description": "Complete your outfit with elegance thanks to our ties for women at Moda Link. Explore a wide selection of designs to suit any occasion."
+  },
+  {
+   "metitle": "Belts for women | Fashion Link",
+   "title": "Belts for women",
+   "name": "accessories-belts",
+   "nameSeo": "belts for women",
+   "description": "Define your style with our belts for women at Moda Link. Find options ranging from classic to modern to enhance your image with elegance."
+  },
+  {
+   "metitle": "Wallets for women | Fashion Link",
+   "title": "Wallets for women",
+   "name": "accessories-wallets",
+   "nameSeo": "wallets for women",
+   "description": "Organize your belongings in style thanks to our women's wallets at Moda Link. Discover functional and stylish options to meet your daily needs."
+  },
+  {
+   "metitle": "Watches for women | Fashion Link",
+   "title": "Watches for women",
+   "name": "accessories-watches",
+   "nameSeo": "watches for women",
+   "description": "Keep time in style with our watches for women at Moda Link. Discover a variety of designs, from elegant to sporty, to complement your look."
+  },
+  {
+   "metitle": "Jewelry for women | Fashion Link",
+   "title": "Jewelry for women",
+   "name": "jewelry-accessories",
+   "nameSeo": "jewelry for women",
+   "description": "Express your personality with our women's jewelry at Moda Link. Discover options ranging from subtle to bold to enhance your unique style."
+  },
+  {
+   "metitle": "Glasses for women | Fashion Link",
+   "title": "glasses for women",
+   "name": "accessories-glasses",
+   "nameSeo": "glasses for women",
+   "description": "Protect your eyes in style thanks to our women's glasses at Moda Link. Explore a wide range of modern and functional options for every occasion."
+  },
+  {
+   "metitle": "Basic T-shirts for women | Fashion Link",
+   "title": "Basic T-shirts for women",
+   "name": "basic-t-shirts",
+   "nameSeo": "basic t-shirts for women",
+   "description": "Discover the essence of fashion with our basic t-shirts for women at Moda Link. With versatile colors and comfortable fits, these t-shirts are the perfect complement to your everyday style."
+  },
+  {
+   "metitle": "Printed T-shirts for women | Fashion Link",
+   "title": "Printed T-shirts for women",
+   "name": "printed t-shirts",
+   "nameSeo": "printed t-shirts for women",
+   "description": "Express your personality with our printed t-shirts for women at Moda Link. Discover a wide range of designs that will add a unique touch to your wardrobe."
+  },
+  {
+   "metitle": "Slim fit shoes for women | Fashion Link",
+   "title": "Slim fit shoes for women",
+   "name": "slim-fit shoes",
+   "nameSeo": "slim fit shoes for women",
+   "description": "Walk in style and comfort with our slim fit shoes for women at Moda Link. Discover stylish options that fit perfectly with your modern and stylish style."
+  },
+  {
+   "metitle": "Organic Cotton T-shirts for Women | Fashion Link",
+   "title": "Organic Cotton T-shirts for Women",
+   "name": "organic-cotton-t-shirts",
+   "nameSeo": "organic cotton t-shirts for women",
+   "description": "Take care of the planet and your style with our organic cotton t-shirts for women at Moda Link. Discover the softness and freshness of organic cotton in modern designs."
+  },
+  {
+   "metitle": "Sports t-shirts for women | Fashion Link",
+   "title": "Sports T-shirts for women",
+   "name": "sports shirts",
+   "nameSeo": "sports shirts for women",
+   "description": "Elevate your performance with our women's sports t-shirts at Moda Link. Designed for comfort and style, they are ideal for your training sessions and sports activities."
+  },
+  {
+   "metitle": "Vintage T-shirts for Women | Fashion Link",
+   "title": "Vintage T-shirts for Women",
+   "name": "vintage-t-shirts",
+   "nameSeo": "vintage t shirts for women",
+   "description": "Travel back in time with our vintage t-shirts for women at Moda Link. Discover unique designs that capture the essence of bygone eras, adding a retro touch to your style."
+  },
+  {
+   "metitle": "Jeans for women | Fashion Link",
+   "title": "Jeans for women",
+   "name": "pants-jeans",
+   "nameSeo": "jeans for women",
+   "description": "Discover versatility and style with our jeans for women at Moda Link. Find the perfect fit and fashionable designs that will complement your everyday look with elegance."
+  },
+  {
+   "metitle": "Casual pants for women | Fashion Link",
+   "title": "Casual pants for women",
+   "name": "casual-pants",
+   "nameSeo": "casual pants for women",
+   "description": "Explore comfort and style with our casual pants for women at Moda Link. From modern cuts to comfortable fabrics, find the perfect option for your relaxed style."
+  },
+  {
+   "metitle": "Formal pants for women | Fashion Link",
+   "title": "Formal pants for women",
+   "name": "formal-pants",
+   "nameSeo": "formal pants for women",
+   "description": "Elevate your presence with our formal pants for women at Moda Link. Discover elegance in every detail and find the perfect pair for special occasions and formal events."
+  },
+  {
+   "metitle": "Leggings for women | Fashion Link",
+   "title": "Leggings for women",
+   "name": "pants-leggings",
+   "nameSeo": "leggings for women",
+   "description": "Combine comfort and style with our women's leggings at Moda Link. Designed for movement and fashion, they are ideal for sports activities or for a casual and modern look."
+  },
+  {
+   "metitle": "Shorts for women | Fashion Link",
+   "title": "Shorts for women",
+   "name": "pants-shorts",
+   "nameSeo": "shorts for women",
+   "description": "Enjoy comfort and freshness with our shorts for women at Moda Link. From casual styles to dressier options, find the perfect pair for every occasion under the sun."
+  },
+  {
+   "metitle": "Wool hats for women | Fashion Link",
+   "title": "Wool hats for women",
+   "name": "wool hats",
+   "nameSeo": "wool hats for women",
+   "description": "Stay warm in style with our wool hats for women at Moda Link. Discover cozy and modern designs that will complement your winter look with elegance."
+  },
+  {
+   "metitle": "Felt hats for women | Fashion Link",
+   "title": "Felt hats for women",
+   "name": "felt-hats",
+   "nameSeo": "felt hats for women",
+   "description": "Add a touch of sophistication to your style with our felt hats for women at Moda Link. Explore elegant and functional designs that will keep you warm with distinction."
+  },
+  {
+   "metitle": "Knitted hats for women | Fashion Link",
+   "title": "Knitted hats for women",
+   "name": "knitted-hats",
+   "nameSeo": "knitted hats for women",
+   "description": "Complete your casual look with our knitted hats for women at Moda Link. Discover comfortable and modern options that will keep you warm in style during the colder seasons."
+  },
+  {
+   "metitle": "Winter hats for women | Fashion Link",
+   "title": "Winter hats for women",
+   "name": "Winter hats",
+   "nameSeo": "winter hats for women",
+   "description": "Face the cold with our winter hats for women at Moda Link. Discover attractive and functional designs that will protect you from wind and cold without compromising style."
+  },
+  {
+   "metitle": "Sports hats for women | Fashion Link",
+   "title": "Sports hats for women",
+   "name": "sports-caps",
+   "nameSeo": "sports hats for women",
+   "description": "Opt for comfort and active style with our sports hats for women at Moda Link. Discover functional designs ideal for your physical activities and your urban style."
+  },
+  {
+   "metitle": "Urban hats for women | Fashion Link",
+   "title": "Urban hats for women",
+   "name": "urban-caps",
+   "nameSeo": "urban hats for women",
+   "description": "Add a modern touch to your urban look with our urban hats for women at Moda Link. Explore contemporary designs that will enhance your style in the city."
+  },
+  {
+   "metitle": "Beach hats for women | Fashion Link",
+   "title": "Beach hats for women",
+   "name": "beach hats",
+   "nameSeo": "beach hats for women",
+   "description": "Protect your head from the sun with style on the beach with our beach hats for women at Moda Link. Discover fresh and functional designs for your sunny days by the sea."
+  },
+  {
+   "metitle": "Formal shoes for women | Fashion Link",
+   "title": "Formal shoes for women",
+   "name": "formal shoes",
+   "nameSeo": "formal shoes for women",
+   "description": "Impress any occasion with our formal shoes for women at Moda Link. Discover elegance and style in every step with our selection of formal footwear."
+  },
+  {
+   "metitle": "Sports shoes for women | Fashion Link",
+   "title": "Women's sports shoes",
+   "name": "sneakers",
+   "nameSeo": "sports shoes for women",
+   "description": "Reach your goals in style using our women's sports shoes at Moda Link. Discover comfort and performance in each pair designed for your physical and sports activities."
+  },
+  {
+   "metitle": "Sandals and flip flops for women | Fashion Link",
+   "title": "Sandals and flip flops for women",
+   "name": "sandals-flip flops",
+   "nameSeo": "sandals and flip flops for women",
+   "description": "Enjoy summer in style with our sandals and flip flops for women at Moda Link. Discover comfortable and fresh options for your sunny days and beach getaways."
+  },
+  {
+   "metitle": "Leather sneakers for women | Fashion Link",
+   "title": "Leather slippers for women",
+   "name": "leather-slippers",
+   "nameSeo": "leather sneakers for women",
+   "description": "Add a touch of luxury to your footwear with our leather sneakers for women at Moda Link. Discover the perfect combination of style and comfort in every step."
   }
-]
+ ]

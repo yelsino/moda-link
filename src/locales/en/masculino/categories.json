@@ -2,26 +2,425 @@
   {
     "params": {
       "category": "accessories"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "scarves",
+          "url": "/en/women/accessories-scarves"
+        },
+        {
+          "name": "ties",
+          "url": "/en/women/accessories-ties"
+        },
+        {
+          "name": "belts",
+          "url": "/en/women/accessories-belts"
+        },
+        {
+          "name": "wallets",
+          "url": "/en/women/accessories-wallets"
+        },
+        {
+          "name": "watches",
+          "url": "/en/women/accessories-watches"
+        },
+        {
+          "name": "jewelry",
+          "url": "/en/women/accessories-jewelry"
+        },
+        {
+          "name": "glasses",
+          "url": "/en/women/accessories-glasses"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "t-shirt"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "basic",
+          "url": "/en/women/t-shirts-basic"
+        },
+        {
+          "name": "printed",
+          "url": "/en/women/t-shirts-printed"
+        },
+        {
+          "name": "slim fit",
+          "url": "/en/women/shoes-slim-fit"
+        },
+        {
+          "name": "organic cotton",
+          "url": "/en/women/t-shirts-organic-cotton"
+        },
+        {
+          "name": "sportswear",
+          "url": "/en/women/t-shirts-sportswear"
+        },
+        {
+          "name": "vintage",
+          "url": "/en/women/t-shirts-vintage"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "pants"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "jeans",
+          "url": "/en/women/pants-jeans"
+        },
+        {
+          "name": "casual",
+          "url": "/en/women/pants-casual"
+        },
+        {
+          "name": "formal",
+          "url": "/en/women/pants-formal"
+        },
+        {
+          "name": "leggings",
+          "url": "/en/women/pants-leggings"
+        },
+        {
+          "name": "shorts",
+          "url": "/en/women/pants-shorts"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "caps"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "wool",
+          "url": "/en/women/hats-wool"
+        },
+        {
+          "name": "felt",
+          "url": "/en/women/hats-felt"
+        },
+        {
+          "name": "knitted",
+          "url": "/en/women/hats-knitted"
+        },
+        {
+          "name": "winter",
+          "url": "/en/women/hats-winter"
+        },
+        {
+          "name": "sports",
+          "url": "/en/women/hats-sports"
+        },
+        {
+          "name": "urban",
+          "url": "/en/women/hats-urban"
+        },
+        {
+          "name": "beach",
+          "url": "/en/women/hats-beach"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "shoes"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "formal shoes",
+          "url": "/en/women/formal-shoes"
+        },
+        {
+          "name": "sports sneakers",
+          "url": "/en/women/sports-sneakers"
+        },
+        {
+          "name": "sandals and flip-flops",
+          "url": "/en/women/sandals-flip-flops"
+        },
+        {
+          "name": "leather sneakers",
+          "url": "/en/women/leather-sneakers"
+        }
+      ]
+    }
+  },
+  {
+    "params": {
+      "category": "accessories-scarves"
+    },
+    "props": {
+      "subCategory": "scarves",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accessories-ties"
+    },
+    "props": {
+      "subCategory": "ties",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accessories-belts"
+    },
+    "props": {
+      "subCategory": "belts",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accessories-wallets"
+    },
+    "props": {
+      "subCategory": "wallets",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accessories-watches"
+    },
+    "props": {
+      "subCategory": "watches",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accessories-jewelry"
+    },
+    "props": {
+      "subCategory": "jewelry",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "accessories-glasses"
+    },
+    "props": {
+      "subCategory": "glasses",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "t-shirts-basic"
+    },
+    "props": {
+      "subCategory": "basic",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "t-shirts-printed"
+    },
+    "props": {
+      "subCategory": "printed",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "shoes-slim-fit"
+    },
+    "props": {
+      "subCategory": "slim fit",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "t-shirts-organic-cotton"
+    },
+    "props": {
+      "subCategory": "organic cotton",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "t-shirts-sportswear"
+    },
+    "props": {
+      "subCategory": "sportswear",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "t-shirts-vintage"
+    },
+    "props": {
+      "subCategory": "vintage",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pants-jeans"
+    },
+    "props": {
+      "subCategory": "jeans",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pants-casual"
+    },
+    "props": {
+      "subCategory": "casual",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pants-formal"
+
+
+    },
+    "props": {
+      "subCategory": "formal",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pants-leggings"
+    },
+    "props": {
+      "subCategory": "leggings",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pants-shorts"
+    },
+    "props": {
+      "subCategory": "shorts",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "hats-wool"
+    },
+    "props": {
+      "subCategory": "wool",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "hats-felt"
+    },
+    "props": {
+      "subCategory": "felt",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "hats-knitted"
+    },
+    "props": {
+      "subCategory": "knitted",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "hats-winter"
+    },
+    "props": {
+      "subCategory": "winter",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "hats-sports"
+    },
+    "props": {
+      "subCategory": "sports",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "hats-urban"
+    },
+    "props": {
+      "subCategory": "urban",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "hats-beach"
+    },
+    "props": {
+      "subCategory": "beach",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "formal-shoes"
+    },
+    "props": {
+      "subCategory": "formal shoes",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "sports-sneakers"
+    },
+    "props": {
+      "subCategory": "sports sneakers",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "sandals-flip-flops"
+    },
+    "props": {
+      "subCategory": "sandals and flip-flops",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "leather-sneakers"
+    },
+    "props": {
+      "subCategory": "leather sneakers",
+      "subcategories": []
     }
   }
 ]

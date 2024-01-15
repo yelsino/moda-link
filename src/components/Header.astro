@@ -8,14 +8,28 @@ const { pathname } = Astro.url;
 ---
 
 <header
-  class="bg-white py-4 max-w-[2000px] px-5 flex justify-between items-center fixed w-full top-0 z-30"
+  class="bg-white py-4 max-w-[2000px] px-5  fixed w-full top-0 z-30 flex flex-col gap-y-3"
 >
-  <!-- <MenWomen client:visible ubication={pathname} /> -->
-  <MenWomen ubication={pathname} />
+  <div class="flex justify-between items-center">
+    <!-- <MenWomen client:visible ubication={pathname} /> -->
+    <MenWomen ubication={pathname} />
 
-  <a href={lang === "en" ? `/${lang}` : "/"} aria-label="moda link, pagina de incio" class="nombre">
-    <h1 class="text-lg font-semibold text-gray-800 font-pacifico">Moda Link</h1>
-  </a>
+    <a
+      href={lang === "en" ? `/${lang}` : "/"}
+      aria-label="moda link, pagina de incio"
+      class="nombre"
+    >
+      <span class="text-lg font-semibold text-gray-800 font-pacifico">
+        Moda Link
+      </span>
+    </a>
 
-  <PickLanguage />
+    <PickLanguage />
+  </div>
+  <!-- <ul class="flex gap-x-2 items-center ">
+    <li class="px-1 bg-color_pink2 text-color_pink1">clasicas</li>
+    <li class="px-1 bg-color_pink2 text-color_pink1">mangas</li>
+    <li class="px-1 bg-color_pink2 text-color_pink1">formales</li>
+    <li class="px-1 bg-color_pink2 text-color_pink1">deportivas</li>
+  </ul> -->
 </header>

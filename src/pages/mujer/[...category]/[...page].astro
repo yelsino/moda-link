@@ -12,16 +12,20 @@ import categories from "@locales/es/femenino/categories.json"
 
 export const getStaticPaths = (async ({ paginate }) => {
 
-  // const urlBase = "https://moda-link-api.deno.dev/api/v1/products?";
+
   const urlBase = await import.meta.env.MODALINK_API_ES;
 
-  // Usar Promise.all() para realizar las peticiones de manera concurrente
+
   const paths = await Promise.all(
     categories.map(async (category) => {
 
       const params = new URLSearchParams();
       params.set("genero", "mujer");
       params.set("filter", category.params.category);
+
+      if(category.props.subCategory){
+        params.set("subCategory", category.props.subCategory)
+      }
 
       const response = await fetch(urlBase + params);
       const products = await response.json();
@@ -31,8 +35,9 @@ export const getStaticPaths = (async ({ paginate }) => {
       //   pageSize: 100,
       // });
 
-      return paginate(orderProducts(products.slice(0,20)), {
+      return paginate(orderProducts(products), {
         params: category.params,
+        props: category.props,
         pageSize: 100,
       });
 
@@ -43,26 +48,38 @@ export const getStaticPaths = (async ({ paginate }) => {
 }) satisfies GetStaticPaths;
 
 const { category } = Astro.params;
-const { page } = Astro.props;
+const { page,subCategory, subcategories } = Astro.props;
 
 const pathname = new URL(Astro.request.url).pathname.split("/");
 const firstPath = `/${pathname[1]}/${pathname[2]}`;
 
-const getElementSeo = dataSeo.find((item) => item.nombre === category);
+const getElementSeo = dataSeo.find((item) => item.name === category);
 ---
 
 <Layout
   title={getElementSeo?.title ?? "Moda Link"}
-  description={getElementSeo?.descripcion ?? "Ropa para mujeres"}
+  description={getElementSeo?.description ?? "Ropa para mujeres"}
 >
   <!-- <h1>categoria ropa</h1> -->
   <div class="h-full">
     <Header />
     <main class="mt-10 flex flex-col py-10">
       <Filter  category={category} genero="mujer" />
-      <section
-        class="flex flex-wrap place-content-center mx-auto gap-3 sm:gap-6 items-center"
-      >
+      <section class="grid-container place-content-center">
+        <!-- <div class="flex flex-col col-span-full gap-y-3">
+          <div>
+            <h1 class="text-2xl font-fugazOne">{getElementSeo?.title ?? category}</h1>
+            
+          </div>
+          <ul class="flex gap-x-1 flex-wrap gap-y-1">
+           
+            {
+              subcategories.map((sub)=>(
+              <li  class="px-4 py-2 border"><a href={sub.url} aria-label={`visitar ${sub.name}`}>{sub.name}</a></li>
+              ))
+            }
+          </ul>
+        </div> -->
         {
           page.data.map((product: any) => (
             <Card
@@ -96,3 +113,32 @@ const getElementSeo = dataSeo.find((item) => item.nombre === category);
     <Footer />
   </div>
 </Layout>
+
+
+<style>
+  .grid-container {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fill, 180px);
+    gap: 16px;
+  }
+
+  @media (min-width: 640px) {
+    .grid-container {
+      display: grid;
+      grid-template-rows: repeat(auto-fit, 1fr);
+      grid-template-columns: repeat(auto-fill, 240px);
+      gap: 20|1px;
+    }
+  }
+
+  .grid-container::-webkit-scrollbar {
+    width: 0;
+  }
+
+  .items {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+  }
+</style>

@@ -2,26 +2,547 @@
   {
     "params": {
       "category": "accesorios"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "callares",
+          "url": "/mujer/colgantes-llamativas"
+        },
+        {
+          "name": "pendientes",
+          "url": "/mujer/pendientes-elegantes"
+        },
+        {
+          "name": "brazaletes",
+          "url": "/mujer/brazaletes-elegantes"
+        },
+        {
+          "name": "carteras",
+          "url": "/mujer/carteras"
+        },
+        {
+          "name": "gafas",
+          "url": "/mujer/accesorios-gafas"
+        }
+       
+       
+      ]
     }
   },
   {
     "params": {
       "category": "camiseta"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "tirantes",
+          "url": "/mujer/camisetas-de-tirantes"
+        },
+        {
+          "name": "corte-holgado",
+          "url": "/mujer/camisetas-de-corte-holgado"
+        },
+        {
+          "name": "crop-tops",
+          "url": "/mujer/camisetas-crop-tops"
+        },
+        {
+          "name": "transparencias",
+          "url": "/mujer/camisetas-de-encaje-transparencias"
+        },
+        {
+          "name": "vestidos de noche",
+          "url": "/mujer/camisetas-vestidos-de-noche"
+        },
+        {
+          "name": "vestidos de verano",
+          "url": "/mujer/vestidos-de-verano"
+        },
+        {
+          "name": "vestidos de fiesta",
+          "url": "/mujer/vestidos-de-fiesta"
+        },
+        {
+          "name": "vestidos de maternidad",
+          "url": "/mujer/vestidos-de-maternidad"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "pantalon"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "jeans",
+          "url": "/mujer/pantalones-jeans"
+        },
+        {
+          "name": "casuales",
+          "url": "/mujer/pantalones-casuales"
+        },
+        {
+          "name": "formales",
+          "url": "/mujer/pantalones-formales"
+        },
+        {
+          "name": "leggings",
+          "url": "/mujer/pantalones-leggings"
+        },
+        {
+          "name": "shorts",
+          "url": "/mujer/shorts"
+        },
+        {
+          "name": "bragas",
+          "url": "/mujer/bragas"
+        },
+        {
+          "name": "sostenes",
+          "url": "/mujer/sostenes"
+        },
+        {
+          "name": "pijamas",
+          "url": "/mujer/pijamas"
+        }
+       
+      ]
     }
   },
   {
     "params": {
       "category": "gorros"
+    },
+
+    "props": {
+      "subcategories": [
+        {
+          "name": "de lana",
+          "url": "/mujer/gorros-de-lana"
+        },
+        {
+          "name": "de fieltro",
+          "url": "/mujer/gorros-de-fieltro"
+        },
+        {
+          "name": "de punto",
+          "url": "/mujer/gorros-de-punto"
+        },
+        {
+          "name": "de invierno",
+          "url": "/mujer/gorros-de-invierno"
+        },
+        {
+          "name": "deportivos",
+          "url": "/mujer/gorros-deportivos"
+        },
+        {
+          "name": "urbanos",
+          "url": "/mujer/gorros-urbanos"
+        },
+        {
+          "name": "playeros",
+          "url": "/mujer/gorros-playeros"
+        }
+      ]
     }
   },
   {
     "params": {
       "category": "zapatos"
+    },
+    "props": {
+      "subcategories": [
+        {
+          "name": "tacones",
+          "url": "/mujer/zapatos-formales"
+        },
+        {
+          "name": "botines",
+          "url": "/mujer/zapatillas-deportivas"
+        },
+        {
+          "name": "sandalias y chancletas",
+          "url": "/mujer/sandalias-chancletas"
+        },
+        {
+          "name": "bailarinas",
+          "url": "/mujer/zapatillas-de-cuero"
+        },
+        {
+          "name": "mocasines",
+          "url": "/mujer/zapatillas-de-cuero"
+        },
+        {
+          "name": "plataformas",
+          "url": "/mujer/zapatos-plataformas"
+        },
+        {
+          "name": "zapatillas",
+          "url": "/mujer/zapatillas"
+        },
+        {
+          "name": "pantuflas",
+          "url": "/mujer/pantuflas-comodas"
+        }
+      ]
+    }
+  },
+
+
+
+
+    {
+      "params": {
+        "category": "colgantes-llamativas"
+      },
+      "props": {
+        "subCategory": "callares",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "pendientes-elegantes"
+      },
+      "props": {
+        "subCategory": "pendientes",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "brazaletes-elegantes"
+      },
+      "props": {
+        "subCategory": "brazaletes",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "carteras"
+      },
+      "props": {
+        "subCategory": "carteras",
+        "subcategories": []
+      }
+    },
+    {
+      "params": {
+        "category": "accesorios-gafas"
+      },
+      "props": {
+        "subCategory": "gafas",
+        "subcategories": []
+      }
+    },
+  
+
+
+
+
+
+
+
+  {
+    "params": {
+      "category": "camisetas-de-tirantes"
+    },
+    "props": {
+      "subCategory": "tirantes",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-de-corte-holgado"
+    },
+    "props": {
+      "subCategory": "corte-holgado",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-crop-tops"
+    },
+    "props": {
+      "subCategory": "crop-tops",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-de-encaje-transparencias"
+    },
+    "props": {
+      "subCategory": "transparencias",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "camisetas-vestidos-de-noche"
+    },
+    "props": {
+      "subCategory": "vestidos de noche",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "vestidos-de-verano"
+    },
+    "props": {
+      "subCategory": "vestidos de verano",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "vestidos-de-fiesta"
+    },
+    "props": {
+      "subCategory": "vestidos de fiesta",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "vestidos-de-maternidad"
+    },
+    "props": {
+      "subCategory": "vestidos de maternidad",
+      "subcategories": []
+    }
+  },
+
+
+
+
+
+
+  {
+    "params": {
+      "category": "pantalones-jeans"
+    },
+    "props": {
+      "subCategory": "jeans",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pantalones-casuales"
+    },
+    "props": {
+      "subCategory": "casuales",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pantalones-formales"
+    },
+    "props": {
+      "subCategory": "formales",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pantalones-leggings"
+    },
+    "props": {
+      "subCategory": "leggings",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "shorts"
+    },
+    "props": {
+      "subCategory": "shorts",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "bragas"
+    },
+    "props": {
+      "subCategory": "bragas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "sostenes"
+    },
+    "props": {
+      "subCategory": "sostenes",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pijamas"
+    },
+    "props": {
+      "subCategory": "pijamas",
+      "subcategories": []
+    }
+  },
+
+
+
+
+  {
+    "params": {
+      "category": "gorros-de-lana"
+    },
+    "props": {
+      "subCategory": "de lana",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "gorros-de-fieltro"
+    },
+    "props": {
+      "subCategory": "de fieltro",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "gorros-de-punto"
+    },
+    "props": {
+      "subCategory": "de punto",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "gorros-de-invierno"
+    },
+    "props": {
+      "subCategory": "de invierno",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "gorros-deportivos"
+    },
+    "props": {
+      "subCategory": "deportivos",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "gorros-urbanos"
+    },
+    "props": {
+      "subCategory": "urbanos",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "gorros-playeros"
+    },
+    "props": {
+      "subCategory": "playeros",
+      "subcategories": []
+    }
+  },
+
+  
+
+
+  {
+    "params": {
+      "category": "zapatos-formales"
+    },
+    "props": {
+      "subCategory": "tacones",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "zapatillas-deportivas"
+    },
+    "props": {
+      "subCategory": "botines",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "sandalias-chancletas"
+    },
+    "props": {
+      "subCategory": "sandalias y chancletas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "zapatillas-de-cuero"
+    },
+    "props": {
+      "subCategory": "bailarinas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "zapatillas-de-cuero"
+    },
+    "props": {
+      "subCategory": "mocasines",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "zapatos-plataformas"
+    },
+    "props": {
+      "subCategory": "plataformas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "zapatillas"
+    },
+    "props": {
+      "subCategory": "zapatillas",
+      "subcategories": []
+    }
+  },
+  {
+    "params": {
+      "category": "pantuflas-comodas"
+    },
+    "props": {
+      "subCategory": "pantuflas",
+      "subcategories": []
     }
   }
+
+
+
 ]

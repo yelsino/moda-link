@@ -1,32 +1,279 @@
 [
   {
-    "title": "Moda femenina: Sombreros y Gorras para Mujeres | Moda Link",
-    "nombre": "gorros",
-    "nombreSeo": "sombreros y gorras para mujeres",
-    "descripcion": "Descubre una amplia selección de sombreros y gorras para mujeres en Moda Link. Encuentra desde sombreros elegantes hasta gorras deportivas, perfectos para complementar tu estilo en cualquier ocasión."
+    "metitle": "Accesorios para mujeres | Moda Link",
+    "title": "Accesorios para mujeres",
+    "name": "accesorios",
+    "nameSeo": "accesorios para mujeres",
+    "description": "Descubre una amplia gama de accesorios para mujeres en Moda Link. Encuentra complementos perfectos para realzar tu estilo, desde elegantes corbatas hasta modernos cinturones y mucho más."
   },
   {
-    "title": "Moda femenina: Blusas y Tops de moda | Moda Link",
-    "nombre": "camiseta",
-    "nombreSeo": "blusas y tops para mujeres",
-    "descripcion": "Explora nuestra colección de blusas y tops de moda para mujeres en Moda Link. Encuentra desde diseños clásicos hasta las últimas tendencias, ideales para crear looks versátiles y a la moda."
+    "metitle": "Camisetas para mujeres | Moda Link",
+    "title": "Camisetas para mujeres",
+    "name": "camiseta",
+    "nameSeo": "camisetas para mujeres",
+    "description": "Explora nuestra colección de camisetas para mujeres en Moda Link. Desde diseños clásicos hasta las últimas tendencias, encuentra camisetas cómodas y con estilo para cada ocasión."
   },
   {
-    "title": "Moda femenina: Pantalones y Vaqueros de tendencia | Moda Link",
-    "nombre": "pantalon",
-    "nombreSeo": "pantalones y vaqueros para mujeres",
-    "descripcion": "Encuentra una amplia variedad de pantalones y vaqueros de tendencia para mujeres en Moda Link. Desde pantalones casuales hasta jeans modernos, encuentra el ajuste perfecto para cualquier ocasión."
+    "metitle": "Pantalones para mujeres | Moda Link",
+    "title": "Pantalones para mujeres",
+    "name": "pantalon",
+    "nameSeo": "pantalones para mujeres",
+    "description": "Encuentra pantalones para mujeres que combinan comodidad y estilo en Moda Link. Descubre una variedad de diseños, desde pantalones casuales hasta opciones elegantes para un look sofisticado."
   },
   {
-    "title": "Moda femenina: Accesorios de estilo | Moda Link",
-    "nombre": "accesorios",
-    "nombreSeo": "accesorios de estilo para mujeres",
-    "descripcion": "Descubre una selección de accesorios de estilo para mujeres en Moda Link. Completa tu look con nuestros accesorios modernos, desde joyas elegantes hasta bolsos de moda."
+    "metitle": "Gorras para mujeres | Moda Link",
+    "title": "Gorras para mujeres",
+    "name": "gorros",
+    "nameSeo": "gorras para mujeres",
+    "description": "Descubre una selección de gorras para mujeres en Moda Link. Completa tu outfit con nuestros gorros modernos y funcionales, disponibles en una amplia gama de estilos y colores."
   },
   {
-    "title": "Moda femenina: Calzado de moda | Moda Link",
-    "nombre": "zapatos",
-    "nombreSeo": "calzado de moda para mujeres",
-    "descripcion": "Explora nuestra colección de calzado de moda para mujeres en Moda Link. Encuentra desde zapatos formales hasta opciones más casuales que se adapten a tu estilo y te hagan destacar."
-  }
+    "metitle": "Zapatos para mujeres | Moda Link",
+    "title": "Zapatos para mujeres",
+    "name": "zapatos",
+    "nameSeo": "zapatos para mujeres",
+    "description": "Explora nuestra colección de zapatos para mujeres en Moda Link. Encuentra calzado elegante y versátil que complementará tu estilo, desde zapatos formales hasta opciones más casuales."
+  },
+
+
+
+
+
+
+
+
+
+
+    {
+      "metitle": "Bufandas para mujeres | Moda Link",
+      "title": "Bufandas para mujeres",
+      "name": "accesorios-bufandas",
+      "nameSeo": "bufandas para mujeres",
+      "description": "Añade un toque de estilo y calidez a tu look con nuestras bufandas para mujeres en Moda Link. Descubre una variedad de diseños y materiales para complementar tu estilo único."
+    },
+    {
+      "metitle": "Corbatas para mujeres | Moda Link",
+      "title": "Corbatas para mujeres",
+      "name": "accesorios-corbatas",
+      "nameSeo": "corbatas para mujeres",
+      "description": "Completa tu atuendo con elegancia gracias a nuestras corbatas para mujeres en Moda Link. Explora una amplia selección de diseños que se adaptan a cualquier ocasión."
+    },
+    {
+      "metitle": "Cinturones para mujeres | Moda Link",
+      "title": "Cinturones para mujeres",
+      "name": "accesorios-cinturones",
+      "nameSeo": "cinturones para mujeres",
+      "description": "Define tu estilo con nuestros cinturones para mujeres en Moda Link. Encuentra opciones que van desde lo clásico hasta lo moderno para realzar tu imagen con elegancia."
+    },
+    {
+      "metitle": "Carteras para mujeres | Moda Link",
+      "title": "Carteras para mujeres",
+      "name": "accesorios-carteras",
+      "nameSeo": "carteras para mujeres",
+      "description": "Organiza tus pertenencias con estilo gracias a nuestras carteras para mujeres en Moda Link. Descubre opciones funcionales y con diseño para satisfacer tus necesidades diarias."
+    },
+    {
+      "metitle": "Relojes para mujeres | Moda Link",
+      "title": "Relojes para mujeres",
+      "name": "accesorios-relojes",
+      "nameSeo": "relojes para mujeres",
+      "description": "Lleva el tiempo con estilo con nuestros relojes para mujeres en Moda Link. Descubre una variedad de diseños, desde elegantes hasta deportivos, para complementar tu look."
+    },
+    {
+      "metitle": "Joyería para mujeres | Moda Link",
+      "title": "Joyería para mujeres",
+      "name": "accesorios-joyeria",
+      "nameSeo": "joyería para mujeres",
+      "description": "Expresa tu personalidad con nuestra joyería para mujeres en Moda Link. Descubre opciones que van desde lo sutil hasta lo llamativo para realzar tu estilo único."
+    },
+    {
+      "metitle": "Gafas para mujeres | Moda Link",
+      "title": "Gafas para mujeres",
+      "name": "accesorios-gafas",
+      "nameSeo": "gafas para mujeres",
+      "description": "Protege tus ojos con estilo gracias a nuestras gafas para mujeres en Moda Link. Explora una amplia gama de opciones modernas y funcionales para cada ocasión."
+    },
+
+
+
+
+
+
+    {
+        "metitle": "Camisetas básicas para mujeres | Moda Link",
+        "title": "Camisetas básicas para mujeres",
+        "name": "camisetas-basicas",
+        "nameSeo": "camisetas básicas para mujeres",
+        "description": "Descubre la esencia de la moda con nuestras camisetas básicas para mujeres en Moda Link. Con colores versátiles y cortes cómodos, estas camisetas son el complemento perfecto para tu estilo diario."
+    },
+    {
+        "metitle": "Camisetas estampadas para mujeres | Moda Link",
+        "title": "Camisetas estampadas para mujeres",
+        "name": "camisetas-estampadas",
+        "nameSeo": "camisetas estampadas para mujeres",
+        "description": "Expresa tu personalidad con nuestras camisetas estampadas para mujeres en Moda Link. Descubre una amplia gama de diseños que añadirán un toque único a tu guardarropa."
+    },
+    {
+        "metitle": "Zapatos slim fit para mujeres | Moda Link",
+        "title": "Zapatos slim fit para mujeres",
+        "name": "zapatos-slim-fit",
+        "nameSeo": "zapatos slim fit para mujeres",
+        "description": "Camina con estilo y comodidad con nuestros zapatos slim fit para mujeres en Moda Link. Descubre opciones elegantes que se ajustan perfectamente a tu estilo moderno y estilizado."
+    },
+    {
+        "metitle": "Camisetas de algodón orgánico para mujeres | Moda Link",
+        "title": "Camisetas de algodón orgánico para mujeres",
+        "name": "camisetas-algodon-organico",
+        "nameSeo": "camisetas de algodón orgánico para mujeres",
+        "description": "Cuida del planeta y de tu estilo con nuestras camisetas de algodón orgánico para mujeres en Moda Link. Descubre la suavidad y frescura del algodón orgánico en diseños modernos."
+    },
+    {
+        "metitle": "Camisetas deportivas para mujeres | Moda Link",
+        "title": "Camisetas deportivas para mujeres",
+        "name": "camisetas-deportivas",
+        "nameSeo": "camisetas deportivas para mujeres",
+        "description": "Eleva tu rendimiento con nuestras camisetas deportivas para mujeres en Moda Link. Diseñadas para la comodidad y el estilo, son ideales para tus sesiones de entrenamiento y actividades deportivas."
+    },
+    {
+        "metitle": "Camisetas vintage para mujeres | Moda Link",
+        "title": "Camisetas vintage para mujeres",
+        "name": "camisetas-vintage",
+        "nameSeo": "camisetas vintage para mujeres",
+        "description": "Viaja en el tiempo con nuestras camisetas vintage para mujeres en Moda Link. Descubre diseños únicos que capturan la esencia de épocas pasadas, añadiendo un toque retro a tu estilo."
+    },
+
+
+
+
+
+
+    {
+        "metitle": "Jeans para mujeres | Moda Link",
+        "title": "Jeans para mujeres",
+        "name": "pantalon-jeans",
+        "nameSeo": "jeans para mujeres",
+        "description": "Descubre la versatilidad y estilo con nuestros jeans para mujeres en Moda Link. Encuentra el ajuste perfecto y los diseños de moda que complementarán tu look cotidiano con elegancia."
+    },
+    {
+        "metitle": "Pantalones casuales para mujeres | Moda Link",
+        "title": "Pantalones casuales para mujeres",
+        "name": "pantalon-casuales",
+        "nameSeo": "pantalones casuales para mujeres",
+        "description": "Explora la comodidad y el estilo con nuestros pantalones casuales para mujeres en Moda Link. Desde cortes modernos hasta tejidos cómodos, encuentra la opción perfecta para tu estilo relajado."
+    },
+    {
+        "metitle": "Pantalones formales para mujeres | Moda Link",
+        "title": "Pantalones formales para mujeres",
+        "name": "pantalon-formales",
+        "nameSeo": "pantalones formales para mujeres",
+        "description": "Eleva tu presencia con nuestros pantalones formales para mujeres en Moda Link. Descubre la elegancia en cada detalle y encuentra el par perfecto para ocasiones especiales y eventos formales."
+    },
+    {
+        "metitle": "Leggings para mujeres | Moda Link",
+        "title": "Leggings para mujeres",
+        "name": "pantalon-leggings",
+        "nameSeo": "leggings para mujeres",
+        "description": "Combina comodidad y estilo con nuestros leggings para mujeres en Moda Link. Diseñados para el movimiento y la moda, son ideales para actividades deportivas o para un look casual y moderno."
+    },
+    {
+        "metitle": "Shorts para mujeres | Moda Link",
+        "title": "Shorts para mujeres",
+        "name": "pantalon-short",
+        "nameSeo": "shorts para mujeres",
+        "description": "Disfruta del confort y la frescura con nuestros shorts para mujeres en Moda Link. Desde estilos casuales hasta opciones más elegantes, encuentra el par perfecto para cada ocasión bajo el sol."
+    },
+
+
+
+
+
+
+    {
+      "metitle": "Gorros de lana para mujeres | Moda Link",
+      "title": "Gorros de lana para mujeres",
+      "name": "gorros-de-lana",
+      "nameSeo": "gorros de lana para mujeres",
+      "description": "Mantén la calidez con estilo con nuestros gorros de lana para mujeres en Moda Link. Descubre diseñosacogedores y modernos que complementarán tu look invernal con elegancia."
+    },
+    {
+      "metitle": "Gorros de fieltro para mujeres | Moda Link",
+      "title": "Gorros de fieltro para mujeres",
+      "name": "gorros-de-fieltro",
+      "nameSeo": "gorros de fieltro para mujeres",
+      "description": "Añade un toque de sofisticación a tu estilo con nuestros gorros de fieltro para mujeres en Moda Link.Explora diseños elegantes y funcionales que te mantendrán abrigado con distinción."
+    },
+    {
+      "metitle": "Gorros de punto para mujeres | Moda Link",
+      "title": "Gorros de punto para mujeres",
+      "name": "gorros-de-punto",
+      "nameSeo": "gorros de punto para mujeres",
+      "description": "Completa tu look casual con nuestros gorros de punto para mujeres en Moda Link. Descubre opciones cómodas ymodernas que te mantendrán abrigado con estilo durante las estaciones más frías."
+    },
+    {
+      "metitle": "Gorros de invierno para mujeres | Moda Link",
+      "title": "Gorros de invierno para mujeres",
+      "name": "gorros-de-invierno",
+      "nameSeo": "gorros de invierno para mujeres",
+      "description": "Enfrenta el frío con nuestros gorros de invierno para mujeres en Moda Link. Descubre diseños atractivos yfuncionales que te protegerán del viento y el frío sin comprometer el estilo."
+    },
+    {
+      "metitle": "Gorros deportivos para mujeres | Moda Link",
+      "title": "Gorros deportivos para mujeres",
+      "name": "gorros-deportivos",
+      "nameSeo": "gorros deportivos para mujeres",
+      "description": "Opta por la comodidad y el estilo activo con nuestros gorros deportivos para mujeres en Moda Link. Descubrediseños funcionales ideales para tus actividades físicas y tu estilo urbano."
+    },
+    {
+      "metitle": "Gorros urbanos para mujeres | Moda Link",
+      "title": "Gorros urbanos para mujeres",
+      "name": "gorros-urbanos",
+      "nameSeo": "gorros urbanos para mujeres",
+      "description": "Añade un toque moderno a tu look urbano con nuestros gorros urbanos para mujeres en Moda Link. Exploradiseños contemporáneos que realzarán tu estilo en la ciudad."
+    },
+    {
+      "metitle": "Gorros playeros para mujeres | Moda Link",
+      "title": "Gorros playeros para mujeres",
+      "name": "gorros-playeros",
+      "nameSeo": "gorros playeros para mujeres",
+      "description": "Protege tu cabeza del sol con estilo en la playa con nuestros gorros playeros para mujeres en Moda Link.Descubre diseños frescos y funcionales para tus días soleados junto al mar."
+    },
+
+
+
+
+
+
+
+    {
+      "metitle": "Zapatos formales para mujeres | Moda Link",
+      "title": "Zapatos formales para mujeres",
+      "name": "zapatos-formales",
+      "nameSeo": "zapatos formales para mujeres",
+      "description": "Impresiona en cualquier ocasión con nuestros zapatos formales para mujeres en Moda Link. Descubre eleganciay estilo en cada paso con nuestra selección de calzado formal."
+    },
+    {
+      "metitle": "Zapatillas deportivas para mujeres | Moda Link",
+      "title": "Zapatillas deportivas para mujeres",
+      "name": "zapatillas-deportivas",
+      "nameSeo": "zapatillas deportivas para mujeres",
+      "description": "Alcanza tus metas con estilo usando nuestras zapatillas deportivas para mujeres en Moda Link. Descubrecomodidad y rendimiento en cada par diseñado para tus actividades físicas y deportivas."
+    },
+    {
+      "metitle": "Sandalias y chancletas para mujeres | Moda Link",
+      "title": "Sandalias y chancletas para mujeres",
+      "name": "sandalias-chancletas",
+      "nameSeo": "sandalias y chancletas para mujeres",
+      "description": "Disfruta del verano con estilo con nuestras sandalias y chancletas para mujeres en Moda Link. Descubreopciones cómodas y frescas para tus días soleados y escapadas playeras."
+    },
+    {
+      "metitle": "Zapatillas de cuero para mujeres | Moda Link",
+      "title": "Zapatillas de cuero para mujeres",
+      "name": "zapatillas-de-cuero",
+      "nameSeo": "zapatillas de cuero para mujeres",
+      "description": "Añade un toque de lujo a tu calzado con nuestras zapatillas de cuero para mujeres en Moda Link. Descubre lacombinación perfecta de estilo y confort en cada paso."
+    }
+    
+    
+
+  
 ]

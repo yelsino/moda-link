@@ -1,32 +1,240 @@
 [
   {
-    "title": "Men's Fashion: Accessories for Men | Moda Link",
-    "nombre": "accessories",
-    "nombreSeo": "accessories for men",
-    "descripcion": "Discover a wide range of accessories for men at Moda Link. Find perfect complements to enhance your style, from elegant ties to modern belts, and much more."
+   "metitle": "Accessories for men | Fashion Link",
+   "title": "Men's accessories",
+   "name": "accessories",
+   "nameSeo": "accessories for men",
+   "description": "Discover a wide range of accessories for men at Moda Link. Find perfect accessories to enhance your style, from elegant ties to modern belts and much more."
   },
   {
-    "title": "Men's Fashion: T-shirts for Men | Moda Link",
-    "nombre": "t-shirt",
-    "nombreSeo": "t-shirts for men",
-    "descripcion": "Explore our collection of t-shirts for men at Moda Link. From classic designs to the latest trends, find comfortable and stylish t-shirts for every occasion."
+   "metitle": "T-shirts for men | Fashion Link",
+   "title": "Men's T-shirts",
+   "name": "t-shirt",
+   "nameSeo": "t-shirts for men",
+   "description": "Explore our collection of men's t-shirts at Moda Link. From classic designs to the latest trends, find comfortable and stylish t-shirts for every occasion."
   },
   {
-    "title": "Men's Fashion: Pants for Men | Moda Link",
-    "nombre": "pants",
-    "nombreSeo": "pants for men",
-    "descripcion": "Find men's pants that combine comfort and style at Moda Link. Discover a variety of designs, from casual pants to elegant options for a sophisticated look."
+   "metitle": "Pants for men | Fashion Link",
+   "title": "Pants for men",
+   "name": "pants",
+   "nameSeo": "pants for men",
+   "description": "Find men's pants that combine comfort and style at Moda Link. Discover a variety of designs, from casual pants to elegant options for a sophisticated look."
   },
   {
-    "title": "Men's Fashion: Caps for Men | Moda Link",
-    "nombre": "caps",
-    "nombreSeo": "caps for men",
-    "descripcion": "Discover a selection of caps for men at Moda Link. Complete your outfit with our modern and functional caps, available in a wide range of styles and colors."
+   "metitle": "Caps for men | Fashion Link",
+   "title": "Caps for men",
+   "name": "caps",
+   "nameSeo": "caps for men",
+   "description": "Discover a selection of caps for men at Moda Link. Complete your outfit with our modern and functional hats, available in a wide range of styles and colors."
   },
   {
-    "title": "Men's Fashion: Shoes for Men | Moda Link",
-    "nombre": "shoes",
-    "nombreSeo": "shoes for men",
-    "descripcion": "Explore our collection of shoes for men at Moda Link. Find elegant and versatile footwear that will complement your style, from formal shoes to more casual options."
+   "metitle": "Shoes for men | Fashion Link",
+   "title": "Men's shoes",
+   "name": "shoes",
+   "nameSeo": "shoes for men",
+   "description": "Explore our collection of men's shoes at Moda Link. Find stylish, versatile footwear that will complement your style, from formal shoes to more casual options."
+  },
+  {
+   "metitle": "Scarves for men | Fashion Link",
+   "title": "Scarves for men",
+   "name": "accessories-scarves",
+   "nameSeo": "scarves for men",
+   "description": "Add a touch of style and warmth to your look with our men's scarves at Moda Link. Discover a variety of designs and materials to complement your unique style."
+  },
+  {
+   "metitle": "Ties for men | Fashion Link",
+   "title": "Ties for men",
+   "name": "accessories-ties",
+   "nameSeo": "ties for men",
+   "description": "Complete your outfit with elegance thanks to our ties for men at Moda Link. Explore a wide selection of designs to suit any occasion."
+  },
+  {
+   "metitle": "Belts for men | Fashion Link",
+   "title": "Belts for men",
+   "name": "accessories-belts",
+   "nameSeo": "belts for men",
+   "description": "Define your style with our men's belts at Moda Link. Find options ranging from classic to modern to enhance your image with elegance."
+  },
+  {
+   "metitle": "Wallets for men | Fashion Link",
+   "title": "Wallets for men",
+   "name": "accessories-wallets",
+   "nameSeo": "wallets for men",
+   "description": "Organize your belongings in style thanks to our men's wallets at Moda Link. Discover functional and stylish options to meet your daily needs."
+  },
+  {
+   "metitle": "Watches for men | Fashion Link",
+   "title": "Watches for men",
+   "name": "accessories-watches",
+   "nameSeo": "watches for men",
+   "description": "Keep time in style with our men's watches at Moda Link. Discover a variety of designs, from elegant to sporty, to complement your look."
+  },
+  {
+   "metitle": "Jewelry for men | Fashion Link",
+   "title": "Men's Jewelry",
+   "name": "jewelry-accessories",
+   "nameSeo": "jewelry for men",
+   "description": "Express your personality with our men's jewelry at Moda Link. Discover options ranging from subtle to bold to enhance your unique style."
+  },
+  {
+   "metitle": "Glasses for men | Fashion Link",
+   "title": "glasses for men",
+   "name": "accessories-glasses",
+   "nameSeo": "glasses for men",
+   "description": "Protect your eyes in style thanks to our glasses for men at Moda Link. Explore a wide range of modern and functional options for every occasion."
+  },
+  {
+   "metitle": "Basic t-shirts for men | Fashion Link",
+   "title": "Basic T-shirts for men",
+   "name": "basic-t-shirts",
+   "nameSeo": "basic t-shirts for men",
+   "description": "Discover the essence of fashion with our basic t-shirts for men at Moda Link. With versatile colors and comfortable fits, these t-shirts are the perfect complement to your everyday style."
+  },
+  {
+   "metitle": "Printed T-shirts for men | Fashion Link",
+   "title": "Printed T-shirts for men",
+   "name": "printed t-shirts",
+   "nameSeo": "printed t-shirts for men",
+   "description": "Express your personality with our printed t-shirts for men at Moda Link. Discover a wide range of designs that will add a unique touch to your wardrobe."
+  },
+  {
+   "metitle": "Slim fit shoes for men | Fashion Link",
+   "title": "Slim fit shoes for men",
+   "name": "slim-fit shoes",
+   "nameSeo": "slim fit shoes for men",
+   "description": "Walk in style and comfort with our slim fit shoes for men at Moda Link. Discover stylish options that fit perfectly with your modern and stylish style."
+  },
+  {
+   "metitle": "Organic Cotton T-shirts for Men | Fashion Link",
+   "title": "Organic Cotton T-shirts for Men",
+   "name": "organic-cotton-t-shirts",
+   "nameSeo": "organic cotton t-shirts for men",
+   "description": "Take care of the planet and your style with our organic cotton t-shirts for men at Moda Link. Discover the softness and freshness of organic cotton in modern designs."
+  },
+  {
+   "metitle": "Sports t-shirts for men | Fashion Link",
+   "title": "Sports T-shirts for men",
+   "name": "sports shirts",
+   "nameSeo": "sports shirts for men",
+   "description": "Elevate your performance with our men's sports t-shirts at Moda Link. Designed for comfort and style, they are ideal for your training sessions and sports activities."
+  },
+  {
+   "metitle": "Vintage t-shirts for men | Fashion Link",
+   "title": "Vintage T-shirts for Men",
+   "name": "vintage-t-shirts",
+   "nameSeo": "vintage t shirts for men",
+   "description": "Travel back in time with our vintage t-shirts for men at Moda Link. Discover unique designs that capture the essence of bygone eras, adding a retro touch to your style."
+  },
+  {
+   "metitle": "Jeans for men | Fashion Link",
+   "title": "Jeans for men",
+   "name": "pants-jeans",
+   "nameSeo": "jeans for men",
+   "description": "Discover versatility and style with our jeans for men at Moda Link. Find the perfect fit and fashionable designs that will complement your everyday look with elegance."
+  },
+  {
+   "metitle": "Casual pants for men | Fashion Link",
+   "title": "Men's casual pants",
+   "name": "casual-pants",
+   "nameSeo": "casual pants for men",
+   "description": "Explore comfort and style with our men's casual pants at Moda Link. From modern cuts to comfortable fabrics, find the perfect option for your relaxed style."
+  },
+  {
+   "metitle": "Formal pants for men | Fashion Link",
+   "title": "Formal pants for men",
+   "name": "formal-pants",
+   "nameSeo": "formal pants for men",
+   "description": "Elevate your presence with our formal pants for men at Moda Link. Discover elegance in every detail and find the perfect pair for special occasions and formal events."
+  },
+  {
+   "metitle": "Leggings for men | Fashion Link",
+   "title": "Leggings for men",
+   "name": "pants-leggings",
+   "nameSeo": "leggings for men",
+   "description": "Combine comfort and style with our men's leggings at Moda Link. Designed for movement and fashion, they are ideal for sports activities or for a casual and modern look."
+  },
+  {
+   "metitle": "Shorts for men | Fashion Link",
+   "title": "Men's shorts",
+   "name": "pants-shorts",
+   "nameSeo": "shorts for men",
+   "description": "Enjoy comfort and freshness with our shorts for men at Moda Link. From casual styles to dressier options, find the perfect pair for every occasion under the sun."
+  },
+  {
+   "metitle": "Wool hats for men | Fashion Link",
+   "title": "Wool hats for men",
+   "name": "wool hats",
+   "nameSeo": "wool hats for men",
+   "description": "Stay warm in style with our wool hats for men at Moda Link. Discover cozy and modern designs that will complement your winter look with elegance."
+  },
+  {
+   "metitle": "Felt hats for men | Fashion Link",
+   "title": "Felt hats for men",
+   "name": "felt-hats",
+   "nameSeo": "felt hats for men",
+   "description": "Add a touch of sophistication to your style with our felt hats for men at Moda Link. Explore elegant and functional designs that will keep you warm with distinction."
+  },
+  {
+   "metitle": "Knitted hats for men | Fashion Link",
+   "title": "Knitted hats for men",
+   "name": "knitted-hats",
+   "nameSeo": "knitted hats for men",
+   "description": "Complete your casual look with our knitted hats for men at Moda Link. Discover comfortable and modern options that will keep you warm in style during the colder seasons."
+  },
+  {
+   "metitle": "Winter hats for men | Fashion Link",
+   "title": "Winter hats for men",
+   "name": "Winter hats",
+   "nameSeo": "winter hats for men",
+   "description": "Face the cold with our winter hats for men at Moda Link. Discover attractive and functional designs that will protect you from wind and cold without compromising style."
+  },
+  {
+   "metitle": "Sports hats for men | Fashion Link",
+   "title": "Sports hats for men",
+   "name": "sports-caps",
+   "nameSeo": "sports hats for men",
+   "description": "Opt for comfort and active style with our sports hats for men at Moda Link. Discover functional designs ideal for your physical activities and your urban style."
+  },
+  {
+   "metitle": "Urban hats for men | Fashion Link",
+   "title": "Urban hats for men",
+   "name": "urban-caps",
+   "nameSeo": "urban hats for men",
+   "description": "Add a modern touch to your urban look with our urban hats for men at Moda Link. Explore contemporary designs that will enhance your style in the city."
+  },
+  {
+   "metitle": "Beach hats for men | Fashion Link",
+   "title": "Beach hats for men",
+   "name": "beach hats",
+   "nameSeo": "beach hats for men",
+   "description": "Protect your head from the sun with style on the beach with our beach hats for men at Moda Link. Discover fresh and functional designs for your sunny days by the sea."
+  },
+  {
+   "metitle": "Formal shoes for men | Fashion Link",
+   "title": "Formal shoes for men",
+   "name": "formal shoes",
+   "nameSeo": "formal shoes for men",
+   "description": "Impress any occasion with our men's formal shoes at Moda Link. Discover elegance and style in every step with our selection of formal footwear."
+  },
+  {
+   "metitle": "Sports shoes for men | Fashion Link",
+   "title": "Men's sports shoes",
+   "name": "sneakers",
+   "nameSeo": "sports shoes for men",
+   "description": "Reach your goals in style using our men's sports shoes at Moda Link. Discover comfort and performance in each pair designed for your physical and sports activities."
+  },
+  {
+   "metitle": "Sandals and flip flops for men | Fashion Link",
+   "title": "Sandals and flip flops for men",
+   "name": "sandals-flip flops",
+   "nameSeo": "sandals and flip flops for men",
+   "description": "Enjoy the summer in style with our men's sandals and flip flops at Moda Link. Discover comfortable and fresh options for your sunny days and beach getaways."
+  },
+  {
+   "metitle": "Leather sneakers for men | Fashion Link",
+   "title": "Leather sneakers for men",
+   "name": "leather-slippers",
+   "nameSeo": "leather sneakers for men",
+   "description": "Add a touch of luxury to your footwear with our leather sneakers for men at Moda Link. Discover the perfect combination of style and comfort in every step."
   }
-]
+ ]
