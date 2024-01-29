@@ -11,136 +11,166 @@ type Gender = "men" | "women";
 
 const { gender } = Astro.props;
 
-const background = gender === "men" ? "bg-[#FEFF99] hover:bg-[#FDFF64] text-black" : "bg-pink-500 hover:bg-pink-600 text-purple-200"
+const background =
+  gender === "men"
+    ? "bg-[#FEFF99] hover:bg-[#FDFF64] text-black"
+    : "bg-pink-500 hover:bg-pink-600 text-purple-200";
 
 const texts = {
   men: {
-  en: {
-    title: "Browse through our categories",
-    categoria1: {
-      title: "Pants",
-      description:
-        "Men's Pants: Elevate your style with comfortable and stylish pants.",
-        url: "/en/men/pants"
+    en: {
+      title: "Browse through our categories",
+      categoria1: {
+        title: "Pants",
+        titleSeo: "Fashionable pants for men,",
+        description:
+          "Elevate your style with our selection of comfortable and stylish pants.",
+        url: "/en/men/pants",
+      },
+      categoria2: {
+        title: "Hats",
+        titleSeo: "Hats for men,",
+        description:
+          "Explore a variety of hats for men, choose your hat for every occasion.",
+        url: "/en/men/caps",
+      },
+      categoria3: {
+        title: "Shirts",
+        titleSeo: "Polo shirts for men,",
+        description:
+          "Visit our long-sleeve shirts for men, designed shirts, and printed shirts.",
+        url: "/en/men/t-shirt",
+      },
+      categoria4: {
+        title: "Footwear",
+        titleSeo: "Fashionable shoes for men,",
+        description: "Browse our collection of shoes and sneakers for men.",
+        url: "/en/men/shoes",
+      },
+      categoria5: {
+        title: "Accessories",
+        titleSeo: "From wallets for men,",
+        description: "to branded eyewear for men.",
+        url: "/en/men/accessories",
+      },
     },
-    categoria2: {
-      title: "Hats",
-      description: "Explore a variety of fashionable hats for every occasion.",
-      url: "/en/men/caps"
-    },
-    categoria3: {
-      title: "Shirts",
-      description:
-        "Men's Shirts: Transform your day with stylish and personality-filled shirts.",
-        url: "/en/men/t-shirt"
-    },
-    categoria4: {
-      title: "Footwear",
-      description: "Discover trendy shoes to complete your fashionable look.",
-      url: "/en/men/shoes"
-    },
-    categoria5: {
-      title: "Accessories",
-      description: "Collection of elegant accessories to enhance your style.",
-      url: "/en/men/accessories"
-    },
-  },
-  es: {
-    title: "Navega entre nuestras categorías",
-    categoria1: {
-      title: "Pantalones",
-      description:
-        "Pantalones de hombre: Eleva tu estilo con pantalones cómodos y elegantes.",
-      url: "/hombre/pantalon"
-    },
-    categoria2: {
-      title: "Gorros",
-      description: "Explora una variedad de gorros a la moda para cada ocasión.",
-      url: "/hombre/gorros"
-    },
-    categoria3: {
-      title: "Camisetas",
-      description:
-        "Camisetas de hombre: Transforma tu día con camisetas elegantes y llenas de personalidad.",
-        url: "/hombre/pantalon"
-    },
-    categoria4: {
-      title: "Calzados",
-      description: "Descubre zapatos a la moda para completar tu look.",
-      url: "/hombre/zapatos"
-    },
-    categoria5: {
-      title: "Accesorios",
-      description: "Colección de accesorios elegantes para realzar tu estilo.",
-      url: "/hombre/accesorios"
-    },
-  },
-},
- women: {
-  en: {
-    title: "Browse through our categories",
-    categoria1: {
-      title: "T-Shirts",
-      description:
-        "Women's T-Shirts: Transform your day with style and personality.",
-        url: "/en/women/t-shirt"
-    },
-    categoria2: {
-      title: "Skirts and Pants",
-      description: "Find fashionable skirts and pants to look spectacular.",
-      url: "/en/women/pants"
-    },
-    categoria3: {
-      title: "Accessories",
-      description:
-        "Collection of elegant accessories to complement your style.",
-        url: "/en/women/accessories"
-    },
-    categoria4: {
-      title: "Lingerie",
-      description:
-        "Discover sensual and comfortable lingerie to enhance your style.",
-        url: "/en/women/t-shirt"
-    },
-    categoria5: {
-      title: "Footwear",
-      description: "The trendy shoes you're looking for to complete your look.",
-      url: "/en/women/shoes"
+
+    es: {
+      title: "Navega entre nuestras categorías",
+      categoria1: {
+        title: "Pantalones",
+        titleSeo: "Pantalones de moda para hombres,",
+        description:
+          " eleva tu estilo con nuestra selección de pantalones cómodos y elegantes",
+        url: "/hombre/pantalon",
+      },
+      categoria2: {
+        title: "Gorras",
+        titleSeo: "Gorras para hombres, ",
+        description:
+          "explora una variedad de gorros  para hombres, elije tu gorra para cada ocasión.",
+        url: "/hombre/gorros",
+      },
+      categoria3: {
+        title: "Camisetas",
+        titleSeo: "Playeras polo para hombre, ",
+        description:
+          "visite nuestras camisas manga largas para hombre, camisas con diseno, camisas estampadas",
+        url: "/hombre/pantalon",
+      },
+      categoria4: {
+        title: "Calzados",
+        titleSeo: "Zapatos de moda para hombres, ",
+        description: "mire nuestra colceción de zapatos y tenis para hombres.",
+        url: "/hombre/zapatos",
+      },
+      categoria5: {
+        title: "Accesorios",
+        titleSeo: "Desde carteras para hombres, ",
+        description: "hasta lentes para hombre de marca",
+        url: "/hombre/accesorios",
+      },
     },
   },
-  es: {
-    title: "Navega entre nuestras categorias",
-    categoria1: {
-      title: "Camisetas",
-      description:
-        "Camisetas de mujer: Transforma tu día con estilo y personalidad.",
-        url: "/mujer/camiseta"
+  women: {
+    en: {
+      title: "Browse through our categories",
+      categoria1: {
+        title: "T-Shirts",
+        titleSeo: "Women's T-Shirts",
+        description:
+          "Transform your day with style and personality using our women's polo shirts.",
+        url: "/en/women/t-shirt",
+      },
+      categoria2: {
+        title: "Skirts and Pants",
+        titleSeo: "Dress Pants for Women",
+        description:
+          "Choose from elegant party dresses, skirts, miniskirts, and shorts for women.",
+        url: "/en/women/pants",
+      },
+      categoria3: {
+        title: "Elegant Accessories for Women",
+        titleSeo: "Elegant accessories for women",
+        description:
+          "Explore our collection of earrings, wallets, and top full-coverage foundations.",
+        url: "/en/women/accessories",
+      },
+      categoria4: {
+        title: "Lingerie",
+        titleSeo: "Discover a women's lingerie store",
+        description:
+          "Find the sexiest panties, bras, and lingerie in our store.",
+        url: "/en/women/lingerie",
+      },
+      categoria5: {
+        title: "Footwear",
+        titleSeo: "Comfortable Shoes for Women",
+        description:
+          "Cowgirl boots for women, heels for girls, sandals - everything to showcase your magnificent feet.",
+        url: "/en/women/shoes",
+      },
     },
-    categoria2: {
-      title: "Faldas y Pantalones",
-      description:
-        "Encuentra faldas y pantalones a la moda para lucir espectacular.",
-        url: "/mujer/pantalon"
-    },
-    categoria3: {
-      title: "Accesorios",
-      description:
-        "Colección de accesorios elegantes para complementar tu estilo.",
-        url: "/mujer/accesorios"
-    },
-    categoria4: {
-      title: "Lenceria",
-      description: "Descubre lencería sensual y cómoda para realzar tu estilo.",
-      url: "/mujer/camiseta"
-    },
-    categoria5: {
-      title: "Calzados",
-      description: "Los zapatos de moda que buscas para completar tu look.",
-      url: "/mujer/zapatos"
+
+    es: {
+      title: "Navega entre nuestras categorías",
+      categoria1: {
+        title: "Camisetas",
+        titleSeo: "Camiseta para mujer",
+        description:
+          "Transforma tu día con estilo y personalidad usando nuestras playeras polo para mujer",
+        url: "/mujer/camiseta",
+      },
+      categoria2: {
+        title: "Pantalones y vestidos",
+        titleSeo: "Pantalones de vestir para mujer",
+        description:
+          "elije entre vestidos elegantes para fiestas, faldas, minifasldas y shorts para mujer",
+        url: "/mujer/pantalon",
+      },
+      categoria3: {
+        title: "Accesorios Elegantes para Mujeres",
+        titleSeo: "Accesorios elegantes para mujeres",
+        description:
+          "Explora nuestra colección de pendientes, carteras y mejores bases de maquillaje cobertura total",
+        url: "/mujer/accesorios",
+      },
+      categoria4: {
+        title: "Ropa interior",
+        titleSeo: "Descubre tienda de ropa interior para mujer",
+        description:
+          "encuetra las bragas, sostenes y lencerias mas sexis de nuestra tienda",
+        url: "/mujer/lenceria",
+      },
+      categoria5: {
+        title: "Calzados",
+        titleSeo: "Zapatos comodos para mujeres",
+        description:
+          "bota vaquera para mujer, tacones para niñas, sandalias, todo para lucir tus magnificos pies",
+        url: "/mujer/zapatos",
+      },
     },
   },
- },
- 
 };
 ---
 
@@ -150,49 +180,91 @@ const texts = {
   </h2>
 
   <div class="grid gap-5 relative h-32 grid-cols-2 xl:grid-cols-3">
-    <a aria-label={`${texts[gender][lang].categoria1.title} ${texts[gender][lang].categoria1.description}`} href={texts[gender][lang].categoria1.url} class={`category ${background} `}>
-      <h2 class="title">{texts[gender][lang].categoria1.title}</h2>
-      <p class="parrafo">
-        {texts[gender][lang].categoria1.description}
-      </p>
-    </a>
-    
-    <a aria-label={`${texts[gender][lang].categoria2.title} ${texts[gender][lang].categoria2.description}`}   href={texts[gender][lang].categoria2.url} class={`category ${background} `}>
-      <h2 class="title">{texts[gender][lang].categoria2.title}</h2>
-      <p class="parrafo">
-        {texts[gender][lang].categoria2.description}
-      </p>
+    <a
+      aria-label={`${texts[gender][lang].categoria1.title} ${texts[gender][lang].categoria1.description}`}
+      href={texts[gender][lang].categoria1.url}
+      class={`category ${background} `}
+    >
+      <p class="title">{texts[gender][lang].categoria1.title}</p>
+      <div class="parrafo">
+        <h2 class="inline">{texts[gender][lang].categoria1.titleSeo}</h2>
+        <p class="font-normal inline">
+          <strong style="font-weight: 400;"
+            >{texts[gender][lang].categoria1.description}</strong
+          >
+        </p>
+      </div>
     </a>
 
-    <a  aria-label={`${texts[gender][lang].categoria3.title} ${texts[gender][lang].categoria3.description}`}   href={texts[gender][lang].categoria3.url}
+    <a
+      aria-label={`${texts[gender][lang].categoria2.title} ${texts[gender][lang].categoria2.description}`}
+      href={texts[gender][lang].categoria2.url}
+      class={`category ${background} `}
+    >
+      <p class="title">{texts[gender][lang].categoria2.title}</p>
+      <div class="parrafo">
+        <h2 class="inline">{texts[gender][lang].categoria2.titleSeo}</h2>
+        <p class="font-normal inline">
+          <strong style="font-weight: 400;"
+            >{texts[gender][lang].categoria2.description}</strong
+          >
+        </p>
+      </div>
+    </a>
+
+    <a
+      aria-label={`${texts[gender][lang].categoria3.title} ${texts[gender][lang].categoria3.description}`}
+      href={texts[gender][lang].categoria3.url}
       class={`${background} md:px-10  w-full h-60 overflow-hidden  ease-in-out duration-300 flex justify-center items-center flex-col px-2 xl:h-full row-span-2 cursor-default`}
     >
-      <h2 class="title">{texts[gender][lang].categoria3.title}</h2>
-      <p class="parrafo">
-        {texts[gender][lang].categoria3.description}
-      </p>
+      <p class="title">{texts[gender][lang].categoria3.title}</p>
+      <div class="parrafo">
+        <h2 class="inline">{texts[gender][lang].categoria3.titleSeo}</h2>
+        <p class="font-normal inline">
+          <strong style="font-weight: 400;"
+            >{texts[gender][lang].categoria3.description}</strong
+          >
+        </p>
+      </div>
     </a>
 
-    <a  aria-label={`${texts[gender][lang].categoria4.title} ${texts[gender][lang].categoria4.description}`}   href={texts[gender][lang].categoria4.url} class={`category ${background} `}>
-      <h2 class="title">{texts[gender][lang].categoria4.title}</h2>
-      <p class="parrafo">
-        {texts[gender][lang].categoria4.description}
-      </p>
+    <a
+      aria-label={`${texts[gender][lang].categoria4.title} ${texts[gender][lang].categoria4.description}`}
+      href={texts[gender][lang].categoria4.url}
+      class={`category ${background} `}
+    >
+      <p class="title">{texts[gender][lang].categoria4.title}</p>
+      <div class="parrafo">
+        <h2 class="inline">{texts[gender][lang].categoria4.titleSeo}</h2>
+        <p class="font-normal inline">
+          <strong style="font-weight: 400;"
+            >{texts[gender][lang].categoria4.description}</strong
+          >
+        </p>
+      </div>
     </a>
 
-    <a  aria-label={`${texts[gender][lang].categoria5.title} ${texts[gender][lang].categoria5.description}`}   href={texts[gender][lang].categoria5.url} class={`category ${background}  col-span-2 xl:col-span-1  -translate-y-5 xl:-translate-y-0`}>
-      <h2 class="title">{texts[gender][lang].categoria5.title}</h2>
-      <p class="parrafo">
-        {texts[gender][lang].categoria5.description}
-      </p>
+    <a
+      aria-label={`${texts[gender][lang].categoria5.title} ${texts[gender][lang].categoria5.description}`}
+      href={texts[gender][lang].categoria5.url}
+      class={`category ${background}  col-span-2 xl:col-span-1  -translate-y-5 xl:-translate-y-0`}
+    >
+      <p class="title">{texts[gender][lang].categoria5.title}</p>
+      <div class="parrafo">
+        <h2 class="inline">{texts[gender][lang].categoria5.titleSeo}</h2>
+        <p class="font-normal inline">
+          <strong style="font-weight: 400;"
+            >{texts[gender][lang].categoria5.description}</strong
+          >
+        </p>
+      </div>
     </a>
   </div>
 </div>
 
-
 <style>
   .category {
-    @apply w-full h-60 overflow-hidden relative  ease-in-out duration-300 flex justify-center items-center flex-col px-2 md:px-10 cursor-default
+    @apply w-full h-60 overflow-hidden relative  ease-in-out duration-300 flex justify-center items-center flex-col px-2 md:px-10 cursor-default;
   }
 
   .title {

@@ -1,9 +1,9 @@
 ---
 import { getLangFromUrl } from "src/i18n/utils";
-import videomen from "../assets/index/videoyellow.mp4"
-import videowomen from "../assets/index/videorosa.mp4"
-import imagemen from "../assets/index/menyellow.jpg"
-import imagewomen from "../assets/index/womenrosa.jpg"
+import videomen from "../assets/index/videoyellow.mp4";
+import videowomen from "../assets/index/videorosa.mp4";
+import imagemen from "../assets/index/menyellow.jpg";
+import imagewomen from "../assets/index/womenrosa.jpg";
 
 const lang = getLangFromUrl(Astro.url);
 
@@ -16,38 +16,42 @@ type Gender = "men" | "women";
 const { gender } = Astro.props;
 
 const background = gender === "men" ? "bg-[#FEFF99]" : "bg-pink-500";
-const textColor = gender === "men" ? "text-black text-opacity-70" : "text-purple-200 text-opacity-100";
+const textColor =
+  gender === "men"
+    ? "text-black text-opacity-70"
+    : "text-purple-200 text-opacity-100";
 const titleColor = gender === "men" ? "text-black " : "text-purple-200";
 
 const texts = {
   men: {
     en: {
-      title: "Fresh Fashion <br /> Men's Style",
+      title: "MEN'S CLOTHING <br /> MALE FASHION",
       notFound: "Your browser does not support the video tag.",
       description:
-        "The best for you, exclusive clothing for guys, stylish, confident, handsome, empowered",
+        "The best for you, exclusive clothing for guys, stylish men, confident and conquering men.",
     },
     es: {
-      title: "ROPA DE MARCA <br /> MODA MASCULINA",
+      title: "ROPA DE HOMBRE <br /> MODA MASCULINA",
       notFound: "Tu navegador no soporta el tag de video.",
       description:
-        "Lo mejor para ti, ropa exclusiva para chicos, con estilo, seguros, guapos, empoderados",
+        "Lo mejor para tí, ropa exclusiva para chicos, hombre con estilo, hombre seguro de si mismo y conquistador",
     },
     video: videomen,
     image: imagemen.src,
   },
   women: {
     en: {
-      title: "Fresh Fashion <br /> Women's Style",
+      title: "BRAND CLOTHING <br /> WOMEN'S FASHION",
       notFound: "Your browser does not support the video tag.",
       description:
-        "The best for you, exclusive clothing for girls, sexy, radiant, beautiful, empowered",
+        "Discover the best for you with our exclusive collection of brand clothing for women. Find sexy, radiant, beautiful, and empowered garments that will enhance your unique style.",
     },
+
     es: {
       title: "ROPA DE MARCA <br /> MODA FEMENINA",
       notFound: "Tu navegador no soporta el tag de video.",
       description:
-        "Lo mejor para tí, ropa exlusiva para chicas, sexis, radiantes, bellas,empoderadas",
+        "Descubre lo mejor para ti con nuestra exclusiva colección de ropa de marca para mujeres. Encuentra prendas sexis, radiantes, bellas y empoderadas que resaltarán tu estilo único.",
     },
     video: videowomen,
     image: imagewomen.src,
@@ -90,11 +94,11 @@ const texts = {
   <div
     class="absolute bottom-0 font-medium translate-y-20 xl:-translate-y-5 flex justify-center items-center flex-col"
   >
-    <p
+    <strong
       class={`text-center md:text-lg lg:text-2xl translate-y-2  w-10/12 ${textColor} `}
     >
       {texts[gender][lang].description}
-    </p>
+    </strong>
   </div>
 </div>
 
